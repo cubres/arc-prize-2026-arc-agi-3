@@ -1,0 +1,47 @@
+{
+  "status": "PASS_SOURCE_AND_ACTUAL_EVIDENCE_CONTRACTS",
+  "validated_utc": "2026-10-04T21:47:50.456326+00:00",
+  "notebook_sha256": "f5852189b649ec154fc21b9eae9aa8d278c5c1d7960dc965e402b230e5b16e7d",
+  "protocol_sha256": "539710002b3de3b7287236d761b748a380161f7f2c92c50dee2c82febce9c4d9",
+  "nbformat": "PASS",
+  "compilation": "PASS",
+  "exact_packet_bytes": "PASS",
+  "own_bootstrap_original_prefixes": "PASS",
+  "one_submission_file_created": false,
+  "rejections": {
+    "one_row_placeholder": "Actual benchmark must contain all 25 game runs.",
+    "duplicate_game_id": "Actual run IDs/order differ from the frozen public panel.",
+    "changed_game_order": "Actual run IDs/order differ from the frozen public panel.",
+    "nonterminal": "Nonterminal state at tn36-ef4dde99: 'playing'",
+    "missing_actual_score": "Missing/nonfinite actual final score at tn36-ef4dde99",
+    "nonfinite_score": "Missing/nonfinite actual final score at tn36-ef4dde99",
+    "all_zero_actions": "A zero-action output cannot attest a real solver run.",
+    "unbound_action_record": "Missing action in actual history at tn36-ef4dde99",
+    "changed_pass_count": "One pass and uniform game weights are required."
+  },
+  "crashes_retained_in_full_denominator": true,
+  "historical_v14": {
+    "benchmark_sha256": "7e7572d7dc775dc74bde615ea13b90829161732d6ec63d56c91530311ae21c7c",
+    "terminal_receipt": {
+      "benchmark_path": "/Users/cubres/Documents/Neurogolf/research/codex_arc3_takeover_20261004T2120Z/version14_output_20261004T2128Z/benchmark.json",
+      "benchmark_sha256": "7e7572d7dc775dc74bde615ea13b90829161732d6ec63d56c91530311ae21c7c",
+      "terminal_games_sha256": "f861384947e29b618d278f48486c4c46740d12ca687224d2e8b916b85bfae3ea",
+      "actual_rows": 25,
+      "no_submission_file_written": true,
+      "eligibility": "MECHANICS_COMPLETE"
+    },
+    "games": 25,
+    "actions": 820,
+    "cancelled": 25,
+    "levels": [
+      20,
+      183
+    ],
+    "local_mean": 3.332611763924584
+  },
+  "actual_source_runtime_untested": true,
+  "gpu_run": false,
+  "model_calls": 0,
+  "downloaded_dependency_code_executed": false,
+  "quality_claim": false
+}
