@@ -1,0 +1,43 @@
+{
+  "schema": "arc3_resolution_context_illustration_v1",
+  "invented_fixture": true,
+  "benchmark_data_read": false,
+  "model_calls": 0,
+  "official_score": false,
+  "submission_written": false,
+  "nearest_neighbor_renderer": true,
+  "measurements": [
+    {
+      "scale": 4,
+      "width": 256,
+      "height": 256,
+      "pixels": 65536,
+      "png_bytes": 1484,
+      "data_url_characters": 2002,
+      "png_sha256": "d01719c4f8886c1a7db05211cb2f39d9474be4fa884e16eb21c25ac79aa99551"
+    },
+    {
+      "scale": 10,
+      "width": 640,
+      "height": 640,
+      "pixels": 409600,
+      "png_bytes": 4641,
+      "data_url_characters": 6210,
+      "png_sha256": "acdce11385f3947845f2dd57b10295507e709bfb814267a058397e40f6c1550c"
+    }
+  ],
+  "pixel_ratio": 6.25,
+  "reference_protocol": "https://github.com/cubres/arc-prize-2026-arc-agi-3/blob/6d108ad7b2b2d700e8e38ca179c147c4c0a620db/experiments/image-resolution-pair/v3/protocol.json",
+  "context_estimator_source": {
+    "dataset": "https://www.kaggle.com/datasets/jakobbrggen/taaf-kaggle-source-anim-20260807-anim",
+    "path": "src/ARC3-Inference/inference/agent/tool_agent.py",
+    "sha256": "856bf9b895d0ad8b959c8f828c7132b0e09eaa47f4c5cc6173785354090f8be7",
+    "behavior": "JSON-serialize the entire request, then estimate max(1, (characters + 2) // 3); old message blocks can be dropped at the context budget.",
+    "foreign_source_included": false
+  },
+  "data_url_warning": "Character counts are not processor image-token counts or a model throughput measurement.",
+  "figure_sha256": {
+    "resolution-context.png": "aa911bbe6509c0841ba743f0a49e2a2e33bcaea75a941463058a240a61783ffb",
+    "resolution-context.svg": "d11108d2663fe71f1951572d4d8480ca5cf829b2798894d4071ea3e265504df3"
+  }
+}
