@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-10-04T22:51:56.601174+00:00",
+  "status": "PASS_LOCAL_DISPATCH_GATE",
+  "source_sha256": "8a56fba318c0e730a7ff5a0b89fd6b8d56344da52907404c4d3c2e744b5f130c",
+  "protocol_sha256": "1abb91697d175bad8cf45f4f94958914ca71697797e7c8213e21280a334dda13",
+  "native_readiness_session": 355286234,
+  "native_readiness_version": 7,
+  "native_readiness_status": "COMPLETE_PASS_RENDERER_AND_METADATA_ONLY",
+  "measured_same_shape_charge_seconds": 76.214,
+  "same_shape_total_server_runtime_seconds_rounded": 76.2,
+  "observed_charge_ratio_approx": 1.0001837270341207,
+  "billing_evidence_scope": "Empirical exact completed RTX job; no guarantee of future policy. ARC2 remained QUEUED; no other GPU job observed. Reservation was zero and was not used to infer rate.",
+  "conservative_planned_quota_seconds": 43200,
+  "other_queued_max_quota_seconds": 10800,
+  "free_gpu_quota_seconds_before": 88858.851328,
+  "native_hard_timeout_seconds": 10800,
+  "paid_compute_enabled_by_this_action": false,
+  "competition_submission": false,
+  "serving_teardown_source_review": "research/codex_arc3_runtime_cleanup_readonly_20261004T224508581633Z/source_receipt.json",
+  "model_backend_not_yet_exercised_in_this_diagnostic": true
+}

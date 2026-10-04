@@ -1,0 +1,21 @@
+{
+  "status": "PASS_MINIMAL_FOURTEENTH_PIN_AUTH_ORDER",
+  "checked_utc": "2026-10-04T22:50:06.477861+00:00",
+  "source_sha256": "8a56fba318c0e730a7ff5a0b89fd6b8d56344da52907404c4d3c2e744b5f130c",
+  "source_bytes": 75411,
+  "protocol_sha256": "1abb91697d175bad8cf45f4f94958914ca71697797e7c8213e21280a334dda13",
+  "only_changed_cell_index": 5,
+  "delta": "Embedded protocol only;14th teardown payload pin plus prospective provenance. Every other cell source/executable statement exact.",
+  "authentication_cell_index": 9,
+  "serving_setup_commands_cell_index": 11,
+  "teardown_commands_cell_index": 17,
+  "competition_wheel_install_precedes_auth_unchanged": true,
+  "authenticated_loop_unchanged": true,
+  "prior_V1_V2_preserved": true,
+  "nbformat": "PASS",
+  "compile": "PASS",
+  "gpu_run": false,
+  "model_calls": 0,
+  "remote_actions": [],
+  "full_runtime_or_quality_claim": false
+}

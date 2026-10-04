@@ -1,0 +1,9 @@
+{
+  "native_hard_timeout_required_seconds": 360,
+  "child_timeout_seconds": 300,
+  "protocol_sha256": "7cfa61418ae2b378a343d9bc392be81f772a13548a78e778cce4e27618f26c25",
+  "hardware_status": "PASS",
+  "status": "PASS",
+  "exit_code": 0,
+  "elapsed_seconds": 67.11036831999999
+}

@@ -1,0 +1,23 @@
+{
+  "path": "/kaggle/working/codex_arc3_hardware_20261004T223906177031Z.json",
+  "checked_utc": "2026-10-04T22:39:06.177082+00:00",
+  "query": [
+    "nvidia-smi",
+    "--query-gpu=name,compute_cap,memory.total",
+    "--format=csv,noheader,nounits"
+  ],
+  "timeout_seconds": 15,
+  "phase": "BEFORE_NON_STDLIB_IMPORTS_AND_MODEL_SETUP",
+  "quota_multiplier_verified": false,
+  "model_calls": 0,
+  "status": "PASS",
+  "returncode": 0,
+  "gpu": {
+    "physical_gpu_count": 1,
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "compute_capability": "12.0",
+    "sm": 120,
+    "memory_total_mib": "97887",
+    "minimum_memory_mib": 92160
+  }
+}
