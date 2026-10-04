@@ -1,0 +1,27 @@
+{
+  "status": "PASS_HARDWARE_FIXTURES_AND_EXACT_SOURCE_DELTA",
+  "validated_utc": "2026-10-04T22:07:23.104471+00:00",
+  "notebook_sha256": "dd4fbf374bc2b281c0e4539b41c7bb32f67aef7e65130c75f5fd1e5dc2376626",
+  "source_bytes": 73823,
+  "protocol_sha256": "39cf415e47e70aad7f525b1ce286dd8b9746196564847df7fd56836ca3efef9c",
+  "hardware_guard_sha256": "6fd713e6d441d1bfa4b47feb218a1126a3f90e081d9e640728226199569a1eeb",
+  "v1_preserved_unchanged": true,
+  "all_other_cell_sources_exact": true,
+  "protocol_all_other_fields_exact": true,
+  "negative_fixtures": {
+    "no_gpu": "Expected exactly one physical GPU; observed 0",
+    "wrong_p100": "Expected RTX PRO 6000; observed 'Tesla P100-PCIE-16GB'",
+    "too_small": "Expected at least90GiB; observed memory '81920'MiB",
+    "multiple_gpu": "Expected exactly one physical GPU; observed 2",
+    "wrong_sm": "Expected SM120; observed capability '8.9'",
+    "unsupported_fields": "Non-numeric GPU capability or memory",
+    "query_failed": "nvidia-smi exited with 1",
+    "nonfinite_memory": "Expected at least90GiB; observed memory 'Infinity'MiB"
+  },
+  "gpu_query_on_host": false,
+  "gpu_run": false,
+  "model_calls": 0,
+  "native_runtime_validated": false,
+  "quota_multiplier_verified": false,
+  "quality_claim": false
+}

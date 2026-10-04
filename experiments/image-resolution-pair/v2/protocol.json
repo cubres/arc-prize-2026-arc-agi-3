@@ -1,0 +1,194 @@
+{
+  "active_wall_s_per_arm": 3000,
+  "arms": [
+    {
+      "label": "control4",
+      "scale": 4
+    },
+    {
+      "label": "image10",
+      "scale": 10
+    }
+  ],
+  "confounds": [
+    "Reused public25",
+    "Single fixed arm order; backend warm state and run variability",
+    "Image resolution changes both perception and current base64-as-text context estimate",
+    "Watchdog restart count is recorded; no throughput inference from zero final summary fields"
+  ],
+  "consumed_asset_pins": {
+    "animation": {
+      "benchmark_initial.pkl": {
+        "bytes": 1946,
+        "sha256": "4834e8a92e9f15b1c7e1891cf00f5be99604e6c6cde9f0b810bd4ae4155bec7d"
+      },
+      "deploy_target.pkl": {
+        "bytes": 790,
+        "sha256": "2052013a31e7feea7ee6b1ef8e0a671ddbbc6426c9a9bb725778d8b50e54dace"
+      },
+      "src/ARC3-Inference/inference/agent/tool_agent.py": {
+        "bytes": 108927,
+        "sha256": "856bf9b895d0ad8b959c8f828c7132b0e09eaa47f4c5cc6173785354090f8be7"
+      },
+      "src/ARC3-Inference/inference/agent/vision_context.py": {
+        "bytes": 2311,
+        "sha256": "6538fa9a115799e249a705812cbb873563f7574b55cf18fc8d3119ee1a2f96ad"
+      },
+      "src/ARC3-Inference/inference/framework/solver.py": {
+        "bytes": 56820,
+        "sha256": "2bef5d6bc23c0312675f0c7203194c94e93d056ac06bf6419acd5142a4ea7c8e"
+      },
+      "src/ARC3-Inference/inference/tools/eval.py": {
+        "bytes": 28259,
+        "sha256": "bc8634bd3dd81af04e6d45e64a4a316db5bf9f6dcc7ed34a8281ada2a029ef52"
+      },
+      "src/tufa-arc-agi-framework/src/taaf/benchmark.py": {
+        "bytes": 21393,
+        "sha256": "d273e8056f83a3d1557d31c50c9716ed205258c8b1ba31747367a743d51c9497"
+      },
+      "taaf-kaggle-bundle.json": {
+        "bytes": 154,
+        "sha256": "6cbfeb130b6bb42555f4992dad23beda32d14ec5dd2583e33f2c26f492904701"
+      }
+    },
+    "serving": {
+      "serving_setup.py": {
+        "bytes": 122872,
+        "sha256": "037c041c9bd9dcffa9084b32f47af9cf1bf35849d5eaf2e1a3422daac098b2e2"
+      },
+      "setup_commands.json": {
+        "bytes": 68,
+        "sha256": "64857a575388b8fcbf177ae68da0b884e12816213d68cfcdd206032763febb6a"
+      },
+      "taaf-kaggle-bundle.json": {
+        "bytes": 161,
+        "sha256": "52f844965b2b80de6e6ef759dfc9ffa3258f42407e0ed1788ec28ff250a7a8cb"
+      },
+      "teardown_commands.json": {
+        "bytes": 71,
+        "sha256": "c6f82500ebc8d2e6f1348f504f8613cbe44fa5674173886049606f5b95753376"
+      },
+      "vllm_server_watchdog.py": {
+        "bytes": 19607,
+        "sha256": "0cf6cf14d81a449b573106fae76b5e470608cf8d51aea1efbeb45067995f3f38"
+      }
+    }
+  },
+  "dispatch_gate": "Root must fresh-check private identity, RTX quota multiplier, remaining/reserved quota, timeout, and input metadata before any push.",
+  "fixed_analyzer_env": {
+    "LOCAL_ANALYZER_CONTEXT_WINDOW": "32768",
+    "LOCAL_ANALYZER_ENABLE_THINKING": "true",
+    "LOCAL_ANALYZER_MAX_OUTPUT": "0",
+    "LOCAL_ANALYZER_MODEL_ID": "Qwen/Qwen3.8-Flash-Next-NVFP4",
+    "LOCAL_ANALYZER_SEED": "20260825",
+    "LOCAL_ANALYZER_TEMPERATURE": "0.6",
+    "LOCAL_ANALYZER_TOOL_OUTPUT_TOKENS": "1024",
+    "LOCAL_ANALYZER_TOOL_STEPS": "0",
+    "LOCAL_ANALYZER_TOOL_TIMEOUT": "30",
+    "LOCAL_ANALYZER_TOP_K": "20",
+    "LOCAL_ANALYZER_TOP_P": "0.95",
+    "LOCAL_ANALYZER_YIELD_SECONDS": "180",
+    "MULTIMODAL_CONTEXT": "current_grid"
+  },
+  "fixed_input_metadata": {
+    "competition_sources": [
+      "arc-prize-2026-arc-agi-3"
+    ],
+    "dataset_sources": [
+      "keithtyser/duck-qwen38-nvfp4-mtp-vllm-smoke-v1",
+      "keithtyser/qwen38-flash-next-vllm-nvfp4-runtime-v1",
+      "jakobbrggen/taaf-kaggle-source-anim-20260807-anim"
+    ],
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:57e612b484cf3df5026ee4dcc3cb176974b22b2bc0937fb1e16132a8be4cb13c",
+    "enable_internet": false,
+    "machine_shape": "NvidiaRtxPro6000",
+    "model_sources": [
+      "keithtyser/qwen3-8-flash-next-nvfp4/PyTorch/radixark-modelopt-fp4/1"
+    ]
+  },
+  "fixed_solver": {
+    "analyzer_timeout": 900,
+    "animation_awareness": true,
+    "concurrency": 28,
+    "hard_noop_guard": true,
+    "max_actions_per_game": null,
+    "max_runtime_s_per_game": 7920,
+    "save_request_logs": false
+  },
+  "frozen_utc": "2026-10-04T22:07:22.877565+00:00",
+  "hardware_preflight": {
+    "failure_policy": "STOP_BEFORE_MODEL_SETUP",
+    "first_code_cell": true,
+    "hardware_guard_sha256": "6fd713e6d441d1bfa4b47feb218a1126a3f90e081d9e640728226199569a1eeb",
+    "minimum_memory_gib": 90,
+    "query_timeout_seconds": 15,
+    "quota_multiplier_still_requires_primary_dispatch_evidence": true,
+    "required_name": "RTX PRO 6000",
+    "required_physical_gpu_count": 1,
+    "required_sm": 120,
+    "stdlib_only": true
+  },
+  "hypothesis": "More spatial detail may improve grid reasoning, with image serialization/context pressure retained as part of the actual intervention.",
+  "independent_quality_validation": false,
+  "max_reserved_quota_hours": 12,
+  "name": "original_private_public25_resolution_pair_v2_hardware_guard",
+  "outer_soft_wall_s": 10200,
+  "paid_compute": false,
+  "panel_reused": true,
+  "parent_original_bootstrap_cell_sha256": {
+    "11": "7af0293a063a07c48bb984a64063bf75314efa10f31957acdfa93d441f414f57",
+    "13": "a8c25a1dd93fd57dcab973a9effb7eb8f50ab695b5a7e09a635e958014df002a",
+    "15": "f434991a581ef0477780ea8d242e25fb780169c0f73a1b513cb1a7f50392fbed",
+    "17": "8ba377b823e09a9d1038bb8bd7a5018f6fff3581294abea48097fc374df13265",
+    "7": "7d3c050f6b4b0661036a7395827c644b13dd6b690f2b9085e57cdfed3830a83a",
+    "9": "daaad7a38b4d9c2974618d6e0a58b28d766e2997e4253f951fa0c8c8e671668d"
+  },
+  "parent_path": "/Users/cubres/Documents/Neurogolf/research/codex_arc3_takeover_20261004T2120Z/fresh_server_pull/arc-agi-3-stock-taaf-action7-shadow.ipynb",
+  "parent_sha256": "902be8bc6e19f6a36b427c0393919756e0a472ec3b0790d52da4e3e996bc47eb",
+  "primary_contrast": "All25 mean actual final score image10 minus control4; full terminal/action records and bundled local score per arm.",
+  "prior_packet": {
+    "notebook_sha256": "f5852189b649ec154fc21b9eae9aa8d278c5c1d7960dc965e402b230e5b16e7d",
+    "path": "/Users/cubres/Documents/Neurogolf/research/codex_arc3_resolution_pair_20261004T2140Z",
+    "preserved_unchanged": true,
+    "protocol_sha256": "539710002b3de3b7287236d761b748a380161f7f2c92c50dee2c82febce9c4d9"
+  },
+  "promotion": "No automatic promotion/public release/official submission; this trial supplies diagnostic evidence only.",
+  "public_game_ids": [
+    "tn36-ef4dde99",
+    "lf52-271a04aa",
+    "cn04-2fe56bfb",
+    "bp35-0a0ad940",
+    "wa30-ee6fef47",
+    "lp85-305b61c3",
+    "r11l-495a7899",
+    "tu93-0768757b",
+    "sp80-589a99af",
+    "m0r0-492f87ba",
+    "vc33-5430563c",
+    "ar25-0c556536",
+    "ka59-38d34dbb",
+    "sc25-635fd71a",
+    "sk48-d8078629",
+    "dc22-fdcac232",
+    "cd82-fb555c5d",
+    "ft09-0d8bbf25",
+    "g50t-5849a774",
+    "ls20-9607627b",
+    "re86-8af5384d",
+    "s5i5-18d95033",
+    "sb26-7fbdac44",
+    "su15-1944f8ab",
+    "tr87-cd924810"
+  ],
+  "required_native_hard_timeout_s": 10800,
+  "source_idea_attribution": {
+    "method": "Public released larger-image configuration motivated the hypothesis, rather than providing copied implementation.",
+    "notebook": "https://www.kaggle.com/code/dfranzen/arc-agi-3-milestone-2-solution",
+    "notebook_current_read_version": 3,
+    "reported_best_v1_score": 31.47,
+    "writeup": "https://github.com/da-fr/arc-agi-3-solution/blob/main/WRITEUP.md"
+  },
+  "source_reuse_scope": "Own current bootstrap only; experimental driver/exporter/prose original. Mounted third-party dependencies retain their rights; no competitor implementation copied.",
+  "status": "PROSPECTIVE_UNRUN_PRIVATE_DIAGNOSTIC",
+  "transition_drain_s": 930
+}
