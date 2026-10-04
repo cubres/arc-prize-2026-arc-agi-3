@@ -1,0 +1,15 @@
+{
+  "campaign": "arc3",
+  "generation_tool": "built-in image_gen",
+  "generated_utc_date": "2026-10-04",
+  "prompt": "Use case: stylized-concept. Asset type: premium wide landscape hero illustration for an ARC-AGI-3 interactive-agent research notebook. Primary request: an elegant miniature world of colorful square-grid rooms and puzzles, linked by a visible path showing observation, deliberate interaction, and changed world state. Show a tiny understated cursor-like explorer discovering rules by interacting with the environment, branching paths and rearranged blocks suggesting experiments and feedback. Style: meticulous handcrafted architectural model photographed on a dark navy studio backdrop, origami and matte paper diorama, cinematic soft side-lighting, sophisticated editorial book-cover composition. Materials visibly tactile paper and colored wood, restrained cyan, terracotta, butter yellow, warm white; subtle depth of field, clear visual hierarchy. Invented symbolic environment only, no copied competition levels. No humanoid robots, brains, circuitry, medals, scores, lettering, labels, logos, text, or watermark. Landscape 16:9 high resolution.",
+  "sha256": "17309134c95f44e449adae0ef468378cbb7ddbab9abed0a7a2a9a9e1284bf42a",
+  "bytes": 1820642,
+  "dimensions": [
+    1672,
+    941
+  ],
+  "rotation_cadence_notebook_versions": 10,
+  "kaggle_versions_using_asset": [],
+  "content_role": "Illustrative cover art with invented grids/environment. No actual benchmark tasks or scientific result depicted."
+}
