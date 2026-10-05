@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="520" viewBox="0 0 1120 520" role="img" aria-labelledby="title desc">
+  <title id="title">Preserving an outcome while making its time explicit</title>
+  <desc id="desc">Synthetic example: action one fails, action two resets to a nonterminal state, and two analyzer inspections report the historical failure with an unchanged action revision. This is an explanatory diagram, not measured gameplay.</desc>
+  <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#677791" stroke-width="1.5"/></marker></defs>
+  <rect width="1120" height="520" rx="20" fill="#f5f7fc"/>
+  <g font-family="system-ui, sans-serif" fill="#14233b">
+    <text x="44" y="54" font-size="27" font-weight="700">One past failure. A current reset board.</text>
+    <text x="44" y="85" font-size="16" fill="#52627a">Illustrative CPU fixture · action revision changes only when an action executes</text>
+    <path d="M260 185 H305 M520 185 H565 M780 185 H825" stroke="#677791" stroke-width="2" marker-end="url(#arrow)"/>
+    <g transform="translate(44 120)">
+      <rect width="216" height="135" rx="14" fill="#fff" stroke="#bf5b60" stroke-width="2"/>
+      <text x="20" y="32" font-size="14" fill="#a43d45" font-weight="700">EXECUTED ACTION 1</text>
+      <text x="20" y="66" font-size="24" font-weight="700">Attempt fails</text>
+      <text x="20" y="94" font-size="16">game_over = true</text>
+      <text x="20" y="116" font-size="14" fill="#52627a">Keep the recorded outcome</text>
+    </g>
+    <g transform="translate(304 120)">
+      <rect width="216" height="135" rx="14" fill="#fff" stroke="#18887f" stroke-width="2"/>
+      <text x="20" y="32" font-size="14" fill="#08766f" font-weight="700">EXECUTED ACTION 2</text>
+      <text x="20" y="66" font-size="24" font-weight="700">RESET observed</text>
+      <text x="20" y="94" font-size="16">Current: nonterminal</text>
+      <text x="20" y="116" font-size="14" fill="#52627a">Origin remains unspecified</text>
+    </g>
+    <g transform="translate(564 120)">
+      <rect width="216" height="135" rx="14" fill="#fff" stroke="#6a5cb4" stroke-width="2"/>
+      <text x="20" y="32" font-size="14" fill="#62519e" font-weight="700">INSPECTION · REVISION 2</text>
+      <text x="20" y="66" font-size="24" font-weight="700">First report</text>
+      <text x="20" y="94" font-size="16">Historical failure</text>
+      <text x="20" y="116" font-size="14" fill="#52627a">No new action or new death</text>
+    </g>
+    <g transform="translate(824 120)">
+      <rect width="252" height="135" rx="14" fill="#fff" stroke="#6a5cb4" stroke-width="2"/>
+      <text x="20" y="32" font-size="14" fill="#62519e" font-weight="700">INSPECTION · REVISION 2</text>
+      <text x="20" y="66" font-size="24" font-weight="700">Already shown</text>
+      <text x="20" y="94" font-size="16">Same historical failure</text>
+      <text x="20" y="116" font-size="14" fill="#52627a">Watermark, rather than erasure</text>
+    </g>
+    <rect x="44" y="290" width="1032" height="158" rx="14" fill="#14233b"/>
+    <text x="68" y="323" font-size="14" fill="#aebcd2" font-weight="700">ANNOTATED OPENER</text>
+    <text x="68" y="356" font-size="19" fill="#fff">Outcome for actions 1–1 (historical, already shown): that attempt failed.</text>
+    <text x="68" y="387" font-size="19" fill="#fff">A nonterminal RESET was observed at action 2 after that failure.</text>
+    <text x="68" y="418" font-size="19" fill="#9de0d6">Current state: step 3, level 2; current visible phase: nonterminal.</text>
+    <text x="44" y="484" font-size="15" fill="#52627a">Action text, knowledge and animation evidence remain in the prompt. No score gain has been measured.</text>
+  </g>
+</svg>

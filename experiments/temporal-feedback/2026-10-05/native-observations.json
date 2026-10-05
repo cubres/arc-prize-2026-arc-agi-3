@@ -1,0 +1,266 @@
+{
+  "checked_utc": "2026-10-05T11:27:53.316875+00:00",
+  "counts": {
+    "analyzer_openers": 152,
+    "consecutive_same_counter_repeats": 19,
+    "game_over_repeats": 10,
+    "level_advance_repeats": 9,
+    "sampled_bytes": 3950999,
+    "sampled_traces": 10
+  },
+  "identity": {
+    "notebook_source_sha256": "2ce3bba1a8fafb90bdb6087696fc8e62cb4445e686933c698c8caed0618b57bd",
+    "ref": "prvsiyan/zz-gpuchk-899422",
+    "session_id": 355288162,
+    "version": 8
+  },
+  "kind": "retained_native_prompt_observation",
+  "schema_version": 1,
+  "scope_limits": [
+    "No new engine or model action.",
+    "Repeated announcement property, not a measured score benefit or complete-sample frequency.",
+    "Correct current step/level was already rendered.",
+    "Native completed-level totals and canceled outcomes remain separate from this observation.",
+    "No raw frames, moves, reasoning or game solutions in this receipt."
+  ],
+  "selection": "Six ft09/ls20/tr87 traces across both arms, plus all four RESET-bearing histories. This is a selected sample, not all 50 traces.",
+  "source_fetch_receipts": [
+    {
+      "name": "fetch_receipt.json",
+      "sha256": "b6c69dc681690a132f3bf509f8dd628cd92355096288678e904f31aa3ac5bc4f"
+    },
+    {
+      "name": "reset_transcript_fetch_receipt.json",
+      "sha256": "5aa90fa5bd5a56433375c0e27e7a390b672c7d5fb9bd92e84280a9c86364a7e4"
+    }
+  ],
+  "traces": [
+    {
+      "analyzer_openers": 15,
+      "bytes": 397852,
+      "repeated_terminal_announcements": [
+        {
+          "analysis_step": 8,
+          "display_action_counter": 26,
+          "game_over_announcement": false,
+          "header_line": 2775,
+          "level_advance_announcement": true,
+          "timestamp": "23:42:52"
+        },
+        {
+          "analysis_step": 8,
+          "display_action_counter": 26,
+          "game_over_announcement": false,
+          "header_line": 3120,
+          "level_advance_announcement": true,
+          "timestamp": "23:48:43"
+        }
+      ],
+      "sha256": "d277ac0d459a4f84b3be56a579531dde72b2f5c53e1825bef11fe686410d7513",
+      "trace": "codex_arc3_resolution_pair_20261004T225257851218Z/control4/transcripts/ft09-0d8bbf25_p0.txt"
+    },
+    {
+      "analyzer_openers": 15,
+      "bytes": 399675,
+      "repeated_terminal_announcements": [],
+      "sha256": "34a11c2b1cea7f99319f449c2ec9a97934b18c2848241bbb1052b4f2fdedb39d",
+      "trace": "codex_arc3_resolution_pair_20261004T225257851218Z/control4/transcripts/ls20-9607627b_p0.txt"
+    },
+    {
+      "analyzer_openers": 12,
+      "bytes": 367935,
+      "repeated_terminal_announcements": [],
+      "sha256": "3fe582ba2444dc38385576e72720f2021e0488bb5973b272384445d7de4c6839",
+      "trace": "codex_arc3_resolution_pair_20261004T225257851218Z/control4/transcripts/tr87-cd924810_p0.txt"
+    },
+    {
+      "analyzer_openers": 15,
+      "bytes": 384554,
+      "repeated_terminal_announcements": [
+        {
+          "analysis_step": 5,
+          "display_action_counter": 24,
+          "game_over_announcement": true,
+          "header_line": 2038,
+          "level_advance_announcement": false,
+          "timestamp": "23:35:24"
+        },
+        {
+          "analysis_step": 5,
+          "display_action_counter": 24,
+          "game_over_announcement": true,
+          "header_line": 2328,
+          "level_advance_announcement": false,
+          "timestamp": "23:40:27"
+        },
+        {
+          "analysis_step": 9,
+          "display_action_counter": 35,
+          "game_over_announcement": false,
+          "header_line": 3381,
+          "level_advance_announcement": true,
+          "timestamp": "23:57:05"
+        },
+        {
+          "analysis_step": 9,
+          "display_action_counter": 35,
+          "game_over_announcement": false,
+          "header_line": 3660,
+          "level_advance_announcement": true,
+          "timestamp": "00:01:42"
+        }
+      ],
+      "sha256": "4654f12a17e91f66c899d5e9c5f36ffb13da985012de651bc8dfbeec8eef4d9f",
+      "trace": "codex_arc3_resolution_pair_20261004T225257851218Z/control4/transcripts/tu93-0768757b_p0.txt"
+    },
+    {
+      "analyzer_openers": 19,
+      "bytes": 440543,
+      "repeated_terminal_announcements": [
+        {
+          "analysis_step": 15,
+          "display_action_counter": 47,
+          "game_over_announcement": true,
+          "header_line": 3539,
+          "level_advance_announcement": false,
+          "timestamp": "00:42:00"
+        },
+        {
+          "analysis_step": 15,
+          "display_action_counter": 47,
+          "game_over_announcement": true,
+          "header_line": 3767,
+          "level_advance_announcement": false,
+          "timestamp": "00:47:06"
+        },
+        {
+          "analysis_step": 15,
+          "display_action_counter": 47,
+          "game_over_announcement": true,
+          "header_line": 4035,
+          "level_advance_announcement": false,
+          "timestamp": "00:52:43"
+        }
+      ],
+      "sha256": "3f6e537d9ebaff42f9d18835f5b9c02f6eb572a6185b79db1c4b5422d8ebeb15",
+      "trace": "codex_arc3_resolution_pair_20261004T225257851218Z/image10/transcripts/bp35-0a0ad940_p0.txt"
+    },
+    {
+      "analyzer_openers": 14,
+      "bytes": 352292,
+      "repeated_terminal_announcements": [
+        {
+          "analysis_step": 7,
+          "display_action_counter": 11,
+          "game_over_announcement": false,
+          "header_line": 3224,
+          "level_advance_announcement": true,
+          "timestamp": "00:47:41"
+        }
+      ],
+      "sha256": "bd3b0773a8b77e4095f45d114fb4b08385b88d728c05e596d54d24f393b5513c",
+      "trace": "codex_arc3_resolution_pair_20261004T225257851218Z/image10/transcripts/ft09-0d8bbf25_p0.txt"
+    },
+    {
+      "analyzer_openers": 14,
+      "bytes": 364524,
+      "repeated_terminal_announcements": [],
+      "sha256": "19ddf5864ea4453c765ef4fcd600b4b1589084f191384b9c767f77ac94fb316a",
+      "trace": "codex_arc3_resolution_pair_20261004T225257851218Z/image10/transcripts/ls20-9607627b_p0.txt"
+    },
+    {
+      "analyzer_openers": 16,
+      "bytes": 435741,
+      "repeated_terminal_announcements": [
+        {
+          "analysis_step": 5,
+          "display_action_counter": 7,
+          "game_over_announcement": false,
+          "header_line": 1650,
+          "level_advance_announcement": true,
+          "timestamp": "00:21:37"
+        },
+        {
+          "analysis_step": 5,
+          "display_action_counter": 7,
+          "game_over_announcement": false,
+          "header_line": 1890,
+          "level_advance_announcement": true,
+          "timestamp": "00:24:42"
+        },
+        {
+          "analysis_step": 5,
+          "display_action_counter": 7,
+          "game_over_announcement": false,
+          "header_line": 2186,
+          "level_advance_announcement": true,
+          "timestamp": "00:29:43"
+        },
+        {
+          "analysis_step": 5,
+          "display_action_counter": 7,
+          "game_over_announcement": false,
+          "header_line": 2432,
+          "level_advance_announcement": true,
+          "timestamp": "00:32:44"
+        },
+        {
+          "analysis_step": 6,
+          "display_action_counter": 17,
+          "game_over_announcement": true,
+          "header_line": 2868,
+          "level_advance_announcement": false,
+          "timestamp": "00:38:42"
+        },
+        {
+          "analysis_step": 6,
+          "display_action_counter": 17,
+          "game_over_announcement": true,
+          "header_line": 3092,
+          "level_advance_announcement": false,
+          "timestamp": "00:42:14"
+        },
+        {
+          "analysis_step": 6,
+          "display_action_counter": 17,
+          "game_over_announcement": true,
+          "header_line": 3333,
+          "level_advance_announcement": false,
+          "timestamp": "00:45:23"
+        },
+        {
+          "analysis_step": 6,
+          "display_action_counter": 17,
+          "game_over_announcement": true,
+          "header_line": 3653,
+          "level_advance_announcement": false,
+          "timestamp": "00:49:04"
+        },
+        {
+          "analysis_step": 6,
+          "display_action_counter": 17,
+          "game_over_announcement": true,
+          "header_line": 3970,
+          "level_advance_announcement": false,
+          "timestamp": "00:54:07"
+        }
+      ],
+      "sha256": "a9e8da15f072bfd808624d4304ed720f9b45fa5668ad2e4034b31ea1891710cd",
+      "trace": "codex_arc3_resolution_pair_20261004T225257851218Z/image10/transcripts/r11l-495a7899_p0.txt"
+    },
+    {
+      "analyzer_openers": 15,
+      "bytes": 373229,
+      "repeated_terminal_announcements": [],
+      "sha256": "7175230b22262ee813768b87bf65a124c91c75970cb177f20c32bdcf24e6042e",
+      "trace": "codex_arc3_resolution_pair_20261004T225257851218Z/image10/transcripts/tr87-cd924810_p0.txt"
+    },
+    {
+      "analyzer_openers": 17,
+      "bytes": 434654,
+      "repeated_terminal_announcements": [],
+      "sha256": "045b392fbd0253e96df75b5ccb301d38c61ec5145b70011b16f0e24ce3d49ddc",
+      "trace": "codex_arc3_resolution_pair_20261004T225257851218Z/image10/transcripts/tu93-0768757b_p0.txt"
+    }
+  ]
+}
