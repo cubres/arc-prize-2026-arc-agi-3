@@ -1,0 +1,246 @@
+{
+  "schema": "action7-cpu-contract-measurements-v1",
+  "report_created_utc": "2026-10-05T09:23:05.602055+00:00",
+  "measurement_completed_utc": "2026-10-05T09:01:23.269707+00:00",
+  "proposed_repository_directory": "experiments/action7-cpu-contract/2026-10-05",
+  "scope": "Actual offline CPU engine observations on two public games at seed0, level1. No native Kaggle harness, model, controller or score experiment.",
+  "source_evidence": [
+    {
+      "filename": "ENGINE_UNDO_CONTRACT_OBSERVATIONS.json",
+      "sha256": "f0731e4bd2fb623c55a92fc6676827dd69bf62d0b2fed1b147f9861697c6fd22"
+    },
+    {
+      "filename": "FINAL_ENGINE_UNDO_AUDIT.json",
+      "sha256": "dcc4c7292a60bc96d544a43a14be118d25504afaddc92ea8535dab4eb8e9c303"
+    }
+  ],
+  "derivation_checks": {
+    "all_11_frame_hashes_recomputed_from_observed_pixels": true,
+    "all_9_transition_pixel_counts_recomputed": true,
+    "frame_hash_encoding": "SHA256 over row-major unsigned-byte values of the final visible64x64 frame",
+    "raw_frames_in_this_report": false
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "mode": "OFFLINE",
+    "pure_python_wheel_imports_without_install": true,
+    "model_loaded": false,
+    "gpu_loaded": false,
+    "wheel_pins": [
+      {
+        "distribution": "arc_agi-0.9.8-py3-none-any.whl",
+        "sha256": "aeca1663db342e91cb8fc96cf0c83e2fa39db1640bc1298e80a8d522e3af70f3"
+      },
+      {
+        "distribution": "arcengine-0.9.3-py3-none-any.whl",
+        "sha256": "5f9739d6d0055780a4581fd6fe09066bb08775c4c8212c9adcca2eb008aef59c"
+      }
+    ]
+  },
+  "environment_action_calls_total": 14,
+  "non_reset_action_calls_total": 9,
+  "initial_reset_calls_total": 5,
+  "fixtures": [
+    {
+      "game_id": "sk48-d8078629",
+      "seed": 0,
+      "initial_available_actions": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "initial_reset_calls": 1,
+      "prior_preflight_reset_calls": 3,
+      "non_reset_action_calls": 6,
+      "total_environment_action_calls": 10,
+      "observations": [
+        {
+          "index": 0,
+          "requested_action": "RESET",
+          "state": "NOT_FINISHED",
+          "levels_completed": 0,
+          "visible_level_number": 1,
+          "actions_count": 0,
+          "resets_count": 0,
+          "response_frame_count": 1,
+          "last_visible_frame_sha256": "62fabd1676c12342a5226899072bd02e21f511974445d30e56fbf7936c98d525"
+        },
+        {
+          "index": 1,
+          "requested_action": "ACTION7",
+          "state": "NOT_FINISHED",
+          "levels_completed": 0,
+          "visible_level_number": 1,
+          "actions_count": 1,
+          "resets_count": 0,
+          "response_frame_count": 1,
+          "last_visible_frame_sha256": "62fabd1676c12342a5226899072bd02e21f511974445d30e56fbf7936c98d525",
+          "listed_available_before": true,
+          "response_returned": true,
+          "changed_pixels_from_previous": 0,
+          "changed_pixels_from_initial": 0
+        },
+        {
+          "index": 2,
+          "requested_action": "ACTION1",
+          "state": "NOT_FINISHED",
+          "levels_completed": 0,
+          "visible_level_number": 1,
+          "actions_count": 2,
+          "resets_count": 0,
+          "response_frame_count": 2,
+          "last_visible_frame_sha256": "7efd9df0ed5942401c207ba292d23abf85760c140a024cf3dc83d4a8e087a90a",
+          "listed_available_before": true,
+          "response_returned": true,
+          "changed_pixels_from_previous": 96,
+          "changed_pixels_from_initial": 96
+        },
+        {
+          "index": 3,
+          "requested_action": "ACTION7",
+          "state": "NOT_FINISHED",
+          "levels_completed": 0,
+          "visible_level_number": 1,
+          "actions_count": 3,
+          "resets_count": 0,
+          "response_frame_count": 1,
+          "last_visible_frame_sha256": "62fabd1676c12342a5226899072bd02e21f511974445d30e56fbf7936c98d525",
+          "listed_available_before": true,
+          "response_returned": true,
+          "changed_pixels_from_previous": 96,
+          "changed_pixels_from_initial": 0
+        },
+        {
+          "index": 4,
+          "requested_action": "ACTION7",
+          "state": "NOT_FINISHED",
+          "levels_completed": 0,
+          "visible_level_number": 1,
+          "actions_count": 4,
+          "resets_count": 0,
+          "response_frame_count": 1,
+          "last_visible_frame_sha256": "62fabd1676c12342a5226899072bd02e21f511974445d30e56fbf7936c98d525",
+          "listed_available_before": true,
+          "response_returned": true,
+          "changed_pixels_from_previous": 0,
+          "changed_pixels_from_initial": 0
+        },
+        {
+          "index": 5,
+          "requested_action": "ACTION4",
+          "state": "NOT_FINISHED",
+          "levels_completed": 0,
+          "visible_level_number": 1,
+          "actions_count": 5,
+          "resets_count": 0,
+          "response_frame_count": 2,
+          "last_visible_frame_sha256": "cc683a1c5339e73759c90001b956a6038e53103f6dc2e3c73eb9bc11111ef57c",
+          "listed_available_before": true,
+          "response_returned": true,
+          "changed_pixels_from_previous": 12,
+          "changed_pixels_from_initial": 12
+        },
+        {
+          "index": 6,
+          "requested_action": "ACTION7",
+          "state": "NOT_FINISHED",
+          "levels_completed": 0,
+          "visible_level_number": 1,
+          "actions_count": 6,
+          "resets_count": 0,
+          "response_frame_count": 1,
+          "last_visible_frame_sha256": "62fabd1676c12342a5226899072bd02e21f511974445d30e56fbf7936c98d525",
+          "listed_available_before": true,
+          "response_returned": true,
+          "changed_pixels_from_previous": 12,
+          "changed_pixels_from_initial": 0
+        }
+      ]
+    },
+    {
+      "game_id": "ls20-9607627b",
+      "seed": 0,
+      "initial_available_actions": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "initial_reset_calls": 1,
+      "prior_preflight_reset_calls": 0,
+      "non_reset_action_calls": 3,
+      "total_environment_action_calls": 4,
+      "observations": [
+        {
+          "index": 0,
+          "requested_action": "RESET",
+          "state": "NOT_FINISHED",
+          "levels_completed": 0,
+          "visible_level_number": 1,
+          "actions_count": 0,
+          "resets_count": 0,
+          "response_frame_count": 1,
+          "last_visible_frame_sha256": "cfe5196fb75182bbcf1368da5c1298bbac7864ebb054d7dd1c9babee229b77a4"
+        },
+        {
+          "index": 1,
+          "requested_action": "ACTION7",
+          "state": "NOT_FINISHED",
+          "levels_completed": 0,
+          "visible_level_number": 1,
+          "actions_count": 1,
+          "resets_count": 0,
+          "response_frame_count": 1,
+          "last_visible_frame_sha256": "cfe5196fb75182bbcf1368da5c1298bbac7864ebb054d7dd1c9babee229b77a4",
+          "listed_available_before": false,
+          "response_returned": true,
+          "changed_pixels_from_previous": 0,
+          "changed_pixels_from_initial": 0
+        },
+        {
+          "index": 2,
+          "requested_action": "ACTION4",
+          "state": "NOT_FINISHED",
+          "levels_completed": 0,
+          "visible_level_number": 1,
+          "actions_count": 2,
+          "resets_count": 0,
+          "response_frame_count": 1,
+          "last_visible_frame_sha256": "7a335e2dce00caaec73f1e9cfe82587080ef611730055c6a3ea20be41ebfa95b",
+          "listed_available_before": true,
+          "response_returned": true,
+          "changed_pixels_from_previous": 52,
+          "changed_pixels_from_initial": 52
+        },
+        {
+          "index": 3,
+          "requested_action": "ACTION7",
+          "state": "NOT_FINISHED",
+          "levels_completed": 0,
+          "visible_level_number": 1,
+          "actions_count": 3,
+          "resets_count": 0,
+          "response_frame_count": 1,
+          "last_visible_frame_sha256": "7a335e2dce00caaec73f1e9cfe82587080ef611730055c6a3ea20be41ebfa95b",
+          "listed_available_before": false,
+          "response_returned": true,
+          "changed_pixels_from_previous": 0,
+          "changed_pixels_from_initial": 52
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Two public game versions, one seed, level1 only; no statistical generalization.",
+    "Visible frame equality is not evidence of equal hidden state or restored action budget.",
+    "No win, level transition, game-over or reset-after-death semantics tested.",
+    "The raw environment wrapper accepted unavailable ACTION7 in ls20; this is not permission to advertise unavailable actions.",
+    "No full agent/controller, model/backend, training, native Kaggle evaluation, submission or quality score measured.",
+    "Source caveat: an earlier broad search incidentally printed sparse game-source import/action-condition lines. They were unused for action selection or conclusions and are absent from this report.",
+    "This report is derived from existing observations; report creation performed no additional engine actions."
+  ]
+}
