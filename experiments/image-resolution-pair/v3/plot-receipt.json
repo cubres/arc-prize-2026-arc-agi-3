@@ -1,0 +1,12 @@
+{
+  "input_sha256": "97a9778fd1d43d0b7d0a1be0c3a698e6f24e407a53408e3466057cc25436494e",
+  "retained_pairs": 25,
+  "mean_difference": -0.5762248685169281,
+  "measured_data": true,
+  "model_calls": 0,
+  "official_score": false,
+  "figure_sha256": {
+    "measured-resolution-result.png": "84eea1727cbb5a206e550439ea9725fa1d51fc797102c3cf9f73f655d7a31f68",
+    "measured-resolution-result.svg": "513fadcc3a276035f4840a6a7a64f9c816c3788fc086dd5c95a7acccec355bc7"
+  }
+}

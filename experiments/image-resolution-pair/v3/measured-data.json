@@ -1,0 +1,402 @@
+{
+  "schema": "arc3_measured_resolution_result_v1",
+  "ref": "prvsiyan/zz-gpuchk-899422",
+  "version": 8,
+  "numeric_session": 355288162,
+  "source_sha256": "2ce3bba1a8fafb90bdb6087696fc8e62cb4445e686933c698c8caed0618b57bd",
+  "protocol_sha256": "1abb91697d175bad8cf45f4f94958914ca71697797e7c8213e21280a334dda13",
+  "arms": {
+    "control4": {
+      "uniform_mean_actual_final_score": 4.328496222659374,
+      "bundled_taaf_score": 4.328496222659374,
+      "all_25_records_verified": true,
+      "state_counts": {
+        "won": 0,
+        "gave_up": 0,
+        "cancelled": 25,
+        "crashed": 0
+      },
+      "completed_levels": 21,
+      "available_levels": 183,
+      "actual_history_actions": 760,
+      "games_with_positive_score": 13,
+      "recorded_action_generated_tokens": 679995,
+      "final_summary_generated_tokens": 0,
+      "elapsed_including_drain_seconds": 3077.334398051,
+      "benchmark_sha256": "d458242cd8c0d7a674ab7e3dc37d1f29519d15574589334cde5cb7c74fe6e33b",
+      "terminal_games_sha256": "f831dfc796bc643aadef921b502cede54fe285885ca46620ec6e20d431547b08",
+      "score_sha256": "fc8fb9d4b39a1bcef83d70ebe8120b732a28161154ce5235d0efc0df8e9490d5"
+    },
+    "image10": {
+      "uniform_mean_actual_final_score": 3.7522713541424455,
+      "bundled_taaf_score": 3.7522713541424455,
+      "all_25_records_verified": true,
+      "state_counts": {
+        "won": 0,
+        "gave_up": 0,
+        "cancelled": 25,
+        "crashed": 0
+      },
+      "completed_levels": 24,
+      "available_levels": 183,
+      "actual_history_actions": 902,
+      "games_with_positive_score": 18,
+      "recorded_action_generated_tokens": 662309,
+      "final_summary_generated_tokens": 0,
+      "elapsed_including_drain_seconds": 3074.6370249989996,
+      "benchmark_sha256": "c779658263a02ab5c108b55b9acd1b511b7a8482b5008db1ff95ec0a374af746",
+      "terminal_games_sha256": "1991b7136803842ff57eec91b8acc14521e02538e5c3a91a6852cd4a1f13a1fc",
+      "score_sha256": "c329a835d8249f6af807f23f41d230b4aafa76687001952f776951f674c54a93"
+    }
+  },
+  "image10_minus_control4_mean": -0.576224868516928,
+  "paired_positive_negative_zero": {
+    "positive": 7,
+    "negative": 5,
+    "zero": 13
+  },
+  "reporting_only_bootstrap": {
+    "method": "Paired game bootstrap, percentile95, reporting only",
+    "seed": 20261005,
+    "draws": 20000,
+    "resampling_unit": "25 retained public game pairs",
+    "mean_difference": -0.576224868516928,
+    "percentile_95": [
+      -3.703472151635846,
+      1.4017648814543078
+    ],
+    "no_game_excluded": true,
+    "used_to_select_a_parameter": false,
+    "warning": "Reused fixed25 distribution only; does not quantify hidden-game quality, arm-order effects, or seed/model-run variability."
+  },
+  "shared_backend_metrics": {
+    "scope": "Both arms plus setup on one shared backend; no per-arm counter snapshots available.",
+    "request_count": 1193.0,
+    "preemptions": 231.0,
+    "prompt_tokens": 20902946.0,
+    "generation_tokens": 1507677.0,
+    "queue_seconds_sum": 126144.39505962997,
+    "inference_seconds_sum": 20609.622583379016,
+    "mean_queue_seconds_per_completed_request": 105.73712913632018,
+    "mean_inference_seconds_per_completed_request": 17.275458996964808,
+    "prefix_cache_queries": 0.0,
+    "prefix_cache_hits": 0.0,
+    "request_success_by_reason": [
+      {
+        "name": "vllm:request_success_total{engine=\"0\",finished_reason=\"stop\",model_name=\"Qwen/Qwen3.8-Flash-Next-NVFP4\"}",
+        "value": 1193.0
+      },
+      {
+        "name": "vllm:request_success_total{engine=\"0\",finished_reason=\"length\",model_name=\"Qwen/Qwen3.8-Flash-Next-NVFP4\"}",
+        "value": 0.0
+      },
+      {
+        "name": "vllm:request_success_total{engine=\"0\",finished_reason=\"abort\",model_name=\"Qwen/Qwen3.8-Flash-Next-NVFP4\"}",
+        "value": 0.0
+      },
+      {
+        "name": "vllm:request_success_total{engine=\"0\",finished_reason=\"error\",model_name=\"Qwen/Qwen3.8-Flash-Next-NVFP4\"}",
+        "value": 0.0
+      },
+      {
+        "name": "vllm:request_success_total{engine=\"0\",finished_reason=\"repetition\",model_name=\"Qwen/Qwen3.8-Flash-Next-NVFP4\"}",
+        "value": 0.0
+      }
+    ],
+    "server_generation_vs_action_recorded_tokens_are_different_scopes": true,
+    "arm_throughput_improvement_claim": false
+  },
+  "limitations": [
+    "Reused public25; no heldout evidence",
+    "Single fixed control4 then image10 order",
+    "Rendering and base64-as-text context effects coupled",
+    "All50 games cancelled by fixed wall budget; none won",
+    "No per-arm server counter baselines",
+    "Final teardown FAIL despite completed diagnostic",
+    "No official score or automatic promotion"
+  ],
+  "official_score": false,
+  "promoted": false,
+  "all_25_pairs": [
+    {
+      "panel_index": 0,
+      "game_id": "tn36-ef4dde99",
+      "control4_score": 0.0,
+      "image10_score": 3.571428571428571,
+      "difference": 3.571428571428571,
+      "control4_levels": 0,
+      "image10_levels": 1,
+      "control4_actions": 19,
+      "image10_actions": 32
+    },
+    {
+      "panel_index": 1,
+      "game_id": "lf52-271a04aa",
+      "control4_score": 1.8181818181818181,
+      "image10_score": 1.8181818181818181,
+      "difference": 0.0,
+      "control4_levels": 1,
+      "image10_levels": 1,
+      "control4_actions": 20,
+      "image10_actions": 20
+    },
+    {
+      "panel_index": 2,
+      "game_id": "cn04-2fe56bfb",
+      "control4_score": 0.0,
+      "image10_score": 4.761904761904762,
+      "difference": 4.761904761904762,
+      "control4_levels": 0,
+      "image10_levels": 1,
+      "control4_actions": 19,
+      "image10_actions": 26
+    },
+    {
+      "panel_index": 3,
+      "game_id": "bp35-0a0ad940",
+      "control4_score": 0.0,
+      "image10_score": 0.756172839506173,
+      "difference": 0.756172839506173,
+      "control4_levels": 0,
+      "image10_levels": 1,
+      "control4_actions": 18,
+      "image10_actions": 46
+    },
+    {
+      "panel_index": 4,
+      "game_id": "wa30-ee6fef47",
+      "control4_score": 0.0,
+      "image10_score": 0.0,
+      "difference": 0.0,
+      "control4_levels": 0,
+      "image10_levels": 0,
+      "control4_actions": 53,
+      "image10_actions": 29
+    },
+    {
+      "panel_index": 5,
+      "game_id": "lp85-305b61c3",
+      "control4_score": 8.333333333333332,
+      "image10_score": 8.333333333333332,
+      "difference": 0.0,
+      "control4_levels": 2,
+      "image10_levels": 2,
+      "control4_actions": 17,
+      "image10_actions": 21
+    },
+    {
+      "panel_index": 6,
+      "game_id": "r11l-495a7899",
+      "control4_score": 4.761904761904762,
+      "image10_score": 4.761904761904762,
+      "difference": 0.0,
+      "control4_levels": 1,
+      "image10_levels": 1,
+      "control4_actions": 10,
+      "image10_actions": 16
+    },
+    {
+      "panel_index": 7,
+      "game_id": "tu93-0768757b",
+      "control4_score": 6.666666666666667,
+      "image10_score": 5.055989473978891,
+      "difference": -1.6106771926877759,
+      "control4_levels": 2,
+      "image10_levels": 2,
+      "control4_actions": 34,
+      "image10_actions": 39
+    },
+    {
+      "panel_index": 8,
+      "game_id": "sp80-589a99af",
+      "control4_score": 0.0,
+      "image10_score": 4.761904761904762,
+      "difference": 4.761904761904762,
+      "control4_levels": 0,
+      "image10_levels": 1,
+      "control4_actions": 13,
+      "image10_actions": 17
+    },
+    {
+      "panel_index": 9,
+      "game_id": "m0r0-492f87ba",
+      "control4_score": 0.0,
+      "image10_score": 0.0,
+      "difference": 0.0,
+      "control4_levels": 0,
+      "image10_levels": 0,
+      "control4_actions": 11,
+      "image10_actions": 23
+    },
+    {
+      "panel_index": 10,
+      "game_id": "vc33-5430563c",
+      "control4_score": 10.714285714285714,
+      "image10_score": 9.660566706021251,
+      "difference": -1.053719008264462,
+      "control4_levels": 2,
+      "image10_levels": 2,
+      "control4_actions": 83,
+      "image10_actions": 24
+    },
+    {
+      "panel_index": 11,
+      "game_id": "ar25-0c556536",
+      "control4_score": 8.333333333333332,
+      "image10_score": 8.333333333333332,
+      "difference": 0.0,
+      "control4_levels": 2,
+      "image10_levels": 2,
+      "control4_actions": 51,
+      "image10_actions": 48
+    },
+    {
+      "panel_index": 12,
+      "game_id": "ka59-38d34dbb",
+      "control4_score": 2.734375,
+      "image10_score": 3.571428571428571,
+      "difference": 0.8370535714285712,
+      "control4_levels": 1,
+      "image10_levels": 1,
+      "control4_actions": 50,
+      "image10_actions": 25
+    },
+    {
+      "panel_index": 13,
+      "game_id": "sc25-635fd71a",
+      "control4_score": 0.0,
+      "image10_score": 4.761904761904762,
+      "difference": 4.761904761904762,
+      "control4_levels": 0,
+      "image10_levels": 1,
+      "control4_actions": 29,
+      "image10_actions": 42
+    },
+    {
+      "panel_index": 14,
+      "game_id": "sk48-d8078629",
+      "control4_score": 0.0,
+      "image10_score": 0.0,
+      "difference": 0.0,
+      "control4_levels": 0,
+      "image10_levels": 0,
+      "control4_actions": 27,
+      "image10_actions": 14
+    },
+    {
+      "panel_index": 15,
+      "game_id": "dc22-fdcac232",
+      "control4_score": 0.0,
+      "image10_score": 4.761904761904762,
+      "difference": 4.761904761904762,
+      "control4_levels": 0,
+      "image10_levels": 1,
+      "control4_actions": 19,
+      "image10_actions": 40
+    },
+    {
+      "panel_index": 16,
+      "game_id": "cd82-fb555c5d",
+      "control4_score": 0.0,
+      "image10_score": 0.0,
+      "difference": 0.0,
+      "control4_levels": 0,
+      "image10_levels": 0,
+      "control4_actions": 25,
+      "image10_actions": 37
+    },
+    {
+      "panel_index": 17,
+      "game_id": "ft09-0d8bbf25",
+      "control4_score": 47.61904761904761,
+      "image10_score": 14.285714285714285,
+      "difference": -33.33333333333333,
+      "control4_levels": 4,
+      "image10_levels": 2,
+      "control4_actions": 45,
+      "image10_actions": 17
+    },
+    {
+      "panel_index": 18,
+      "game_id": "g50t-5849a774",
+      "control4_score": 0.0,
+      "image10_score": 0.0,
+      "difference": 0.0,
+      "control4_levels": 0,
+      "image10_levels": 0,
+      "control4_actions": 18,
+      "image10_actions": 14
+    },
+    {
+      "panel_index": 19,
+      "game_id": "ls20-9607627b",
+      "control4_score": 1.1970716264345074,
+      "image10_score": 0.0,
+      "difference": -1.1970716264345074,
+      "control4_levels": 1,
+      "image10_levels": 0,
+      "control4_actions": 38,
+      "image10_actions": 30
+    },
+    {
+      "panel_index": 20,
+      "game_id": "re86-8af5384d",
+      "control4_score": 8.256427915518824,
+      "image10_score": 6.833333333333333,
+      "difference": -1.4230945821854908,
+      "control4_levels": 2,
+      "image10_levels": 2,
+      "control4_actions": 68,
+      "image10_actions": 135
+    },
+    {
+      "panel_index": 21,
+      "game_id": "s5i5-18d95033",
+      "control4_score": 2.7777777777777777,
+      "image10_score": 2.7777777777777777,
+      "difference": 0.0,
+      "control4_levels": 1,
+      "image10_levels": 1,
+      "control4_actions": 19,
+      "image10_actions": 40
+    },
+    {
+      "panel_index": 22,
+      "game_id": "sb26-7fbdac44",
+      "control4_score": 2.7777777777777777,
+      "image10_score": 2.7777777777777777,
+      "difference": 0.0,
+      "control4_levels": 1,
+      "image10_levels": 1,
+      "control4_actions": 41,
+      "image10_actions": 31
+    },
+    {
+      "panel_index": 23,
+      "game_id": "su15-1944f8ab",
+      "control4_score": 2.2222222222222223,
+      "image10_score": 2.2222222222222223,
+      "difference": 0.0,
+      "control4_levels": 1,
+      "image10_levels": 1,
+      "control4_actions": 19,
+      "image10_actions": 16
+    },
+    {
+      "panel_index": 24,
+      "game_id": "tr87-cd924810",
+      "control4_score": 0.0,
+      "image10_score": 0.0,
+      "difference": 0.0,
+      "control4_levels": 0,
+      "image10_levels": 0,
+      "control4_actions": 14,
+      "image10_actions": 120
+    }
+  ],
+  "terminal_audit_sha256": "176277d429bcf30f82b0fc1caf82fc9cc54acff482af693495d65eca83c794d7",
+  "independent_root_reproduction": "PASS exact audit content except timestamp",
+  "teardown_pass": false,
+  "trial_complete_before_teardown": true,
+  "protocol_url": "https://github.com/cubres/arc-prize-2026-arc-agi-3/blob/6d108ad7b2b2d700e8e38ca179c147c4c0a620db/experiments/image-resolution-pair/v3/protocol.json"
+}
