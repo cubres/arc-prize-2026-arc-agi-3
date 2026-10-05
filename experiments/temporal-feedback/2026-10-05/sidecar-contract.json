@@ -1,0 +1,196 @@
+{
+  "bounds": {
+    "fifo_behavior": "O_NONBLOCK before fstat, actual no-writer FIFO fixture refused within2s subprocess bound",
+    "file_bytes_each": 8388608,
+    "file_stability": "pre/post fstat checks opened file descriptor; pathname continuity is not claimed",
+    "interpretation": "bounded full-buffer reads followed by strict JSONL interpretation, not streaming parsing",
+    "jsonl_line_bytes": 1048576,
+    "raw_event_rows": 10000
+  },
+  "candidate_version": "reviewed_v3",
+  "files": [
+    {
+      "bytes": 13148,
+      "name": "sidecar_reader.py",
+      "sha256": "1a18fb306e62d9931af888e238ed6bfaf42beaa4695762823777b9e52bc30e99"
+    },
+    {
+      "bytes": 14549,
+      "name": "test_sidecar_reader.py",
+      "sha256": "50558fbad19f26d7eb0fec76c3e32b1a75907a531853c2f5a5fa7c7aa0af0a4d"
+    }
+  ],
+  "frozen_utc": "2026-10-05T12:06:06.948789+00:00",
+  "gates": [
+    "Both caller-supplied expected SHA256 values verified before JSON interpretation",
+    "Strict JSON duplicate keys/nonfinite values/invalid UTF8 refused",
+    "Exact one initial zero anchor, excluded from ActionEvents",
+    "Consecutive actual action revisions1..N; static executed actions remain events",
+    "Exact bool flags and raw-state/done/outcome consistency",
+    "Known pinned event schemas; no compact ToolAgent result or prose reconstruction",
+    "Viewer game/pass against caller; raw eventCount and typed lastEvent against actual action or empty-history fallback",
+    "Historical action run_status need not equal later cancelled viewer status",
+    "Opaque scope combines caller version/session/arm/individual-run token/game/pass",
+    "Scalar ActionEvent/receipt outputs only; boards/transcripts discarded"
+  ],
+  "kind": "original_retained_action_sidecar_reader_cpu_contract",
+  "native_input_pairs": [
+    {
+      "arm": "control4",
+      "files": [
+        {
+          "bytes": 1038872,
+          "name": "tu93-0768757b_p0_events.jsonl",
+          "sha256": "c118c17e0d8921f71052572ce4fad8444316431114477b077c5f76d6c830034d"
+        },
+        {
+          "bytes": 1085,
+          "name": "tu93-0768757b_p0_viewer_data.json",
+          "sha256": "42321ecdbea37d09b8cd97ee4845c6d791e01ca21a34eb24f08fc59896b56055"
+        }
+      ],
+      "observed_transition": {
+        "failed_attempt_action_revision": 22,
+        "reset_origin": "not inferred",
+        "reset_terminal_flags": false,
+        "subsequent_reset_revision": 23
+      },
+      "parser_scalar_receipt": {
+        "action_count": 34,
+        "external_identity_binding": "caller-attested file hashes; session/version/arm are not internal fields",
+        "external_provenance": {
+          "arm": "control4",
+          "game_id": "tu93-0768757b",
+          "notebook_ref": "prvsiyan/zz-gpuchk-899422",
+          "pass_index": 0,
+          "run_token": "native-v8-resolution-pair",
+          "session_id": 355288162,
+          "version": 8
+        },
+        "initial_anchor_count": 1,
+        "internal_scope_checks": "viewer game_id, pass_index, pass_label, eventCount and lastEvent",
+        "live_bridge": "unimplemented",
+        "quality_claim": "none",
+        "raw_event_count": 51,
+        "scope": [
+          "retained-session:acbd580a46d46080b0d73aafe0cd82308bc53234775f78321d1648a217cfe8b8",
+          "game-pass:acbd580a46d46080b0d73aafe0cd82308bc53234775f78321d1648a217cfe8b8"
+        ],
+        "sidecar_sha256": "c118c17e0d8921f71052572ce4fad8444316431114477b077c5f76d6c830034d",
+        "viewer_sha256": "42321ecdbea37d09b8cd97ee4845c6d791e01ca21a34eb24f08fc59896b56055"
+      }
+    },
+    {
+      "arm": "image10",
+      "files": [
+        {
+          "bytes": 1179573,
+          "name": "tu93-0768757b_p0_events.jsonl",
+          "sha256": "b88a7173ad8837cf2b350fbe401166681e3c5ec50e352f58983b30aa9f4db4e2"
+        },
+        {
+          "bytes": 1086,
+          "name": "tu93-0768757b_p0_viewer_data.json",
+          "sha256": "6461cfff6d7a4dc45261d6184b5ddd668d3f3da4961e46dd3ffcc2e207718314"
+        }
+      ],
+      "observed_transition": {
+        "failed_attempt_action_revision": 22,
+        "reset_origin": "not inferred",
+        "reset_terminal_flags": false,
+        "subsequent_reset_revision": 23
+      },
+      "parser_scalar_receipt": {
+        "action_count": 39,
+        "external_identity_binding": "caller-attested file hashes; session/version/arm are not internal fields",
+        "external_provenance": {
+          "arm": "image10",
+          "game_id": "tu93-0768757b",
+          "notebook_ref": "prvsiyan/zz-gpuchk-899422",
+          "pass_index": 0,
+          "run_token": "native-v8-resolution-pair",
+          "session_id": 355288162,
+          "version": 8
+        },
+        "initial_anchor_count": 1,
+        "internal_scope_checks": "viewer game_id, pass_index, pass_label, eventCount and lastEvent",
+        "live_bridge": "unimplemented",
+        "quality_claim": "none",
+        "raw_event_count": 58,
+        "scope": [
+          "retained-session:5c35d926cdd3e5c1dd88b8a7c6e8d455ca82c243df27a01e1175b382b3fa95e2",
+          "game-pass:5c35d926cdd3e5c1dd88b8a7c6e8d455ca82c243df27a01e1175b382b3fa95e2"
+        ],
+        "sidecar_sha256": "b88a7173ad8837cf2b350fbe401166681e3c5ec50e352f58983b30aa9f4db4e2",
+        "viewer_sha256": "6461cfff6d7a4dc45261d6184b5ddd668d3f3da4961e46dd3ffcc2e207718314"
+      }
+    }
+  ],
+  "preservation": [
+    "Initial reader/test packet and V2 preserved",
+    "Existing published watermark module/tests/receipts/docs/diagram unchanged",
+    "No notebook identities, versions, source or metadata changed"
+  ],
+  "review_history": [
+    {
+      "correction": "v2 uses canonical typed JSON metadata equality and O_NONBLOCK, with focused regressions.",
+      "finding": "Plain Python dict equality accepted bool/int lastEvent substitutions; blocking FIFO open preceded type rejection.",
+      "version": "v1"
+    },
+    {
+      "correction": "v3 documents bounded full-buffer/opened-FD semantics and propagates caller-attested provenance.",
+      "finding": "Opened-FD stability must not be presented as path continuity; scalar receipt should carry external scope explicitly.",
+      "version": "v2"
+    }
+  ],
+  "runtime_requirements": "Python3.10+ standard library, unchanged original ActionEvent module, POSIX O_NOFOLLOW/O_NONBLOCK support; fixtures verified on macOS.",
+  "schema_version": 1,
+  "scope_limits": [
+    "Authenticates retained bytes/schema/action metadata only; no live ToolAgent prompt bridge.",
+    "Caller supplies trustworthy exact-version hash provenance; external identity is propagated, not inferred from paths.",
+    "No new Kaggle/API/browser/model/engine actions; tests only parse existing retained artifacts or synthetic temporary fixtures.",
+    "No agent summary reconstructed from displayed prose.",
+    "No raw boards, transcripts, game answers, action-sequence solutions or learned controller implementation in this receipt.",
+    "No numerical/runtime benefit, competition score or quality promotion measured."
+  ],
+  "source_schema_binding": {
+    "binding_authority": "trusted parent exact V8/session355288162 fetch audit; parser does not prove external version/session/arm internally",
+    "notebook_source_sha256": "2ce3bba1a8fafb90bdb6087696fc8e62cb4445e686933c698c8caed0618b57bd",
+    "pinned_consumed_assets_sha256": "3f07a97439d4b958b12d01b36db6eafbf1d93659ec5e1d71da4b2956b2c8debf",
+    "pinned_solver_sha256": "2bef5d6bc23c0312675f0c7203194c94e93d056ac06bf6419acd5142a4ea7c8e"
+  },
+  "status": "PASS_READ_ONLY_CPU_ARTIFACT_PARSER",
+  "unchanged_dependency": {
+    "copy_or_edit_performed": false,
+    "module": "feedback_watermark.ActionEvent",
+    "module_sha256": "5ca0d9918b60ea98f7a8226e86e83c59e737be92ca50ae17eb6d44cac92b4429",
+    "published_watermark_contracts": 19
+  },
+  "validation": {
+    "author": {
+      "elapsed_reported_seconds": 0.101,
+      "full_tests_passed": 17
+    },
+    "full_mode_breakdown": {
+      "authenticated_actual_action_records": 73,
+      "exact_retained_native_artifact_tests": 2,
+      "synthetic_parser_contracts": 15
+    },
+    "independent_peer": {
+      "agent": "original_campaign_fresh_frontier",
+      "elapsed_reported_seconds": 0.115,
+      "frozen_hashes_match": true,
+      "full_tests_passed": 17,
+      "verdict": "PASS standalone parser; no remaining concrete blocker"
+    },
+    "independent_root": {
+      "elapsed_reported_seconds": 0.109,
+      "full_tests_passed": 17
+    },
+    "source_free_mode": {
+      "elapsed_reported_seconds": 0.074,
+      "native_inputs_required": false,
+      "synthetic_tests_passed": 15
+    }
+  }
+}

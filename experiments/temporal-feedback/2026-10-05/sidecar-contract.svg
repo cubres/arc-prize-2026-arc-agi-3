@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title description">
+<title id="title">Retained ARC3 traces to typed temporal feedback</title>
+<desc id="description">Trusted hashes and caller-attested provenance accompany two retained files. Bounded reading and strict validation produce scalar ActionEvents for the existing watermark adapter. No live host-to-prompt bridge is implemented.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1729"/><stop offset="1" stop-color="#14283b"/></linearGradient>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#64d9bf"/></marker>
+</defs>
+<rect width="1200" height="720" rx="26" fill="url(#bg)"/>
+<g font-family="system-ui, -apple-system, sans-serif">
+<text x="56" y="66" fill="#72dfcb" font-size="14" font-weight="650" letter-spacing="2">ARC3 · REPRODUCIBLE CPU CONTRACT</text>
+<text x="56" y="114" fill="#eef6ff" font-size="36" font-weight="700">Keep the action. Authenticate the context.</text>
+<text x="56" y="151" fill="#b4c7d9" font-size="18">Retained metadata → scalar events → temporal feedback</text>
+<rect x="56" y="193" width="1088" height="93" rx="16" fill="#20364c" stroke="#57728b"/>
+<text x="79" y="224" fill="#e8f2ff" font-size="19" font-weight="650">External trust boundary</text>
+<text x="79" y="254" fill="#becfdf" font-size="16">Trusted SHA256 for both files + caller-attested version, session, arm, individual run and game pass</text>
+<g fill="none" stroke="#64d9bf" stroke-width="2.5" marker-end="url(#arrow)"><path d="M262 286V322"/><path d="M608 286V322"/><path d="M980 286V322"/></g>
+<rect x="56" y="334" width="289" height="180" rx="18" fill="#152c40" stroke="#4f728a"/>
+<text x="80" y="370" fill="#e6f4ff" font-size="23" font-weight="650">Two retained files</text>
+<text x="80" y="406" fill="#b7cbdc" font-size="17">events.jsonl + viewer_data.json</text>
+<text x="80" y="440" fill="#77dec9" font-size="17">8 MiB per file · 1 MiB per line</text>
+<text x="80" y="475" fill="#b7cbdc" font-size="16">Regular file · stable opened bytes</text>
+<path d="M349 424H391" fill="none" stroke="#64d9bf" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="403" y="334" width="342" height="180" rx="18" fill="#173345" stroke="#4da697"/>
+<text x="427" y="370" fill="#e6f4ff" font-size="23" font-weight="650">Strict schema + history</text>
+<text x="427" y="406" fill="#b7cbdc" font-size="17">Consecutive actual revisions 1…N</text>
+<text x="427" y="440" fill="#77dec9" font-size="17">Exact types · raw state ↔ flags</text>
+<text x="427" y="475" fill="#b7cbdc" font-size="16">Viewer scope + count + last event</text>
+<path d="M749 424H791" fill="none" stroke="#64d9bf" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="803" y="334" width="341" height="180" rx="18" fill="#183e46" stroke="#64d9bf"/>
+<text x="827" y="370" fill="#e6f4ff" font-size="23" font-weight="650">Typed ActionEvents</text>
+<text x="827" y="406" fill="#b7cbdc" font-size="17">Actual RESET retained</text>
+<text x="827" y="440" fill="#77dec9" font-size="17">Action-zero display excluded</text>
+<text x="827" y="475" fill="#b7cbdc" font-size="16">No board or transcript in output</text>
+<rect x="56" y="547" width="689" height="83" rx="15" fill="#20364c"/>
+<text x="80" y="581" fill="#e6f4ff" font-size="20" font-weight="650">Existing temporal watermark adapter</text>
+<text x="80" y="610" fill="#b7cbdc" font-size="16">Separate validated contract · historical outcomes stay historical</text>
+<path d="M973 516V588H758" fill="none" stroke="#64d9bf" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="803" y="647" width="341" height="39" rx="11" fill="none" stroke="#f0bf72" stroke-dasharray="6 5"/>
+<text x="824" y="673" fill="#f0cc92" font-size="15">Live host → prompt bridge: unimplemented</text>
+<text x="56" y="675" fill="#a8bfd1" font-size="16">73 retained native actions checked · no model run or score gain claimed</text>
+</g>
+</svg>
