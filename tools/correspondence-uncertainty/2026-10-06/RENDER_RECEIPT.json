@@ -1,0 +1,11 @@
+{
+  "example_cli_exit_code": 0,
+  "example_stdout_sha256": "6fa485bff3d8b4456b144126510016682dfbeaecee7d31ce2fb73338d70f3c7d",
+  "existing_output_refused": true,
+  "existing_output_unchanged": true,
+  "renderer_sha256": "15d942e0c87d4f0219d7fb7c77d03740b4c798fad0f5f0efe61def0481093ee0",
+  "reproduction": "byte-identical to render_svg()",
+  "scope": "synthetic diagram/example only",
+  "status": "PASS",
+  "svg_sha256": "7b9fbe5323f7d40e47d6ece0bb73bd7ecd83811e75e545f39f84361e01d03e27"
+}

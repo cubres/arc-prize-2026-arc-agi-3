@@ -1,0 +1,93 @@
+{
+  "runs": [
+    {
+      "argv_portable": [
+        "python",
+        "-B",
+        "verify_correspondence.py"
+      ],
+      "exit_code": 0,
+      "label": "Python3.12 normal",
+      "result": {
+        "counts": {
+          "certificate_tamper_refusals": 6,
+          "checker_schema_refusals": 9,
+          "geometry_permutation_oracles": 2477,
+          "input_permutations": 36,
+          "input_refusals": 15,
+          "invariance_and_boundary_cases": 6,
+          "matrix_permutation_oracles": 722,
+          "threshold_boundaries": 5
+        },
+        "scope": "synthetic CPU exact assignment mathematics only",
+        "seed": 20261006,
+        "status": "PASS",
+        "total_cases": 3276
+      },
+      "stdout_sha256": "b0730056daaf9f45fdead8fd53ff428fc57be6d8526d9e84e674645a61e543ba",
+      "version": "Python 3.12.14"
+    },
+    {
+      "argv_portable": [
+        "python",
+        "-B",
+        "-O",
+        "verify_correspondence.py"
+      ],
+      "exit_code": 0,
+      "label": "Python3.12 optimized",
+      "result": {
+        "counts": {
+          "certificate_tamper_refusals": 6,
+          "checker_schema_refusals": 9,
+          "geometry_permutation_oracles": 2477,
+          "input_permutations": 36,
+          "input_refusals": 15,
+          "invariance_and_boundary_cases": 6,
+          "matrix_permutation_oracles": 722,
+          "threshold_boundaries": 5
+        },
+        "scope": "synthetic CPU exact assignment mathematics only",
+        "seed": 20261006,
+        "status": "PASS",
+        "total_cases": 3276
+      },
+      "stdout_sha256": "b0730056daaf9f45fdead8fd53ff428fc57be6d8526d9e84e674645a61e543ba",
+      "version": "Python 3.12.14"
+    },
+    {
+      "argv_portable": [
+        "python",
+        "-B",
+        "verify_correspondence.py"
+      ],
+      "exit_code": 0,
+      "label": "Python3.9 normal",
+      "result": {
+        "counts": {
+          "certificate_tamper_refusals": 6,
+          "checker_schema_refusals": 9,
+          "geometry_permutation_oracles": 2477,
+          "input_permutations": 36,
+          "input_refusals": 15,
+          "invariance_and_boundary_cases": 6,
+          "matrix_permutation_oracles": 722,
+          "threshold_boundaries": 5
+        },
+        "scope": "synthetic CPU exact assignment mathematics only",
+        "seed": 20261006,
+        "status": "PASS",
+        "total_cases": 3276
+      },
+      "stdout_sha256": "b0730056daaf9f45fdead8fd53ff428fc57be6d8526d9e84e674645a61e543ba",
+      "version": "Python 3.9.6"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "synthetic CPU exact assignment checks; no competition performance claim",
+  "source_scope": "Mathematical runs bind helper and verifier; diagram/example evidence is in RENDER_RECEIPT.json.",
+  "source_sha256": {
+    "correspondence.py": "87c8ab3c374b2b82b41321823c20a9a5382dccdc26e927e0bdc8f614a7d76f5d",
+    "verify_correspondence.py": "2e63c87748d30d0de8e4fcb8b9c69dad015e2b64b79aedf5a4dcb60da5ec48da"
+  }
+}

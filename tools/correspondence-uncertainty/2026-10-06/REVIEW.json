@@ -1,0 +1,42 @@
+{
+  "documentation_gate": "Final README uses3276 configured cases, verification_final.json and actual execution receipt; repeated interpreter runs are not new unique cases.",
+  "fix_applied": "Checker independently validates square size1-16, exact nonnegative int costs and exact-int forbidden tuple indices.",
+  "independent_additional_checks": {
+    "matrix_permutation_oracles_through_n7": 1037,
+    "nonpoint_bbox_frame_pairs_with_shuffling": 420,
+    "targeted_checker_malformed_inputs_after_fix": 11
+  },
+  "limitations": [
+    "Assignment ambiguity under the declared cost model only.",
+    "No physical identity or movement correctness guarantee.",
+    "No confidence probability or competition-performance claim.",
+    "One-witness checker does not validate an entire serialized correspondence report."
+  ],
+  "notebook_or_remote_actions": "None",
+  "preservation_rejection": "None",
+  "review_scope": [
+    "edge-exclusion and global best-distinct assignment proofs",
+    "cost-budget edge retention statement",
+    "parity and singleton semantics",
+    "integer Hungarian implementation with skipped forbidden edge",
+    "independent primal-dual witness checker and input validation",
+    "README and provenance limitations"
+  ],
+  "schema_version": 1,
+  "source_sha256": {
+    "PROVENANCE.md": "abd38dbf75659d03f2aa5355d2c1d725a82d08f53ff8625d796ae59ae75b146e",
+    "README.md": "32aefec281e36f00f883b64dca0a233ef04831ae6074187f04b86f80ff5e8702",
+    "correspondence.py": "87c8ab3c374b2b82b41321823c20a9a5382dccdc26e927e0bdc8f614a7d76f5d",
+    "verify_correspondence.py": "2e63c87748d30d0de8e4fcb8b9c69dad015e2b64b79aedf5a4dcb60da5ec48da"
+  },
+  "status": "PASS",
+  "visual_review": {
+    "dimensions": [
+      1440,
+      1100
+    ],
+    "finding": "Legible schematic, matrix, edge decisions and limitations; explicit cx2/cy2 notation; reproduction uses a new output path.",
+    "status": "PASS",
+    "svg_sha256": "7b9fbe5323f7d40e47d6ece0bb73bd7ecd83811e75e545f39f84361e01d03e27"
+  }
+}

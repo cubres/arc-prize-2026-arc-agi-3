@@ -1,0 +1,16 @@
+{
+  "counts": {
+    "certificate_tamper_refusals": 6,
+    "checker_schema_refusals": 9,
+    "geometry_permutation_oracles": 2477,
+    "input_permutations": 36,
+    "input_refusals": 15,
+    "invariance_and_boundary_cases": 6,
+    "matrix_permutation_oracles": 722,
+    "threshold_boundaries": 5
+  },
+  "scope": "synthetic CPU exact assignment mathematics only",
+  "seed": 20261006,
+  "status": "PASS",
+  "total_cases": 3276
+}

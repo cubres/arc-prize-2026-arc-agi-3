@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1100" viewBox="0 0 1440 1100" role="img" aria-labelledby="title desc">
+<title id="title">Assignment ambiguity: a tied pair and an isolated anchor</title>
+<desc id="desc">Synthetic three-object example. Two complete assignments cost eight doubled-center units. A and B have zero exclusion regret and abstain. C has regret thirty-two, so only C is separated under the declared cost model.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#16243d}.title{font-size:42px;font-weight:700}.h{font-size:25px;font-weight:700}.p{font-size:20px}.small{font-size:16px}.mono{font-family:monospace;font-size:24px}.pill{font-size:17px;font-weight:700}</style>
+<rect width="1440" height="1100" fill="#f4f7fb"/>
+<rect x="0" y="0" width="1440" height="13" fill="#6c4ed9"/>
+<text x="56" y="78" class="title">An optimal match can still be ambiguous</text>
+<text x="56" y="119" class="p">Exact assignment certificates • synthetic geometry • no identity or probability claim</text>
+<rect x="48" y="158" width="690" height="570" rx="18" fill="#ffffff" stroke="#dae3ee"/>
+<rect x="758" y="158" width="634" height="570" rx="18" fill="#ffffff" stroke="#dae3ee"/>
+<text x="76" y="204" class="h">1  Two equally good complete assignments</text>
+<text x="76" y="238" class="small">Connections are schematic; coordinates are written beside each object.</text>
+<text x="102" y="279" class="pill">BEFORE</text>
+<text x="485" y="279" class="pill">AFTER</text>
+<line x1="240" y1="330" x2="492" y2="330" stroke="#6c4ed9" stroke-width="4"/>
+<line x1="240" y1="430" x2="492" y2="430" stroke="#6c4ed9" stroke-width="4"/>
+<line x1="240" y1="558" x2="492" y2="558" stroke="#247eaa" stroke-width="4"/>
+<path d="M240 330 L492 430 M240 430 L492 330" stroke="#159b91" stroke-width="3" stroke-dasharray="9 7" fill="none"/>
+<rect x="104" y="305" width="48" height="48" rx="12" fill="#eee9ff" stroke="#dae3ee"/>
+<text x="120" y="338" class="h">A</text>
+<text x="92" y="388" class="small">(0, 0)</text>
+<rect x="502" y="305" width="48" height="48" rx="12" fill="#eee9ff" stroke="#dae3ee"/>
+<text x="518" y="338" class="h">U</text>
+<text x="490" y="388" class="small">(1, −1)</text>
+<rect x="104" y="405" width="48" height="48" rx="12" fill="#eee9ff" stroke="#dae3ee"/>
+<text x="120" y="438" class="h">B</text>
+<text x="92" y="488" class="small">(2, 0)</text>
+<rect x="502" y="405" width="48" height="48" rx="12" fill="#eee9ff" stroke="#dae3ee"/>
+<text x="518" y="438" class="h">V</text>
+<text x="490" y="488" class="small">(1, 1)</text>
+<rect x="104" y="533" width="48" height="48" rx="12" fill="#e3f2fa" stroke="#dae3ee"/>
+<text x="120" y="566" class="h">C</text>
+<text x="92" y="616" class="small">(10, 0)</text>
+<rect x="502" y="533" width="48" height="48" rx="12" fill="#e3f2fa" stroke="#dae3ee"/>
+<text x="518" y="566" class="h">W</text>
+<text x="490" y="616" class="small">(10, 0)</text>
+<text x="77" y="652" class="small">Solid purple: selected optimum</text>
+<text x="77" y="680" class="small">Dashed green: another optimum; both totals = 8</text>
+<text x="789" y="204" class="h">2  Cost alone cannot resolve the pair</text>
+<text x="789" y="240" class="p">c[i,j] = |cx2[i] − cx2[j]| + |cy2[i] − cy2[j]|</text>
+<text x="789" y="270" class="small">cx2 = xmin + xmax; cy2 = ymin + ymax</text>
+<text x="790" y="323" class="small">from / to</text>
+<text x="860" y="323" class="h">U</text>
+<text x="990" y="323" class="h">V</text>
+<text x="1120" y="323" class="h">W</text>
+<text x="803" y="379" class="h">A</text>
+<rect x="848" y="349" width="68" height="44" rx="8" fill="#eee9ff" stroke="#dae3ee"/>
+<text x="860" y="379" class="mono">4</text>
+<text x="990" y="379" class="mono">4</text>
+<text x="1120" y="379" class="mono">20</text>
+<text x="803" y="435" class="h">B</text>
+<text x="860" y="435" class="mono">4</text>
+<rect x="978" y="405" width="68" height="44" rx="8" fill="#eee9ff" stroke="#dae3ee"/>
+<text x="990" y="435" class="mono">4</text>
+<text x="1120" y="435" class="mono">16</text>
+<text x="803" y="491" class="h">C</text>
+<text x="860" y="491" class="mono">20</text>
+<text x="990" y="491" class="mono">20</text>
+<rect x="1108" y="461" width="68" height="44" rx="8" fill="#eee9ff" stroke="#dae3ee"/>
+<text x="1120" y="491" class="mono">0</text>
+<text x="789" y="548" class="h">Best total C* = 8</text>
+<text x="789" y="586" class="p">Best distinct-assignment gap = 0</text>
+<text x="789" y="625" class="p">Forbid one selected edge and solve again.</text>
+<text x="789" y="658" class="small">Its regret is an entire-assignment cost difference.</text>
+<text x="789" y="688" class="small">A low global gap does not make every edge ambiguous.</text>
+<rect x="48" y="750" width="1344" height="191" rx="18" fill="#ffffff" stroke="#dae3ee"/>
+<text x="76" y="794" class="h">3  Abstain per edge, using a threshold declared in advance</text>
+<rect x="76" y="819" width="415" height="91" rx="12" fill="#eee9ff" stroke="#dae3ee"/>
+<text x="93" y="852" class="h">A → U    regret = 0</text>
+<text x="93" y="885" class="small">ABSTAIN: exact tie</text>
+<rect x="518" y="819" width="415" height="91" rx="12" fill="#eee9ff" stroke="#dae3ee"/>
+<text x="535" y="852" class="h">B → V    regret = 0</text>
+<text x="535" y="885" class="small">ABSTAIN: exact tie</text>
+<rect x="960" y="819" width="415" height="91" rx="12" fill="#e3f2fa" stroke="#dae3ee"/>
+<text x="977" y="852" class="h">C → W    regret = 32</text>
+<text x="977" y="885" class="small">Separated under this cost model</text>
+<text x="57" y="982" class="p">Every assignment within C* + threshold must retain an edge whose regret exceeds that threshold.</text>
+<text x="57" y="1016" class="small">Here threshold = 0. Positive regret certifies cost robustness; physical identity still needs appearance and context.</text>
+<text x="57" y="1061" class="small">Reproduce: python -B render_diagram.py --output reproduced.svg    •    Original MIT implementation, 2026-10-06</text>
+</svg>

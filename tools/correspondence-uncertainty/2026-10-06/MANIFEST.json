@@ -1,0 +1,86 @@
+{
+  "entries": [
+    {
+      "bytes": 9136,
+      "git_blob_sha1": "0d40e8e847b34c4efb56e07a901a19028d3749b1",
+      "path": "correspondence.py",
+      "sha256": "87c8ab3c374b2b82b41321823c20a9a5382dccdc26e927e0bdc8f614a7d76f5d"
+    },
+    {
+      "bytes": 15739,
+      "git_blob_sha1": "d3ede3cd09d263ae0eb7399ef9eff8256d46d714",
+      "path": "verify_correspondence.py",
+      "sha256": "2e63c87748d30d0de8e4fcb8b9c69dad015e2b64b79aedf5a4dcb60da5ec48da"
+    },
+    {
+      "bytes": 617,
+      "git_blob_sha1": "f25d562294907ee4d59600841904b058f3000cba",
+      "path": "example.py",
+      "sha256": "0200da323f75601b375373347bfb5d43d1459b5e9670858bdd488f195ada9b33"
+    },
+    {
+      "bytes": 5859,
+      "git_blob_sha1": "22e9a91cc6dd7318d7b9cb9acd3d75e3c254301c",
+      "path": "render_diagram.py",
+      "sha256": "15d942e0c87d4f0219d7fb7c77d03740b4c798fad0f5f0efe61def0481093ee0"
+    },
+    {
+      "bytes": 5985,
+      "git_blob_sha1": "89bfda8857c679e241f136e0bc279011bd7aa776",
+      "path": "pipeline.svg",
+      "sha256": "7b9fbe5323f7d40e47d6ece0bb73bd7ecd83811e75e545f39f84361e01d03e27"
+    },
+    {
+      "bytes": 9572,
+      "git_blob_sha1": "214f0371d04e3f39cad52467029fd537fbcb38a0",
+      "path": "README.md",
+      "sha256": "32aefec281e36f00f883b64dca0a233ef04831ae6074187f04b86f80ff5e8702"
+    },
+    {
+      "bytes": 2378,
+      "git_blob_sha1": "bd6ab533902dc5ed9d1597d134333bc1b355a411",
+      "path": "PROVENANCE.md",
+      "sha256": "abd38dbf75659d03f2aa5355d2c1d725a82d08f53ff8625d796ae59ae75b146e"
+    },
+    {
+      "bytes": 1063,
+      "git_blob_sha1": "f6371c8975e87d01580c5f3779471f7da51335df",
+      "path": "LICENSE",
+      "sha256": "eed854701ae3433dccb0da2fc34fb3a8b70460bb4cad7f9e1abb4145a6cdbf0e"
+    },
+    {
+      "bytes": 426,
+      "git_blob_sha1": "4ef4c5e0c7a013fbc8e0d48362085c820bc74205",
+      "path": "verification_final.json",
+      "sha256": "b0730056daaf9f45fdead8fd53ff428fc57be6d8526d9e84e674645a61e543ba"
+    },
+    {
+      "bytes": 2967,
+      "git_blob_sha1": "d5c7a0b044d4fa76c752618c4a77c4e44eec5b33",
+      "path": "EXECUTION_RECEIPT.json",
+      "sha256": "52c2815f23784a0b8225e0638da74771a5919e383dce8cbcb3ff014bf8eb9046"
+    },
+    {
+      "bytes": 490,
+      "git_blob_sha1": "7f970806dbe9b79a518536fabed3c19f3f3eb5a6",
+      "path": "RENDER_RECEIPT.json",
+      "sha256": "7c2c620611ad213636f87fccdb0e1a6b520132bd7f783226e42f609af5d213a1"
+    },
+    {
+      "bytes": 2001,
+      "git_blob_sha1": "0c123b6efeef522b805efebc9d2a1f985da7f523",
+      "path": "REVIEW.json",
+      "sha256": "c1bb79620311ef8b19c6781304d56f0ef295fe8f70a3d7180249908d9a9a6de4"
+    }
+  ],
+  "excluded_local_history": [
+    "verification.json"
+  ],
+  "license": "MIT",
+  "manifest_self_excluded": true,
+  "public_file_count_including_manifest": 13,
+  "public_path": "tools/correspondence-uncertainty/2026-10-06",
+  "schema_version": 1,
+  "scope": "Generic assignment ambiguity; synthetic exact CPU checks; no native integration or score claim",
+  "status": "QUALIFIED_STANDALONE_CPU_TOOL"
+}
