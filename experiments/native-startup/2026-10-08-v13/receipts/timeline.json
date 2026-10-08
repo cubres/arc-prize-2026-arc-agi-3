@@ -1,0 +1,24 @@
+{
+  "caller_end_s": 1483.5,
+  "game_started_utc": "2026-10-08T14:52:32.48",
+  "game_wallclock_seconds": 96.25,
+  "play_and_drain_seconds": 100.55,
+  "play_window_seconds": 480.0,
+  "readiness_begin_s": 162.0,
+  "readiness_limit_seconds": 2400,
+  "readiness_reference": {
+    "v10": 1185.1,
+    "v11": ">1500 (timed out)",
+    "v12": 1070.1,
+    "v13": 1215.2,
+    "v8": 1105.1
+  },
+  "readiness_returned_s": 1377.2,
+  "readiness_seconds": 1215.2,
+  "server_timeout_s": 3100,
+  "setup_begin_s": 46.4,
+  "setup_limit_from_original_s": 2700,
+  "setup_returned_s": 1377.2,
+  "source": "startup-phase-final.json, benchmark.json, native_feedback_delivery.json, native-caller-receipt.json",
+  "whole_limit_s": 3000
+}

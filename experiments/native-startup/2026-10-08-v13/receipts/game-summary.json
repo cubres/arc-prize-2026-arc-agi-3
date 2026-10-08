@@ -1,0 +1,12 @@
+{
+  "action_cap": 6,
+  "actions": 6,
+  "final_score": 0.0,
+  "game_id": "tn36-ef4dde99",
+  "generated_tokens_from_solver_note": 10831,
+  "levels_completed": 0,
+  "number_of_levels": 7,
+  "state": "gave_up",
+  "tokens_per_second": 112.5,
+  "wallclock_seconds": 96.246
+}

@@ -1,0 +1,47 @@
+{
+  "absolute_real_time_guarantee": false,
+  "command_absolute_deadline": 3136.817831338,
+  "events": [
+    {
+      "elapsed_from_original_start": 46.405475429000006,
+      "maximum_setup_seconds_from_original_start": 2700,
+      "monotonic": 198.223306767,
+      "phase": "SETUP_BEGIN",
+      "remaining_setup_seconds": 2653.594524571,
+      "setup_absolute_deadline": 2851.817831338
+    },
+    {
+      "effective_absolute_deadline": 2713.861804115,
+      "elapsed_from_original_start": 162.043976067,
+      "maximum_readiness_seconds": 2400,
+      "monotonic": 313.861807405,
+      "phase": "READINESS_BEGIN",
+      "remaining_setup_seconds": 2537.956023933
+    },
+    {
+      "effective_absolute_deadline": 2713.861804115,
+      "elapsed_from_original_start": 1377.157259495,
+      "monotonic": 1528.975090833,
+      "phase": "READINESS_RETURNED",
+      "remaining_setup_seconds": 1322.842740505
+    },
+    {
+      "elapsed_from_original_start": 1377.2143546040002,
+      "monotonic": 1529.032185942,
+      "phase": "SETUP_RETURNED",
+      "remaining_setup_seconds": 1322.7856453959998
+    }
+  ],
+  "initiating_error_type": null,
+  "maximum_readiness_seconds": 2400,
+  "maximum_setup_seconds_from_original_start": 2700,
+  "original_started_monotonic": 151.817831338,
+  "raw_messages_arguments_tracebacks_environment_or_prompts_retained": false,
+  "receipt_faults": [],
+  "schema": "arc3-startup-phase-v1",
+  "serving_source_sha256": "037c041c9bd9dcffa9084b32f47af9cf1bf35849d5eaf2e1a3422daac098b2e2",
+  "setup_absolute_deadline": 2851.817831338,
+  "setup_returned": true,
+  "status": "STARTUP_RETURNED",
+  "whole_bootstrap_seconds": 3000
+}

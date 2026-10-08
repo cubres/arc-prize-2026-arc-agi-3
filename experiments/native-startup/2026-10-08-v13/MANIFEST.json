@@ -1,0 +1,102 @@
+{
+  "canary_status": "NATIVE_HOOK_CONSUMPTION_PASS",
+  "candidate_sha256": "522bccdc37c2e87c59d97319cd191ef3a06cede422a5da03c5e17ed3a3d54875",
+  "competition_submission": false,
+  "full_request_bytes": 898803,
+  "full_request_sha256": "610d502d16f7f4e85e081482b18fba9e6b18206b5dfd7e2c787daa99bf0075ea",
+  "gameplay_actions": 6,
+  "initiating_error": null,
+  "note_files": {
+    "receipts/caller-summary.json": {
+      "bytes": 634,
+      "sha256": "828a2c3e77880d8383f8b88b7a4bd6e7943e9c69423be755b4cd065d10c222ca"
+    },
+    "receipts/delivery-summary.json": {
+      "bytes": 933,
+      "sha256": "f51be3ddfff2686112c657267389032128dc5ef4d3d6cfff52222ed1ee8fe2a9"
+    },
+    "receipts/game-summary.json": {
+      "bytes": 269,
+      "sha256": "ab08e2ad22d7f0c5ade536be58270cc763d6f975edb245558e40627e60437615"
+    },
+    "receipts/helper-import-gate.json": {
+      "bytes": 408,
+      "sha256": "88a2ec067c4141802d362187ba0f8b1cd92b5f9c0cc4d607f0eb779deaebf3d8"
+    },
+    "receipts/linux-lifecycle.json": {
+      "bytes": 1010,
+      "sha256": "912c893565141a74c79584465bb21eb971cb2655226c43a0cf98e3b7af3d5eed"
+    },
+    "receipts/payload-exit.json": {
+      "bytes": 400,
+      "sha256": "021ee3cdc222d347cfa70ac31ef505f0cede873a160ec74e255f7a376519a21a"
+    },
+    "receipts/server-release-summary.json": {
+      "bytes": 1181,
+      "sha256": "42a3c692e6525f6eb1fd4a26d2f6e63ab2083eb698b41b2eae90add73fb9042b"
+    },
+    "receipts/startup-phase.json": {
+      "bytes": 1643,
+      "sha256": "3b287c3ebc2b74b5754d325098abdbf59043e9f2bcbc7d4aabb99a437b1ff648"
+    },
+    "receipts/terminal-evidence.json": {
+      "bytes": 726,
+      "sha256": "b7c52d6a2b7bfe42a2aebce30e312ed1a1c7772d1509582d36be674266b95a5a"
+    },
+    "receipts/timeline.json": {
+      "bytes": 710,
+      "sha256": "81bfa1b4fc9c0bde8976c89d1148c9babf2b8746765c07757308082483808498"
+    }
+  },
+  "notebook": "prvsiyan/zz-gpuchk-899422",
+  "notebook_status": "COMPLETE",
+  "official_score": null,
+  "pushed_utc": "2026-10-08T14:20:59Z",
+  "source_outputs": {
+    "feedback_canary/actual_terminal_evidence/receipt.json": {
+      "bytes": 1063,
+      "sha256": "837308979756db6b07463394585492bc6a3c68fa0198c3e72a74d95b215cb1e3"
+    },
+    "feedback_canary/benchmark.json": {
+      "bytes": 2756,
+      "sha256": "0baeea69e390e42d23ad3ef675c01affd65c705ee0f2f8199def49fae9bef471"
+    },
+    "feedback_canary/native_feedback_delivery.json": {
+      "bytes": 3322,
+      "sha256": "af59b173ee9aec225bb71af7c0514976c107936d53be412f9800dbb371b4eb6a"
+    },
+    "helper-import-gate.json": {
+      "bytes": 408,
+      "sha256": "88a2ec067c4141802d362187ba0f8b1cd92b5f9c0cc4d607f0eb779deaebf3d8"
+    },
+    "native-caller-receipt.json": {
+      "bytes": 2240,
+      "sha256": "abe36ea4b29917184d12e823adccd3ae6238e8f069b8d1958cb34b45597bce00"
+    },
+    "native-linux-lifecycle-normal.json": {
+      "bytes": 518,
+      "sha256": "b2f07953d77af23ccc8ede42ad333e6e14a437ce3082d710a55973b3af9c89c5"
+    },
+    "native-linux-lifecycle-optimized.json": {
+      "bytes": 518,
+      "sha256": "b2f07953d77af23ccc8ede42ad333e6e14a437ce3082d710a55973b3af9c89c5"
+    },
+    "native-payload-exit.json": {
+      "bytes": 400,
+      "sha256": "021ee3cdc222d347cfa70ac31ef505f0cede873a160ec74e255f7a376519a21a"
+    },
+    "serving_canary/canary-server-release.json": {
+      "bytes": 61676,
+      "sha256": "3534490ffc61c12c43cdc38b50e748d7d48c2196c7db43ab078543a86fd889fe"
+    },
+    "serving_canary/server.log": {
+      "bytes": 116510,
+      "sha256": "44fa55c6718b43bf79a5f33bb98ab8107875bf7d71aeba4243db9facb3c0bb2c"
+    },
+    "serving_canary/startup-phase-final.json": {
+      "bytes": 1643,
+      "sha256": "3b287c3ebc2b74b5754d325098abdbf59043e9f2bcbc7d4aabb99a437b1ff648"
+    }
+  },
+  "version": 13
+}

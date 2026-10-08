@@ -1,0 +1,16 @@
+{
+  "actual_game_run_sha256": "b857b2fa121c5a10429df29761e6216591692ddbfbe9af8bf666c49009c00cb4",
+  "actual_wallclock_seconds": 96.2458831670001,
+  "available_levels": 7,
+  "benchmark_sha256": "0baeea69e390e42d23ad3ef675c01affd65c705ee0f2f8199def49fae9bef471",
+  "completed_levels": 0,
+  "evidence_limit": "Saved benchmark consistency only; actual new execution and delivery require separate native receipts.",
+  "game_id": "tn36-ef4dde99",
+  "history_action_count": 6,
+  "history_sha256": "830eac0265117bc6b7dd218f70095edb66dd3bcd4744f5cc7ff076085e65b740",
+  "independent_validation": false,
+  "local_final_score": 0.0,
+  "official_score": false,
+  "schema": "arc3-one-game-native-canary-evidence-v1",
+  "state": "gave_up"
+}

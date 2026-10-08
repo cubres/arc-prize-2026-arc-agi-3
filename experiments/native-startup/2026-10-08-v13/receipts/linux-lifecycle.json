@@ -1,0 +1,26 @@
+{
+  "normal": {
+    "actual_linux_case_count": 9,
+    "native_gpu_release_proven": false,
+    "platform": "linux",
+    "requires_external_gpu_attestation": true,
+    "schema": "arc3-server-anchor-linux-cpu-fixture-gate-v1",
+    "source_sha256": "5ee5ffa044bf9c84a49bb4d66b0f904aec821ca477a62b6baf57175eba5bc471",
+    "status": "PASS_LINUX_CPU_FIXTURES",
+    "test_sha256": "0db7af697ebba273adb164880b47b40846523b6e2c1cfef9d6905a6be9879aaf",
+    "tests_run": 19,
+    "unseen_escape_guarantee": false
+  },
+  "optimized": {
+    "actual_linux_case_count": 9,
+    "native_gpu_release_proven": false,
+    "platform": "linux",
+    "requires_external_gpu_attestation": true,
+    "schema": "arc3-server-anchor-linux-cpu-fixture-gate-v1",
+    "source_sha256": "5ee5ffa044bf9c84a49bb4d66b0f904aec821ca477a62b6baf57175eba5bc471",
+    "status": "PASS_LINUX_CPU_FIXTURES",
+    "test_sha256": "0db7af697ebba273adb164880b47b40846523b6e2c1cfef9d6905a6be9879aaf",
+    "tests_run": 19,
+    "unseen_escape_guarantee": false
+  }
+}

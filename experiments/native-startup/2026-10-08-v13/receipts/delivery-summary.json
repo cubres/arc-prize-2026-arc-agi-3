@@ -1,0 +1,20 @@
+{
+  "agents": 1,
+  "backend_and_workers_quiescent": true,
+  "bridge_action_revision": 5,
+  "bridge_source_pins": {
+    "feedback_watermark": "5ca0d9918b60ea98f7a8226e86e83c59e737be92ca50ae17eb6d44cac92b4429",
+    "inference.agent.runtime_state": "c32cbc4352b2e632efef33ebcb252af4f54867088a934d63fe1df5465934c5af",
+    "inference.agent.tool_agent": "856bf9b895d0ad8b959c8f828c7132b0e09eaa47f4c5cc6173785354090f8be7",
+    "inference.framework.solver": "2bef5d6bc23c0312675f0c7203194c94e93d056ac06bf6419acd5142a4ea7c8e"
+  },
+  "distinct_render_ids_with_successful_completion": 5,
+  "matching_opener_http_2xx": 15,
+  "payload_sha256_chain": "c02bb5998a4e5be40e12d8560674b16b55880ef047f2fff3f128d212754ebe10",
+  "played_solvers": 1,
+  "prepared_model_requests": 15,
+  "raw_prompts_frames_headers_or_model_outputs_retained": false,
+  "rendered_openers": 5,
+  "status": "NATIVE_HOOK_CONSUMPTION_PASS",
+  "successful_completion_calls": 15
+}
