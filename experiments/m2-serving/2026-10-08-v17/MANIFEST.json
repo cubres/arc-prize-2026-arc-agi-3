@@ -1,0 +1,34 @@
+{
+ "L8_AND_BEHAVIOUR_ANALYSIS.json": {
+  "bytes": 8143,
+  "sha256": "8bed87d2ad63a66f60767cc92d8ab72a90d032895b8a2b9397770df18daeaf82"
+ },
+ "README.md": {
+  "bytes": 3198,
+  "sha256": "350ef2fe465f320ad49f57abb1cbe5585ed2e7b81e445a365e7670f7a03ae66b"
+ },
+ "V15_SERVING_ANALYSIS.json": {
+  "bytes": 6858,
+  "sha256": "9e819d530bef28ba9881219c48938ccb3846b846f5f996106079168d084ba091"
+ },
+ "V16_SERVING_ANALYSIS.json": {
+  "bytes": 6843,
+  "sha256": "3a4fede7752fa14217385c8b48d194645511884d3739a0f39982e8dad21c15a7"
+ },
+ "V17_SERVING_ANALYSIS.json": {
+  "bytes": 6542,
+  "sha256": "c1292f0102d969376a60ef24d8bdb1922c36ac64e81ecf20b99b44fe1f4f52dd"
+ },
+ "analyze_v17_l8.py": {
+  "bytes": 7282,
+  "sha256": "8ed0c13e71022d2dcf7d7712082ed853a624d4e7d8149ab2f7b28e61f901801c"
+ },
+ "check_commit_output_arc3_v17.py": {
+  "bytes": 1939,
+  "sha256": "03dc1897d8c116c5dffb4a9e363db6f2ca099116ff377120ce1819255df7c891"
+ },
+ "v17_report.json": {
+  "bytes": 3855,
+  "sha256": "12a5065cc34babae6c2197354bf6a2bc126842b33885ded1adc6bc27fda29578"
+ }
+}

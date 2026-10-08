@@ -1,0 +1,388 @@
+{
+ "source": "serve.log + benchmark.json of public V16 commit run",
+ "serve_log_lines": 2992,
+ "t0": "2026-10-08 16:14:25",
+ "boot_seconds_from_first_log": {
+  "load_weight_begin": [
+   21.0,
+   "Load weight begin. avail mem=94.17 GB"
+  ],
+  "load_weight_end": [
+   299.0,
+   "Load weight end. elapsed=278.04 s, type=Qwen4ExpForConditionalGeneration, quant=auto-round, bits=4, avail mem=24.32 GB, mem usage=69.85 GB."
+  ],
+  "kv_allocated": [
+   304.0,
+   "KV Cache is allocated. dtype: torch.float8_e4m3fn, #tokens: 1011264, K size: 5.79 GB, V size: 5.79 GB"
+  ],
+  "first_prefill": [
+   473.0,
+   "Prefill batch, #new-seq: 1, #new-token: 64, #cached-token: 0, full token usage: 0.00, mamba usage: 0.05, #running-req: 0, #queue-req: 0, #pending-token: 0, cuda"
+  ],
+  "first_http_200": [
+   480.0,
+   "INFO:     127.0.0.1:52568 - \"POST /v1/chat/completions HTTP/1.1\" 200 OK"
+  ]
+ },
+ "decode_lines": 1009,
+ "prefill_lines": 626,
+ "accept_len_all": {
+  "n": 1009,
+  "mean": 2.6913,
+  "median": 2.69,
+  "p10": 2.5,
+  "p90": 2.89,
+  "min": 2.05,
+  "max": 3.17
+ },
+ "accept_rate_all": {
+  "n": 1009,
+  "mean": 0.5637,
+  "median": 0.56,
+  "p10": 0.5,
+  "p90": 0.63,
+  "min": 0.35,
+  "max": 0.72
+ },
+ "gen_tps_all": {
+  "n": 1009,
+  "mean": 652.9119,
+  "median": 703.04,
+  "p10": 420.91,
+  "p90": 814.82,
+  "min": 20.85,
+  "max": 921.4
+ },
+ "by_running_req": {
+  "1": {
+   "acc_len": {
+    "n": 13,
+    "mean": 2.6446,
+    "median": 2.57,
+    "p10": 2.182,
+    "p90": 3.11,
+    "min": 2.05,
+    "max": 3.17
+   },
+   "gen_tps": {
+    "n": 13,
+    "mean": 173.37,
+    "median": 167.66,
+    "p10": 139.516,
+    "p90": 215.834,
+    "min": 131.32,
+    "max": 225.85
+   }
+  },
+  "2": {
+   "acc_len": {
+    "n": 1,
+    "mean": 2.87,
+    "median": 2.87,
+    "p10": null,
+    "p90": null,
+    "min": 2.87,
+    "max": 2.87
+   },
+   "gen_tps": {
+    "n": 1,
+    "mean": 321.57,
+    "median": 321.57,
+    "p10": null,
+    "p90": null,
+    "min": 321.57,
+    "max": 321.57
+   }
+  },
+  "3": {
+   "acc_len": {
+    "n": 5,
+    "mean": 2.768,
+    "median": 2.77,
+    "p10": null,
+    "p90": null,
+    "min": 2.54,
+    "max": 3.01
+   },
+   "gen_tps": {
+    "n": 5,
+    "mean": 417.482,
+    "median": 360.28,
+    "p10": null,
+    "p90": null,
+    "min": 336.27,
+    "max": 588.44
+   }
+  },
+  "4": {
+   "acc_len": {
+    "n": 5,
+    "mean": 2.802,
+    "median": 2.78,
+    "p10": null,
+    "p90": null,
+    "min": 2.57,
+    "max": 3.06
+   },
+   "gen_tps": {
+    "n": 5,
+    "mean": 550.198,
+    "median": 497.69,
+    "p10": null,
+    "p90": null,
+    "min": 288.76,
+    "max": 792.19
+   }
+  },
+  "5": {
+   "acc_len": {
+    "n": 4,
+    "mean": 2.8,
+    "median": 2.77,
+    "p10": null,
+    "p90": null,
+    "min": 2.7,
+    "max": 2.96
+   },
+   "gen_tps": {
+    "n": 4,
+    "mean": 559.2,
+    "median": 542.845,
+    "p10": null,
+    "p90": null,
+    "min": 484.53,
+    "max": 666.58
+   }
+  },
+  "6": {
+   "acc_len": {
+    "n": 37,
+    "mean": 2.7751,
+    "median": 2.76,
+    "p10": 2.574,
+    "p90": 2.962,
+    "min": 2.4,
+    "max": 3.1
+   },
+   "gen_tps": {
+    "n": 37,
+    "mean": 585.8757,
+    "median": 607.41,
+    "p10": 402.466,
+    "p90": 707.44,
+    "min": 245.34,
+    "max": 767.34
+   }
+  },
+  "7": {
+   "acc_len": {
+    "n": 120,
+    "mean": 2.7498,
+    "median": 2.76,
+    "p10": 2.531,
+    "p90": 2.929,
+    "min": 2.36,
+    "max": 3.14
+   },
+   "gen_tps": {
+    "n": 120,
+    "mean": 638.313,
+    "median": 678.525,
+    "p10": 447.364,
+    "p90": 757.719,
+    "min": 132.92,
+    "max": 801.81
+   }
+  },
+  "8": {
+   "acc_len": {
+    "n": 238,
+    "mean": 2.7128,
+    "median": 2.72,
+    "p10": 2.519,
+    "p90": 2.91,
+    "min": 2.3,
+    "max": 3.11
+   },
+   "gen_tps": {
+    "n": 238,
+    "mean": 662.7763,
+    "median": 714.54,
+    "p10": 439.752,
+    "p90": 787.881,
+    "min": 118.23,
+    "max": 862.05
+   }
+  },
+  "9": {
+   "acc_len": {
+    "n": 331,
+    "mean": 2.6966,
+    "median": 2.7,
+    "p10": 2.52,
+    "p90": 2.888,
+    "min": 2.36,
+    "max": 3.15
+   },
+   "gen_tps": {
+    "n": 331,
+    "mean": 659.8088,
+    "median": 741.99,
+    "p10": 420.942,
+    "p90": 814.372,
+    "min": 20.85,
+    "max": 894.12
+   }
+  },
+  "10": {
+   "acc_len": {
+    "n": 255,
+    "mean": 2.621,
+    "median": 2.62,
+    "p10": 2.466,
+    "p90": 2.804,
+    "min": 2.27,
+    "max": 2.96
+   },
+   "gen_tps": {
+    "n": 255,
+    "mean": 685.1963,
+    "median": 698.71,
+    "p10": 467.842,
+    "p90": 842.488,
+    "min": 252.22,
+    "max": 921.4
+   }
+  }
+ },
+ "full_token_usage": {
+  "n": 1009,
+  "mean": 0.5384,
+  "median": 0.58,
+  "p10": 0.19,
+  "p90": 0.76,
+  "min": 0.01,
+  "max": 0.92
+ },
+ "queue_req": {
+  "n": 1009,
+  "mean": 0.001,
+  "median": 0.0,
+  "p10": 0.0,
+  "p90": 0.0,
+  "min": 0.0,
+  "max": 1.0
+ },
+ "occupancy": {
+  "window_s": 1527.0,
+  "gap_threshold_s": 15.0,
+  "idle_gap_s": 0.0,
+  "n_gaps": 0,
+  "longest_gaps": [],
+  "time_weighted_mean_running": 8.295,
+  "max_streams": 10,
+  "slot_idle_fraction": 0.17
+ },
+ "games": [
+  {
+   "game": "tu93-0768757b",
+   "state": "gave_up",
+   "levels": 4,
+   "score": 22.22,
+   "actions": 95,
+   "gen_tokens": 95208,
+   "action_wall_s": 58277.1,
+   "final_wall_s": 1503.7
+  },
+  {
+   "game": "lp85-305b61c3",
+   "state": "gave_up",
+   "levels": 5,
+   "score": 39.35,
+   "actions": 92,
+   "gen_tokens": 97268,
+   "action_wall_s": 60372.9,
+   "final_wall_s": 1500.8
+  },
+  {
+   "game": "vc33-5430563c",
+   "state": "gave_up",
+   "levels": 3,
+   "score": 21.43,
+   "actions": 94,
+   "gen_tokens": 96310,
+   "action_wall_s": 72545.6,
+   "final_wall_s": 1500.5
+  },
+  {
+   "game": "r11l-495a7899",
+   "state": "gave_up",
+   "levels": 2,
+   "score": 14.29,
+   "actions": 45,
+   "gen_tokens": 97353,
+   "action_wall_s": 41380.4,
+   "final_wall_s": 1500.4
+  },
+  {
+   "game": "sc25-635fd71a",
+   "state": "gave_up",
+   "levels": 3,
+   "score": 21.3,
+   "actions": 187,
+   "gen_tokens": 92164,
+   "action_wall_s": 185381.6,
+   "final_wall_s": 1500.4
+  },
+  {
+   "game": "ar25-0c556536",
+   "state": "gave_up",
+   "levels": 5,
+   "score": 41.67,
+   "actions": 176,
+   "gen_tokens": 93518,
+   "action_wall_s": 139777.4,
+   "final_wall_s": 1503.2
+  },
+  {
+   "game": "sb26-7fbdac44",
+   "state": "won",
+   "levels": 8,
+   "score": 100.0,
+   "actions": 136,
+   "gen_tokens": 39851,
+   "action_wall_s": 36935.0,
+   "final_wall_s": 636.5
+  },
+  {
+   "game": "re86-8af5384d",
+   "state": "gave_up",
+   "levels": 5,
+   "score": 41.67,
+   "actions": 257,
+   "gen_tokens": 83860,
+   "action_wall_s": 190288.1,
+   "final_wall_s": 1515.6
+  },
+  {
+   "game": "ft09-0d8bbf25",
+   "state": "gave_up",
+   "levels": 5,
+   "score": 71.43,
+   "actions": 114,
+   "gen_tokens": 95191,
+   "action_wall_s": 76840.7,
+   "final_wall_s": 1507.4
+  },
+  {
+   "game": "tr87-cd924810",
+   "state": "gave_up",
+   "levels": 1,
+   "score": 2.47,
+   "actions": 83,
+   "gen_tokens": 83171,
+   "action_wall_s": 49885.7,
+   "final_wall_s": 1506.8
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+{
+ "version": 17,
+ "rerun": false,
+ "checks": {
+  "placeholder_written_first": "ok",
+  "python_3_12": "ok: kernel Python 3.12",
+  "wheelhouse": "ok: mount=/kaggle/input/pennyroyal-v253 wheels=/kaggle/input/pennyroyal-v253/wheels lock=/kaggle/input/pennyroyal-v253/requirements.lock sglang=1 uv=1",
+  "target_model": "ok: 38 shards, 0 missing, quant=auto-round/4",
+  "draft_model": "ok: /kaggle/input/models/dfranzen/albucino-qwen3-8-flash-next-drafter/transformers/default/1",
+  "frspec_map": "ok: map=/kaggle/input/pennyroyal-v253/hot_tokens_64k.pt map_sha_ok=True tokenizer_sha_ok=True",
+  "taaf_bundle_mit": "ok: mount=/kaggle/input/datasets/jeroencottaar/taaf-kaggle-source-share files=73 mismatched=[] extra=[]",
+  "competition_wheels": "ok: /kaggle/input/competitions/arc-prize-2026-arc-agi-3/arc_agi_3_wheels",
+  "demo_environments": "ok: /kaggle/input/competitions/arc-prize-2026-arc-agi-3/environment_files",
+  "startup_timeout_at_least_720s": "ok: SERVER_STARTUP_TIMEOUT=720 s; Version 15 needed about 767 s from server spawn to the first answer, and the harness starts early and retries for 900 s",
+  "teardown_reserve": "ok: hard stop 300 s before the 9 h limit; 240 s between the soft end and the hard stop",
+  "server_process_alive": "ok: exit code None"
+ },
+ "fallbacks": [],
+ "warnings": [],
+ "timing": {
+  "records": 629,
+  "completed": 629,
+  "threads": 10,
+  "window_s": 1504.3,
+  "slots": 10,
+  "mean_in_flight": 9.375,
+  "slot_idle_fraction": 0.0625,
+  "all_slots_busy_fraction": 0.6062,
+  "idle_fraction_mean_over_threads": 0.0358,
+  "per_thread": {
+   "harness-game_0": {
+    "requests": 47,
+    "errors": 1,
+    "busy_s": 1469.7,
+    "idle_s": 30.7,
+    "span_s": 1500.3,
+    "idle_fraction": 0.0205,
+    "gap_p50_s": 0.25,
+    "gap_p90_s": 2.02
+   },
+   "harness-game_1": {
+    "requests": 59,
+    "errors": 0,
+    "busy_s": 1461.2,
+    "idle_s": 38.7,
+    "span_s": 1499.9,
+    "idle_fraction": 0.0258,
+    "gap_p50_s": 0.41,
+    "gap_p90_s": 1.86
+   },
+   "harness-game_2": {
+    "requests": 54,
+    "errors": 1,
+    "busy_s": 1477.4,
+    "idle_s": 22.7,
+    "span_s": 1500.1,
+    "idle_fraction": 0.0151,
+    "gap_p50_s": 0.32,
+    "gap_p90_s": 0.89
+   },
+   "harness-game_3": {
+    "requests": 57,
+    "errors": 0,
+    "busy_s": 1480.8,
+    "idle_s": 23.5,
+    "span_s": 1504.3,
+    "idle_fraction": 0.0156,
+    "gap_p50_s": 0.22,
+    "gap_p90_s": 0.91
+   },
+   "harness-game_4": {
+    "requests": 73,
+    "errors": 1,
+    "busy_s": 1453.1,
+    "idle_s": 47.1,
+    "span_s": 1500.2,
+    "idle_fraction": 0.0314,
+    "gap_p50_s": 0.3,
+    "gap_p90_s": 1.61
+   },
+   "harness-game_5": {
+    "requests": 76,
+    "errors": 0,
+    "busy_s": 1376.2,
+    "idle_s": 122.0,
+    "span_s": 1498.2,
+    "idle_fraction": 0.0814,
+    "gap_p50_s": 0.52,
+    "gap_p90_s": 3.81
+   },
+   "harness-game_6": {
+    "requests": 83,
+    "errors": 1,
+    "busy_s": 1428.4,
+    "idle_s": 71.8,
+    "span_s": 1500.2,
+    "idle_fraction": 0.0478,
+    "gap_p50_s": 0.54,
+    "gap_p90_s": 1.56
+   },
+   "harness-game_7": {
+    "requests": 66,
+    "errors": 1,
+    "busy_s": 1397.1,
+    "idle_s": 103.5,
+    "span_s": 1500.6,
+    "idle_fraction": 0.069,
+    "gap_p50_s": 0.43,
+    "gap_p90_s": 4.67
+   },
+   "harness-game_8": {
+    "requests": 42,
+    "errors": 0,
+    "busy_s": 1118.8,
+    "idle_s": 13.9,
+    "span_s": 1132.7,
+    "idle_fraction": 0.0123,
+    "gap_p50_s": 0.18,
+    "gap_p90_s": 0.79
+   },
+   "harness-game_9": {
+    "requests": 72,
+    "errors": 1,
+    "busy_s": 1440.7,
+    "idle_s": 59.3,
+    "span_s": 1500.0,
+    "idle_fraction": 0.0395,
+    "gap_p50_s": 0.2,
+    "gap_p90_s": 2.38
+   }
+  },
+  "logging_errors": 0
+ },
+ "teardown": {
+  "ownership_proved": true,
+  "signals": [
+   "SIGTERM"
+  ],
+  "seconds_since_notebook_start": 2106.6
+ },
+ "server_when_released": {
+  "seconds_since_notebook_start": 590.8,
+  "exit_code": null
+ }
+}

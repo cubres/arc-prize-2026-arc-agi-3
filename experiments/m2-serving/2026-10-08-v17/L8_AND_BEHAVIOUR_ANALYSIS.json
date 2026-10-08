@@ -1,0 +1,427 @@
+{
+ "client_v17": {
+  "records": 629,
+  "threads": 10,
+  "window_s": 1504.3,
+  "error_records": [
+   {
+    "thread": "harness-game_4",
+    "error": "ReadTimeout",
+    "seconds_before_window_end": 4.2,
+    "duration_s": 43.5
+   },
+   {
+    "thread": "harness-game_2",
+    "error": "ReadTimeout",
+    "seconds_before_window_end": 4.2,
+    "duration_s": 36.6
+   },
+   {
+    "thread": "harness-game_0",
+    "error": "ReadTimeout",
+    "seconds_before_window_end": 4.0,
+    "duration_s": 8.2
+   },
+   {
+    "thread": "harness-game_7",
+    "error": "ReadTimeout",
+    "seconds_before_window_end": 3.7,
+    "duration_s": 8.4
+   },
+   {
+    "thread": "harness-game_6",
+    "error": "ReadTimeout",
+    "seconds_before_window_end": 4.2,
+    "duration_s": 5.7
+   },
+   {
+    "thread": "harness-game_9",
+    "error": "ReadTimeout",
+    "seconds_before_window_end": 4.3,
+    "duration_s": 5.5
+   }
+  ],
+  "request_latency_s": {
+   "p10": 4.9,
+   "p50": 14.58,
+   "p90": 49.1,
+   "max": 186.3
+  },
+  "tool_gap_s": {
+   "n": 619,
+   "sum": 533.1,
+   "p50": 0.34,
+   "p90": 1.98,
+   "p99": 8.99,
+   "max": 20.6
+  },
+  "report_timing": {
+   "records": 629,
+   "completed": 629,
+   "threads": 10,
+   "window_s": 1504.3,
+   "slots": 10,
+   "mean_in_flight": 9.375,
+   "slot_idle_fraction": 0.0625,
+   "all_slots_busy_fraction": 0.6062,
+   "idle_fraction_mean_over_threads": 0.0358,
+   "logging_errors": 0
+  }
+ },
+ "l8": {
+  "slots": 10,
+  "client_mean_in_flight": 9.375,
+  "server_time_weighted_running_v17": 8.562,
+  "client_idle_slots": 0.625,
+  "client_idle_share": 0.0625,
+  "tool_gap_idle_slots": 0.354,
+  "tool_gap_idle_share": 0.0354,
+  "edge_idle_slots_first_last_request": 0.271,
+  "edge_note": "mostly harness-game_8, whose game ended about 370 s before the window; in the rerun a queued game takes that slot",
+  "queued_or_prefill_slots": 0.813,
+  "pooled_gen_tps_by_running": {
+   "1": 187.2,
+   "2": 294.3,
+   "3": 406.7,
+   "4": 517.0,
+   "5": 502.0,
+   "6": 601.4,
+   "7": 623.0,
+   "8": 661.9,
+   "9": 672.8,
+   "10": 685.0
+  },
+  "throughput_gain_if_tool_gaps_filled": {
+   "measured_curve": 0.0058,
+   "linear_upper_bound": 0.0414
+  },
+  "points_at_elasticity_0.25": {
+   "measured_curve": [
+    0.04,
+    0.04
+   ],
+   "linear_upper_bound": [
+    0.27,
+    0.29
+   ]
+  },
+  "kv_usage_max": {
+   "V15": 0.96,
+   "V16": 0.92,
+   "V17": 0.96
+  }
+ },
+ "behaviour": {
+  "runs": {
+   "V15": {
+    "mean_score": 42.78,
+    "median": 41.67,
+    "won": 1,
+    "duration": "25m 20s",
+    "actions_per_game": 150.5,
+    "tokens_per_game": 83146,
+    "tokens_per_game_sd": 5267,
+    "levels_total": 46.0,
+    "gen_tps_job": 546.75,
+    "server_accept_len": 2.6809,
+    "server_gen_tps": 664.7621,
+    "server_boot_first_200_s": 767.0
+   },
+   "V16": {
+    "mean_score": 37.58,
+    "median": 30.78,
+    "won": 1,
+    "duration": "25m 15s",
+    "actions_per_game": 127.9,
+    "tokens_per_game": 87389,
+    "tokens_per_game_sd": 16580,
+    "levels_total": 41.0,
+    "gen_tps_job": 576.47,
+    "server_accept_len": 2.6913,
+    "server_gen_tps": 652.9119,
+    "server_boot_first_200_s": 480.0
+   },
+   "V17": {
+    "mean_score": 53.88,
+    "median": 52.98,
+    "won": 1,
+    "duration": "25m 4s",
+    "actions_per_game": 139.1,
+    "tokens_per_game": 87978,
+    "tokens_per_game_sd": 7019,
+    "levels_total": 50.0,
+    "gen_tps_job": 584.61,
+    "server_accept_len": 2.7052,
+    "server_gen_tps": 660.5573,
+    "server_boot_first_200_s": 529.0
+   }
+  },
+  "paired_per_game_score": {
+   "V15->V16": {
+    "mean_diff": -5.19,
+    "sd_diff": 19.68,
+    "se": 6.22,
+    "n_up": 3,
+    "n_down": 5
+   },
+   "V15->V17": {
+    "mean_diff": 11.1,
+    "sd_diff": 31.53,
+    "se": 9.97,
+    "n_up": 6,
+    "n_down": 3
+   },
+   "V16->V17": {
+    "mean_diff": 16.3,
+    "sd_diff": 35.63,
+    "se": 11.27,
+    "n_up": 6,
+    "n_down": 2
+   }
+  },
+  "per_game_score_sd_across_runs": {
+   "ar25-0c556536": 12.5,
+   "ft09-0d8bbf25": 21.4,
+   "lp85-305b61c3": 17.6,
+   "r11l-495a7899": 23.4,
+   "re86-8af5384d": 6.5,
+   "sb26-7fbdac44": 26.4,
+   "sc25-635fd71a": 21.6,
+   "tr87-cd924810": 20.2,
+   "tu93-0768757b": 5.2,
+   "vc33-5430563c": 0.0
+  },
+  "per_game": {
+   "ar25-0c556536": {
+    "V15": {
+     "score": 27.78,
+     "levels": 4.0,
+     "max_levels": 8,
+     "actions": 130,
+     "tokens": 78193
+    },
+    "V16": {
+     "score": 41.67,
+     "levels": 5.0,
+     "max_levels": 8,
+     "actions": 176,
+     "tokens": 93518
+    },
+    "V17": {
+     "score": 58.33,
+     "levels": 6.0,
+     "max_levels": 8,
+     "actions": 237,
+     "tokens": 87891
+    }
+   },
+   "ft09-0d8bbf25": {
+    "V15": {
+     "score": 47.62,
+     "levels": 4.0,
+     "max_levels": 6,
+     "actions": 69,
+     "tokens": 86879
+    },
+    "V16": {
+     "score": 71.43,
+     "levels": 5.0,
+     "max_levels": 6,
+     "actions": 114,
+     "tokens": 95191
+    },
+    "V17": {
+     "score": 100.0,
+     "levels": 6.0,
+     "max_levels": 6,
+     "actions": 89,
+     "tokens": 71912
+    }
+   },
+   "lp85-305b61c3": {
+    "V15": {
+     "score": 41.67,
+     "levels": 5.0,
+     "max_levels": 8,
+     "actions": 68,
+     "tokens": 92784
+    },
+    "V16": {
+     "score": 39.35,
+     "levels": 5.0,
+     "max_levels": 8,
+     "actions": 92,
+     "tokens": 97268
+    },
+    "V17": {
+     "score": 77.78,
+     "levels": 7.0,
+     "max_levels": 8,
+     "actions": 104,
+     "tokens": 96456
+    }
+   },
+   "r11l-495a7899": {
+    "V15": {
+     "score": 47.62,
+     "levels": 4.0,
+     "max_levels": 6,
+     "actions": 59,
+     "tokens": 87785
+    },
+    "V16": {
+     "score": 14.29,
+     "levels": 2.0,
+     "max_levels": 6,
+     "actions": 45,
+     "tokens": 97353
+    },
+    "V17": {
+     "score": 71.43,
+     "levels": 5.0,
+     "max_levels": 6,
+     "actions": 72,
+     "tokens": 95238
+    }
+   },
+   "re86-8af5384d": {
+    "V15": {
+     "score": 41.67,
+     "levels": 5.0,
+     "max_levels": 8,
+     "actions": 276,
+     "tokens": 73612
+    },
+    "V16": {
+     "score": 41.67,
+     "levels": 5.0,
+     "max_levels": 8,
+     "actions": 257,
+     "tokens": 83860
+    },
+    "V17": {
+     "score": 27.78,
+     "levels": 4.0,
+     "max_levels": 8,
+     "actions": 192,
+     "tokens": 79391
+    }
+   },
+   "sb26-7fbdac44": {
+    "V15": {
+     "score": 92.7,
+     "levels": 8.0,
+     "max_levels": 8,
+     "actions": 158,
+     "tokens": 79989
+    },
+    "V16": {
+     "score": 100.0,
+     "levels": 8.0,
+     "max_levels": 8,
+     "actions": 136,
+     "tokens": 39851
+    },
+    "V17": {
+     "score": 40.8,
+     "levels": 6.0,
+     "max_levels": 8,
+     "actions": 163,
+     "tokens": 86173
+    }
+   },
+   "sc25-635fd71a": {
+    "V15": {
+     "score": 31.49,
+     "levels": 4.0,
+     "max_levels": 6,
+     "actions": 234,
+     "tokens": 81294
+    },
+    "V16": {
+     "score": 21.3,
+     "levels": 3.0,
+     "max_levels": 6,
+     "actions": 187,
+     "tokens": 92164
+    },
+    "V17": {
+     "score": 71.43,
+     "levels": 5.0,
+     "max_levels": 6,
+     "actions": 157,
+     "tokens": 89073
+    }
+   },
+   "tr87-cd924810": {
+    "V15": {
+     "score": 42.47,
+     "levels": 4.0,
+     "max_levels": 6,
+     "actions": 285,
+     "tokens": 80078
+    },
+    "V16": {
+     "score": 2.47,
+     "levels": 1.0,
+     "max_levels": 6,
+     "actions": 83,
+     "tokens": 83171
+    },
+    "V17": {
+     "score": 47.62,
+     "levels": 4.0,
+     "max_levels": 6,
+     "actions": 178,
+     "tokens": 91680
+    }
+   },
+   "tu93-0768757b": {
+    "V15": {
+     "score": 33.33,
+     "levels": 5.0,
+     "max_levels": 9,
+     "actions": 140,
+     "tokens": 84966
+    },
+    "V16": {
+     "score": 22.22,
+     "levels": 4.0,
+     "max_levels": 9,
+     "actions": 95,
+     "tokens": 95208
+    },
+    "V17": {
+     "score": 22.22,
+     "levels": 4.0,
+     "max_levels": 9,
+     "actions": 103,
+     "tokens": 91092
+    }
+   },
+   "vc33-5430563c": {
+    "V15": {
+     "score": 21.43,
+     "levels": 3.0,
+     "max_levels": 7,
+     "actions": 86,
+     "tokens": 85885
+    },
+    "V16": {
+     "score": 21.43,
+     "levels": 3.0,
+     "max_levels": 7,
+     "actions": 94,
+     "tokens": 96310
+    },
+    "V17": {
+     "score": 21.43,
+     "levels": 3.0,
+     "max_levels": 7,
+     "actions": 96,
+     "tokens": 90874
+    }
+   }
+  }
+ }
+}
