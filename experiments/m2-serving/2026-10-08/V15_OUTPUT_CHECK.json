@@ -1,0 +1,175 @@
+{
+ "output_dir": "public_v15_launch/v15_output",
+ "checks": {
+  "parquet_exists": {
+   "pass": true,
+   "detail": "public_v15_launch/v15_output/submission.parquet"
+  },
+  "parquet_columns": {
+   "pass": true,
+   "detail": [
+    "row_id",
+    "game_id",
+    "end_of_game",
+    "score"
+   ]
+  },
+  "parquet_rows>=1": {
+   "pass": true,
+   "detail": 1
+  },
+  "parquet_no_nulls": {
+   "pass": true,
+   "detail": [
+    {
+     "row_id": "1_0",
+     "game_id": "1",
+     "end_of_game": true,
+     "score": 1
+    }
+   ]
+  },
+  "benchmark_exists": {
+   "pass": true,
+   "detail": "public_v15_launch/v15_output/benchmark.json"
+  },
+  "runs>=1": {
+   "pass": true,
+   "detail": 10
+  },
+  "every_game_has_actions": {
+   "pass": true,
+   "detail": [
+    135,
+    68,
+    86,
+    59,
+    231,
+    130,
+    158,
+    276,
+    69,
+    284
+   ]
+  },
+  "every_game_has_tokens": {
+   "pass": true,
+   "detail": [
+    84966,
+    92784,
+    85885,
+    87785,
+    81294,
+    78193,
+    79989,
+    73612,
+    86879,
+    80078
+   ]
+  },
+  "no_crashed_game": {
+   "pass": true,
+   "detail": [
+    "gave_up",
+    "won"
+   ]
+  },
+  "summary_runs_match": {
+   "pass": true,
+   "detail": "runs:      10"
+  }
+ },
+ "parquet_rows": [
+  {
+   "row_id": "1_0",
+   "game_id": "1",
+   "end_of_game": true,
+   "score": 1
+  }
+ ],
+ "parquet_num_rows": 1,
+ "games": [
+  {
+   "game": "tu93-0768757b",
+   "state": "gave_up",
+   "non_reset_actions": 135,
+   "gen_tokens": 84966,
+   "levels": 5,
+   "score": 33.33
+  },
+  {
+   "game": "lp85-305b61c3",
+   "state": "gave_up",
+   "non_reset_actions": 68,
+   "gen_tokens": 92784,
+   "levels": 5,
+   "score": 41.67
+  },
+  {
+   "game": "vc33-5430563c",
+   "state": "gave_up",
+   "non_reset_actions": 86,
+   "gen_tokens": 85885,
+   "levels": 3,
+   "score": 21.43
+  },
+  {
+   "game": "r11l-495a7899",
+   "state": "gave_up",
+   "non_reset_actions": 59,
+   "gen_tokens": 87785,
+   "levels": 4,
+   "score": 47.62
+  },
+  {
+   "game": "sc25-635fd71a",
+   "state": "gave_up",
+   "non_reset_actions": 231,
+   "gen_tokens": 81294,
+   "levels": 4,
+   "score": 31.49
+  },
+  {
+   "game": "ar25-0c556536",
+   "state": "gave_up",
+   "non_reset_actions": 130,
+   "gen_tokens": 78193,
+   "levels": 4,
+   "score": 27.78
+  },
+  {
+   "game": "sb26-7fbdac44",
+   "state": "won",
+   "non_reset_actions": 158,
+   "gen_tokens": 79989,
+   "levels": 8,
+   "score": 92.7
+  },
+  {
+   "game": "re86-8af5384d",
+   "state": "gave_up",
+   "non_reset_actions": 276,
+   "gen_tokens": 73612,
+   "levels": 5,
+   "score": 41.67
+  },
+  {
+   "game": "ft09-0d8bbf25",
+   "state": "gave_up",
+   "non_reset_actions": 69,
+   "gen_tokens": 86879,
+   "levels": 4,
+   "score": 47.62
+  },
+  {
+   "game": "tr87-cd924810",
+   "state": "gave_up",
+   "non_reset_actions": 284,
+   "gen_tokens": 80078,
+   "levels": 4,
+   "score": 42.47
+  }
+ ],
+ "summary_mean_score": 42.78,
+ "verdict": "PASS"
+}
