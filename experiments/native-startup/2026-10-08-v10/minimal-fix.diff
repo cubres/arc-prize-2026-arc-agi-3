@@ -1,0 +1,7 @@
+--- a/owned_native_support.py   (V10, sha256 b031321e528b553521b34a9241775a7b31fdee00226655538e7490e005764321)
++++ b/owned_native_support.py   (proposed V11)
+@@ -68,2 +68,4 @@
+     return (arm_bm, arm_target)
++if str(BUNDLE_DIR) not in sys.path:
++    sys.path.insert(0, str(BUNDLE_DIR))
+ import vllm_server_watchdog as vllm_watchdog

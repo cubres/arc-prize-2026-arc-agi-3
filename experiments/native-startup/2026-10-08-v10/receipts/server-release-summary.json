@@ -1,0 +1,40 @@
+{
+  "anchor_cleanup": {
+    "cleanup_proven": true,
+    "emergency": false,
+    "escaped_count": 1,
+    "escaped_sigkill_deliveries": 24,
+    "known_owned_descendants": 148,
+    "known_owned_live_after_exit": 0,
+    "owned_group_live_after_exit": 0,
+    "pidfd_delivery_error": false,
+    "reason": "CONTROLLER_STOP",
+    "status": "OBSERVED_OWNED_CLEANUP",
+    "unseen_escape_guarantee": false
+  },
+  "faults": [],
+  "gpu_release_verified": true,
+  "gpu_rows_after": [],
+  "gpu_settle": {
+    "duration_s": 0.588452,
+    "maximum_settle_seconds": 10.0,
+    "minimum_empty_sample_spacing_seconds": 0.5,
+    "passed": true,
+    "samples": [
+      {
+        "gpu_rows": 0,
+        "owned_marker_residuals": 0,
+        "seconds_from_original_start": 1359.792388
+      },
+      {
+        "gpu_rows": 0,
+        "owned_marker_residuals": 0,
+        "seconds_from_original_start": 1360.305768
+      }
+    ],
+    "status": "GPU_SETTLE_PASS"
+  },
+  "live_owned_marker_residuals": [],
+  "prior_HOLD_receipts_promoted": false,
+  "status": "NATIVE_RELEASE_PASS"
+}

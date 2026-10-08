@@ -1,0 +1,72 @@
+{
+  "candidate_sha256": "fb072e061e7120210851dfd3c38e9cd477970ec5254b7ae13626602d531c2204",
+  "competition_submission": false,
+  "full_request_bytes": 896332,
+  "full_request_sha256": "34624d88d202fb45f093e04d8a9dbc2c2689d8cb717a0d3db570d01ba6912e2a",
+  "gameplay_actions": 0,
+  "note_files": {
+    "minimal-fix.diff": {
+      "bytes": 333,
+      "sha256": "5c2ae4936f0fa64628429e604edbfda64ff519be315a1cbcd820438458cde606"
+    },
+    "receipts/caller-summary.json": {
+      "bytes": 673,
+      "sha256": "023af60d9aea06351396744f06ab25c6756f07869ad8948936b357f4a033642f"
+    },
+    "receipts/linux-lifecycle.json": {
+      "bytes": 1010,
+      "sha256": "089cc2aeeb23d81381756548dbbfc2c289e1ce62e8a01d90b498c33170874591"
+    },
+    "receipts/payload-exit.json": {
+      "bytes": 416,
+      "sha256": "ae2862a856338620f44cb0ddb4c0c22f4e529b7a91ac8049501d023da7483203"
+    },
+    "receipts/readiness-timeline.json": {
+      "bytes": 736,
+      "sha256": "4457747ed069c67a736b77b2c1af32c9da747040120d088b9e35542d556091b1"
+    },
+    "receipts/server-release-summary.json": {
+      "bytes": 1053,
+      "sha256": "c7465da0133b63d3c3f5e0080fb7dda858e176930cb25f979cfc698abf85da6c"
+    },
+    "receipts/startup-phase.json": {
+      "bytes": 1637,
+      "sha256": "2dded57727c90042f925f40d41cd72dcf31fce7970e135ca51648de690c35dae"
+    }
+  },
+  "notebook": "prvsiyan/zz-gpuchk-899422",
+  "notebook_status": "ERROR",
+  "official_score": null,
+  "pushed_utc": "2026-10-08T10:29:30Z",
+  "source_outputs": {
+    "native-caller-receipt.json": {
+      "bytes": 2143,
+      "sha256": "fced06e7de26bbc2a6a67e3adc8db23b2d33bfec51b06b5a669a01066800359f"
+    },
+    "native-linux-lifecycle-normal.json": {
+      "bytes": 518,
+      "sha256": "9afe2e51fe50376669d6e561d1f852a8d76675cd369aefa17a6a59de46eeb872"
+    },
+    "native-linux-lifecycle-optimized.json": {
+      "bytes": 518,
+      "sha256": "9afe2e51fe50376669d6e561d1f852a8d76675cd369aefa17a6a59de46eeb872"
+    },
+    "native-payload-exit.json": {
+      "bytes": 416,
+      "sha256": "ae2862a856338620f44cb0ddb4c0c22f4e529b7a91ac8049501d023da7483203"
+    },
+    "serving_canary/canary-server-release.json": {
+      "bytes": 55915,
+      "sha256": "91475e38becc21572b28caf3f8dc932ef7e772b02856c378f4e7cafd4bc8425d"
+    },
+    "serving_canary/server.log": {
+      "bytes": 111240,
+      "sha256": "d6cd12efb4ae86d6e6b9ff5b14db2aab1316b5734a5c63460f8cd93a263edabb"
+    },
+    "serving_canary/startup-phase-final.json": {
+      "bytes": 1637,
+      "sha256": "2dded57727c90042f925f40d41cd72dcf31fce7970e135ca51648de690c35dae"
+    }
+  },
+  "version": 10
+}

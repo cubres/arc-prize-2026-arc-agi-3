@@ -1,0 +1,20 @@
+{
+  "eagle_head_compile_seconds": 2.78,
+  "initial_free_gib": 94.43,
+  "initial_profiling_warmup_seconds": 39.63,
+  "kv_cache_reserved_gib": 5.0,
+  "kv_cache_tokens": 105202,
+  "main_weight_load_seconds": 593.61,
+  "model_loading_gib": 81.8,
+  "model_loading_total_seconds": 677.034347,
+  "ple_offload_shard_load_wall_seconds": 949,
+  "readiness_limit_seconds": 1500,
+  "readiness_seconds": 1185.130471856,
+  "safetensors_shards": 206,
+  "second_weight_load_seconds": 76.34,
+  "setup_limit_seconds_from_original_start": 1800,
+  "setup_returned_seconds_from_original_start": 1355.823206625,
+  "source": "serving_canary/server.log (numeric fields only)",
+  "teardown_signal_seconds_after_api_ready": 5,
+  "torch_compile_seconds": 16.91
+}
