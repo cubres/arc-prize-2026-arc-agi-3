@@ -1,0 +1,17 @@
+{
+  "checked": [
+    "arc_agi",
+    "feedback_watermark",
+    "live_feedback_bridge",
+    "native_canary_evidence",
+    "native_feedback_hooks",
+    "terminal_evidence",
+    "vllm_server_watchdog"
+  ],
+  "missing": [],
+  "modules_executed": 0,
+  "schema": "arc3-helper-import-gate-v1",
+  "seconds_from_original_start": 48.83693639100002,
+  "status": "HELPER_IMPORTS_RESOLVED",
+  "sys_path_changed": false
+}

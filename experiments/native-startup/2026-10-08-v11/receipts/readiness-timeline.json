@@ -1,0 +1,25 @@
+{
+  "main_weight_load_seconds": 1109.92,
+  "model_loading_gib": 81.8,
+  "model_loading_total_seconds": 1201.056188,
+  "ple_offload_elapsed_at_termination_seconds": 1404,
+  "ple_offload_shards_done_at_termination": "203/206",
+  "readiness_begin_seconds_from_original_start": 237.086258461,
+  "readiness_failed_seconds_from_original_start": 1737.243095841,
+  "readiness_limit_seconds": 1500,
+  "safetensors_shards": 206,
+  "second_weight_load_seconds": 83.97,
+  "setup_begin_seconds_from_original_start": 48.871215197,
+  "source": "startup-phase-final.json and serving_canary/server.log (numeric fields only)",
+  "v10_reference": {
+    "main_weight_load_seconds": 593.61,
+    "model_loading_total_seconds": 677.034347,
+    "ple_offload_total_seconds": 949,
+    "readiness_seconds": 1185.130471856
+  },
+  "v8_reference": {
+    "model_loading_total_seconds": 641.740017,
+    "ple_offload_total_seconds": 870,
+    "ready_seconds": 1105.1
+  }
+}

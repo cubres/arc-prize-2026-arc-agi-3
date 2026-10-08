@@ -1,0 +1,51 @@
+{
+  "absolute_real_time_guarantee": false,
+  "command_absolute_deadline": 2503.713939491,
+  "events": [
+    {
+      "elapsed_from_original_start": 48.871215197,
+      "maximum_setup_seconds_from_original_start": 1800,
+      "monotonic": 217.585154688,
+      "phase": "SETUP_BEGIN",
+      "remaining_setup_seconds": 1751.1287848030001,
+      "setup_absolute_deadline": 1968.713939491
+    },
+    {
+      "effective_absolute_deadline": 1905.800194902,
+      "elapsed_from_original_start": 237.08625846100003,
+      "maximum_readiness_seconds": 1500,
+      "monotonic": 405.800197952,
+      "phase": "READINESS_BEGIN",
+      "remaining_setup_seconds": 1562.913741539
+    },
+    {
+      "deadline_observed_expired": true,
+      "effective_absolute_deadline": 1905.800194902,
+      "elapsed_from_original_start": 1737.243095841,
+      "error_type": "TimeoutError",
+      "monotonic": 1905.957035332,
+      "phase": "READINESS_FAILED",
+      "remaining_setup_seconds": 62.75690415899999
+    },
+    {
+      "deadline_observed_expired": false,
+      "elapsed_from_original_start": 1737.243107071,
+      "error_type": "TimeoutError",
+      "monotonic": 1905.957046562,
+      "phase": "SETUP_FAILED",
+      "remaining_setup_seconds": 62.75689292900006
+    }
+  ],
+  "initiating_error_type": "TimeoutError",
+  "maximum_readiness_seconds": 1500,
+  "maximum_setup_seconds_from_original_start": 1800,
+  "original_started_monotonic": 168.713939491,
+  "raw_messages_arguments_tracebacks_environment_or_prompts_retained": false,
+  "receipt_faults": [],
+  "schema": "arc3-startup-phase-v1",
+  "serving_source_sha256": "037c041c9bd9dcffa9084b32f47af9cf1bf35849d5eaf2e1a3422daac098b2e2",
+  "setup_absolute_deadline": 1968.713939491,
+  "setup_returned": false,
+  "status": "STARTUP_FAILED",
+  "whole_bootstrap_seconds": 2350
+}

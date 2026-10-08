@@ -1,0 +1,77 @@
+{
+  "candidate_sha256": "1c38cc82bc07528891cacbeb6eaa21cc3d71d03d9fdc5edc9d6be8a6b6475d40",
+  "competition_submission": false,
+  "full_request_bytes": 626080,
+  "full_request_sha256": "9363e5e7551b71f91571b2641c602c96bb5b5dd8412b47b2c2c22144c3699bfd",
+  "gameplay_actions": 0,
+  "initiating_error": "TimeoutError at serving readiness (1500 s limit)",
+  "note_files": {
+    "receipts/caller-summary.json": {
+      "bytes": 668,
+      "sha256": "0329feb018eab6e0d504867ee6bf2b57d7a2961eb82f2523af4d5600dd23d44d"
+    },
+    "receipts/helper-import-gate.json": {
+      "bytes": 407,
+      "sha256": "1cb39887d1f9fc48d35c4d9ad9c38e1b506619e3f6ca0b76030ae334ed898744"
+    },
+    "receipts/linux-lifecycle.json": {
+      "bytes": 1010,
+      "sha256": "089cc2aeeb23d81381756548dbbfc2c289e1ce62e8a01d90b498c33170874591"
+    },
+    "receipts/payload-exit.json": {
+      "bytes": 409,
+      "sha256": "4d8dcaa90c9bb8e4dc811cec594feea1c4cee9e9130e12f484b1fbbb5f26dff5"
+    },
+    "receipts/readiness-timeline.json": {
+      "bytes": 939,
+      "sha256": "b733f44f62d1d5bc427b1468f06bbcbaf77a4ff491c0f1c5906dc2fb2886cb04"
+    },
+    "receipts/server-release-summary.json": {
+      "bytes": 1307,
+      "sha256": "b189155c7ebc2e68f7d1791883b5a1c8e7de1a32c853aa09576dfc2f8b4d93ab"
+    },
+    "receipts/startup-phase.json": {
+      "bytes": 1804,
+      "sha256": "50c8b23f3a3ab67cf8bc75059eb6080deeef082cfe344413732cae56f284d9a8"
+    }
+  },
+  "notebook": "prvsiyan/zz-gpuchk-899422",
+  "notebook_status": "ERROR",
+  "official_score": null,
+  "pushed_utc": "2026-10-08T11:46:55Z",
+  "source_outputs": {
+    "helper-import-gate.json": {
+      "bytes": 407,
+      "sha256": "1cb39887d1f9fc48d35c4d9ad9c38e1b506619e3f6ca0b76030ae334ed898744"
+    },
+    "native-caller-receipt.json": {
+      "bytes": 2134,
+      "sha256": "370692ab63197d6276b369e3ea56d210efa33f61d81acc0a4cad7670bcee5762"
+    },
+    "native-linux-lifecycle-normal.json": {
+      "bytes": 518,
+      "sha256": "9afe2e51fe50376669d6e561d1f852a8d76675cd369aefa17a6a59de46eeb872"
+    },
+    "native-linux-lifecycle-optimized.json": {
+      "bytes": 518,
+      "sha256": "9afe2e51fe50376669d6e561d1f852a8d76675cd369aefa17a6a59de46eeb872"
+    },
+    "native-payload-exit.json": {
+      "bytes": 409,
+      "sha256": "4d8dcaa90c9bb8e4dc811cec594feea1c4cee9e9130e12f484b1fbbb5f26dff5"
+    },
+    "serving_canary/canary-server-release.json": {
+      "bytes": 15524,
+      "sha256": "143f739d5bd79ed2e90f1618901ae16e5b87802e5482f20c04f67390f5b80099"
+    },
+    "serving_canary/server.log": {
+      "bytes": 79842,
+      "sha256": "e1a2bccac10f228922f485aef26e7c0d4d1f51da7d566668a0d9bc0b3c09d106"
+    },
+    "serving_canary/startup-phase-final.json": {
+      "bytes": 1804,
+      "sha256": "50c8b23f3a3ab67cf8bc75059eb6080deeef082cfe344413732cae56f284d9a8"
+    }
+  },
+  "version": 11
+}

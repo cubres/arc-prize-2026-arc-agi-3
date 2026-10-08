@@ -1,0 +1,26 @@
+{
+  "automatic_retry": false,
+  "elapsed_from_original_bootstrap_s": 1741.19169755,
+  "fault": {
+    "error_type": "OwnedProcessError"
+  },
+  "final_deadline_gate_passed": true,
+  "gpu_rows_after_command": [],
+  "official_score": false,
+  "owned_command": {
+    "command_returncode": 1,
+    "elapsed_seconds": 1741.132448263,
+    "group_signals": [
+      "SIGTERM",
+      "SIGKILL"
+    ],
+    "leader_reaped": true,
+    "ownership_proved": true,
+    "ownership_strategy": "unreaped-owned-supervisor",
+    "status": "FAIL_OWNED_COMMAND",
+    "timed_out": false,
+    "unresolved": false
+  },
+  "status": "NATIVE_CANARY_CALLER_HOLD",
+  "whole_bootstrap_budget_s": 2350
+}
