@@ -15,7 +15,7 @@ In Versions 8 and 10, readiness was close to the PLE-offload load time plus abou
 
 Cleanup was clean. The owned server anchor confirmed cleanup of all 27 observed descendants and stopped one detached process. Four GPU samples went from two processes, to one, to empty, to empty within 1.55 seconds, inside the 10-second settle limit. No owned process or GPU process remained after the command.
 
-The next version widens only the startup envelope: readiness up to 2400 s, setup 2700 s, whole run 3000 s, server limit 3100 s. The model, inputs, canary and checks stay as they are.
+The next version widens only the startup envelope: readiness up to 2400 s, setup 2700 s, whole run 3000 s, server limit 3100 s. The model, inputs, canary and checks stay as they are. The serving module's own readiness limit, which also sets the server's offload-loading timeout, is now set to the new value rather than capped at its built-in 1500 seconds; a CPU test confirms the server environment then carries 2400.
 
 Files: `receipts/` contains `startup-phase.json`, `payload-exit.json`, `helper-import-gate.json`, `caller-summary.json`, `server-release-summary.json`, `linux-lifecycle.json` and `readiness-timeline.json`. They keep exception classes and numbers only, with no messages, prompts, frames, environment values or URLs. `MANIFEST.json` binds the version, the candidate (`1c38cc82bc07528891cacbeb6eaa21cc3d71d03d9fdc5edc9d6be8a6b6475d40`, 626,080-byte request) and every file hash.
 

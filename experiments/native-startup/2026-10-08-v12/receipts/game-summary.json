@@ -1,0 +1,12 @@
+{
+  "actions": 0,
+  "analyzer_failure_class": "RuntimeError",
+  "analyzer_failure_site": "native_feedback_hooks.py:89 TransportObserver proxies check (before any model request)",
+  "evidence_gate": "rejected: non-crashed terminal state required (native_canary_evidence.py:67)",
+  "game_id": "tn36-ef4dde99",
+  "generated_tokens": 0,
+  "levels_completed": 0,
+  "number_of_levels": 7,
+  "state": "crashed",
+  "wallclock_seconds": 0.073
+}

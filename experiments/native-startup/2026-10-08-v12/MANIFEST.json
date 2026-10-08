@@ -1,0 +1,85 @@
+{
+  "candidate_sha256": "1576147ff7606db161708b09610cd4de3b595e7ce6bb04757133d0b79bf0146a",
+  "competition_submission": false,
+  "full_request_bytes": 762159,
+  "full_request_sha256": "cd55ff8b65607f0640eed55df64a0933b0d941cb4006a7f8523e30f94a02d884",
+  "gameplay_actions": 0,
+  "initiating_error": "RuntimeError at native one-game evidence gate: game crashed at analysis step 1 because the transport hook rejected an environment-derived proxies mapping; 0 model requests sent",
+  "note_files": {
+    "receipts/caller-summary.json": {
+      "bytes": 673,
+      "sha256": "fa8749afa1f36e195c76fc184c4bafea82ca2e240f4e5456cde0e67ef505d0b4"
+    },
+    "receipts/game-summary.json": {
+      "bytes": 436,
+      "sha256": "e953158ff9fc10b55848ad7d76fa4d3d3c5aba824af2ef5f4403f4e049f73041"
+    },
+    "receipts/helper-import-gate.json": {
+      "bytes": 407,
+      "sha256": "03948cd0f414488890ffc9a2350f38960f4b1b60d1e17d75c34d8bf254cf625a"
+    },
+    "receipts/linux-lifecycle.json": {
+      "bytes": 1010,
+      "sha256": "912c893565141a74c79584465bb21eb971cb2655226c43a0cf98e3b7af3d5eed"
+    },
+    "receipts/payload-exit.json": {
+      "bytes": 409,
+      "sha256": "a9e44c4bd51bea45970dde91deff98ac58633263bb8223f689bcc3625e8070d3"
+    },
+    "receipts/server-release-summary.json": {
+      "bytes": 1181,
+      "sha256": "d22ed4af5a8d5af2a123145c429ced0a677011969cfc2fc99b4c03d76dc44cea"
+    },
+    "receipts/startup-phase.json": {
+      "bytes": 1644,
+      "sha256": "1b7a62e6c4753b3d8215611bfc651f848f3f7af00bd5b12db208de459526d1cd"
+    },
+    "receipts/timeline.json": {
+      "bytes": 597,
+      "sha256": "7f5f69fd3841ae010145aac3122b8a996f59529b54174d2d16cb0cd10ff05832"
+    }
+  },
+  "notebook": "prvsiyan/zz-gpuchk-899422",
+  "notebook_status": "ERROR",
+  "official_score": null,
+  "pushed_utc": "2026-10-08T13:27:35Z",
+  "source_outputs": {
+    "feedback_canary/benchmark.json": {
+      "bytes": 1067,
+      "sha256": "1eafc6762356f1e994cffebf339fa3ce3b7e568c48344b95cfc75a4798ee0b50"
+    },
+    "helper-import-gate.json": {
+      "bytes": 407,
+      "sha256": "03948cd0f414488890ffc9a2350f38960f4b1b60d1e17d75c34d8bf254cf625a"
+    },
+    "native-caller-receipt.json": {
+      "bytes": 2139,
+      "sha256": "ff2acddb07bf13a833ddf91cc4a242e04def64403f4873c31e9f2217ec62d924"
+    },
+    "native-linux-lifecycle-normal.json": {
+      "bytes": 518,
+      "sha256": "b2f07953d77af23ccc8ede42ad333e6e14a437ce3082d710a55973b3af9c89c5"
+    },
+    "native-linux-lifecycle-optimized.json": {
+      "bytes": 518,
+      "sha256": "b2f07953d77af23ccc8ede42ad333e6e14a437ce3082d710a55973b3af9c89c5"
+    },
+    "native-payload-exit.json": {
+      "bytes": 409,
+      "sha256": "a9e44c4bd51bea45970dde91deff98ac58633263bb8223f689bcc3625e8070d3"
+    },
+    "serving_canary/canary-server-release.json": {
+      "bytes": 56631,
+      "sha256": "9b13401dd21110fb03519ec75b0487ca2679b73dc32d9037cde1d9a082adeab5"
+    },
+    "serving_canary/server.log": {
+      "bytes": 109911,
+      "sha256": "62ef225adea27799eb1e31d103da6251e17f21b5c7e37fbddc60cbaa206db03f"
+    },
+    "serving_canary/startup-phase-final.json": {
+      "bytes": 1644,
+      "sha256": "1b7a62e6c4753b3d8215611bfc651f848f3f7af00bd5b12db208de459526d1cd"
+    }
+  },
+  "version": 12
+}

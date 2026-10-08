@@ -1,0 +1,11 @@
+{
+  "cleanup_error_type": null,
+  "command_absolute_deadline": 3140.173069644,
+  "initiating_error_type": "RuntimeError",
+  "initiating_exception_preserved": true,
+  "original_started_monotonic": 155.173069644,
+  "raw_exception_messages_arguments_environment_prompts_or_tracebacks_retained": false,
+  "release_status": "NATIVE_RELEASE_PASS",
+  "schema": "arc3-native-payload-exit-v1",
+  "shutdown_ok": true
+}
