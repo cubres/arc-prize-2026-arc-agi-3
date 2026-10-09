@@ -1,0 +1,38 @@
+{
+  "author_fixture_checks_passed": 25,
+  "checks": [
+    "float action quota cannot impersonate integer quota",
+    "bool action usage rejected",
+    "bool period rejected",
+    "negative runtime rejected",
+    "infinite reward rejected",
+    "string finalized flag rejected",
+    "missing lifecycle truth rejected",
+    "serving replay metric cannot impersonate game reward",
+    "unexpected quota field rejected",
+    "matched pair with different initialization across orders rejected",
+    "matching arms require both periods",
+    "all intermediate outcomes rejected",
+    "invalid registered game_seed fails closed",
+    "invalid registered llm_seed fails closed",
+    "every registered repetition required",
+    "passed evidence remains diagnostic with no automatic adoption",
+    "summary excludes all private seed and game strings",
+    "helper has no network game model or subprocess import"
+  ],
+  "cpu_limit_seconds": 120,
+  "cpu_seconds": 0.023612,
+  "cross_startup_limit": "Initialization checked within startup strata; cross-startup contrasts additionally require same environment-reset/observation binding.",
+  "external_calls_or_mutations": 0,
+  "helper_sha256": "7c95886bfc68d6b91173f2413201282a3529b0cc5c2871b16e0a0dcadf4364ae",
+  "independent_invented_checks_passed": 18,
+  "limits": [
+    "All fixture data is invented; these are schema/pairing checks, not performance evidence.",
+    "Receipt and identity hashes still require actual native-source binding upstream.",
+    "Balanced declarations alone do not prove causal comparability or statistical improvement."
+  ],
+  "native_game_or_model_calls": 0,
+  "review": "PASS_FOR_OFFLINE_NORMALIZED_DIAGNOSTIC_ONLY",
+  "source_result_sha256": "e6027d9ddc1640cc18d02973bea7d03520df1712be606e02b631a80993ec9d1e",
+  "source_review_sha256": "f7de3ef5261de97e357cbe703aab6bd70cb069cff2ed148b7df3eead2e67d181"
+}

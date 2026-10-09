@@ -1,0 +1,53 @@
+{
+  "active_cell_exact_equal": true,
+  "active_cell_sha256": "22c202e835749af74ee7128aaaccd1fc655b4bbb49bc172c15e132bd125063be",
+  "active_code_cells": 1,
+  "candidate_sha256": "679e296c65c92cfa215f91bad2e434c35e38e2abb3199b4b85dc2cfea554b9ce",
+  "cells": 31,
+  "dry_run_save_calls": 0,
+  "fresh_native_measurements_by_this_audit": 0,
+  "kind": "READ_ONLY_PREPARED_SOURCE_AUDIT",
+  "limits": [
+    "Stored fake-server tests and zero-call dry-run are not native measurements.",
+    "No live status or official score was refreshed.",
+    "No checkpoint, environment, model or native benchmark was invoked."
+  ],
+  "native_gate_scope": "serving_screen_only",
+  "observed_design": {
+    "arm_order_fixed": true,
+    "arms_steps": [
+      4,
+      3
+    ],
+    "boots_per_arm": 1,
+    "changed_arguments": [
+      "speculative_num_steps",
+      "speculative_num_draft_tokens"
+    ],
+    "counterbalanced_order": false,
+    "equal_planned_replay_windows": true,
+    "game_environment_run": false,
+    "llm_seed_set": false,
+    "max_tokens_per_request": 2048,
+    "model_argument_differences": 2,
+    "native_gate_checks_settle": false,
+    "native_gate_checks_stragglers": false,
+    "post_warmup_effective_span_equal_enforced": false,
+    "sampling_temperature": 0.7,
+    "shared_payloads": true,
+    "snapshot_manifest_required": false,
+    "snapshot_streams": 10
+  },
+  "official_score": null,
+  "paired_terminal_game_trials_in_inspected_packet": 0,
+  "promotion": "HOLD_NO_PAIRED_TERMINAL_EVIDENCE",
+  "schema": "prepared-arc3-steps-benchmark-audit-v1",
+  "stored_fake_server_named_pass_lines": {
+    "TESTS-O.txt": 50,
+    "TESTS_normal.txt": 50
+  },
+  "stored_fake_server_reported_total": {
+    "TESTS-O.txt": 56,
+    "TESTS_normal.txt": 56
+  }
+}
