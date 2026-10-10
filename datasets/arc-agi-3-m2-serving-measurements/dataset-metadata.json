@@ -1,0 +1,441 @@
+{
+  "id": "prvsiyan/arc-agi-3-m2-serving-measurements",
+  "title": "ARC-AGI-3 Milestone-2 Serving Logs (RTX PRO 6000)",
+  "subtitle": "Tok/s, speculative accept length, KV use and boot times, 3 runs",
+  "description": "Measured serving behaviour of the Milestone-2 (M2) stack we ran for ARC-AGI-3: Qwen3.8-Flash-Next W4A16 on SGLang with EAGLE speculative decoding and an FR-Spec token map, 10 concurrent game streams, one NVIDIA RTX PRO 6000 inside Kaggle GPU notebooks.\n\nThe measurements come from our notebook runs of V15, V16 and V17. The three official Kaggle rows of the project (2.95, 27.83, 30.65) are our own submission records.\n\n## What\n- 4,822 serve-log batch rows (decode and prefill) from three notebook runs: throughput, accept length, KV-pool use, running requests.\n- 629 V17 model-request timings: start, duration and HTTP status across 10 game threads.\n- V17 token, cache-hit and finish-reason totals for 10 public demo games (labelled demo_01 to demo_10), and a 31-record 5% usage sample.\n- The three official rows, and a measured limit: 4 speculative steps fail during CUDA-graph capture on this stack.\n\nNo prompts, model outputs, game frames, observations, action identities, game results or model weights.\n\n| Version | Accept length (mean) | Generation tok/s (mean) | KV-pool use (max) | Boot to first HTTP 200 (recorded) |\n|---|---|---|---|---|\n| V15 | 2.68 | 664.8 | 0.96 | 767 s |\n| V16 | 2.69 | 652.9 | 0.92 | 480 s |\n| V17 | 2.71 | 660.6 | 0.96 | 529 s |\n\n## Why\nThese files give tok/s, accept length, KV-pool use, slot idle and boot times per batch, the per-request latency of model calls, and the evidence behind a steps limit.\n\n## Files\n- rows.csv: 5 rows, official Kaggle rows and serving aggregates per version, with notes.\n- server_metrics.csv: 4,822 decode and prefill batch rows from the V15, V16 and V17 serve logs.\n- client_request_timing.csv: 629 V17 client-side request timings.\n- per_stream_summary.csv: 10 demo games, token, cache and finish-reason totals.\n- requests_sample.jsonl: 31 sampled usage records.\n- schema.json (every column defined), README.md (method, credits and dependency licences, caveats), NOTICE.md (per-file licence terms), LICENSE, MANIFEST.json (SHA-256 and bytes).\n\n## Columns\nEvery column of every data file has a name, type, unit and description in schema.json and in the README column reference.\n\n## How to load\n```python\nimport pandas as pd\n\nsm = pd.read_csv(\"server_metrics.csv\")\ndec = sm[sm.kind == \"decode\"]\nprint(dec.groupby(\"run_label\")[[\"accept_len\", \"gen_tok_s\"]].agg([\"mean\", \"median\"]).round(2))\n```\n\nEvery file reads with pandas or Python's json module. The README has a second and third example (client timing, and reasoning share from the sample and the per-game totals).\n\n## Provenance\nThe serve logs of three notebook runs were parsed with fixed regular expressions. Decode counts and means in rows.csv can be recomputed from server_metrics.csv. All 622 V17 responses were aggregated, and a 5% random sample was drawn. Client timing comes from the V17 harness timing log. Official row ids, public scores, status and submission times come from the Kaggle submission records of our account, and the submission descriptions are quoted verbatim.\n\n## Credits and licences\nCredits, and the licence of every third-party component, are listed in the README Credits section. None of that upstream work is redistributed here. Publisher: prvsiyan.\n\n## Licence\nApache-2.0 for this dataset (see LICENSE). NOTICE.md gives the per-file terms. The official-row facts in rows.csv (row id, submission time, public score, status and submission description) and the pre-M2 scores quoted in the README are compiled from public Kaggle submission facts and our own submission rows, and are offered under CC-BY-4.0. Model weights, competition frames, observations, action identities and per-game results are not included.\n\n## Changelog\n- v1, 2026-10-10: first release.\n",
+  "isPrivate": false,
+  "licenses": [
+    {
+      "name": "apache-2.0"
+    }
+  ],
+  "keywords": [
+    "computer science",
+    "artificial intelligence",
+    "deep learning",
+    "tabular",
+    "benchmark"
+  ],
+  "resources": [
+    {
+      "path": "README.md",
+      "description": "Full overview: method, official rows, headline tables, quick start, column reference, licence, caveats and changelog."
+    },
+    {
+      "path": "LICENSE",
+      "description": "Apache License 2.0, full text. The licence field of this dataset."
+    },
+    {
+      "path": "NOTICE.md",
+      "description": "Per-file licence terms, the official-row facts under CC-BY-4.0, and the fields removed for licence reasons."
+    },
+    {
+      "path": "schema.json",
+      "description": "Column names, types, units and descriptions for every data file, plus row counts."
+    },
+    {
+      "path": "MANIFEST.json",
+      "description": "SHA-256 and size in bytes of every other file in this dataset."
+    },
+    {
+      "path": "rows.csv",
+      "description": "Official Kaggle rows of this project and serving aggregates per version, with notes. Per-game demo scores are not included.",
+      "schema": {
+        "fields": [
+          {
+            "name": "row_label",
+            "type": "string",
+            "description": "Label of the measured version or official row."
+          },
+          {
+            "name": "competition",
+            "type": "string",
+            "description": "Kaggle competition slug the row belongs to."
+          },
+          {
+            "name": "notebook_version",
+            "type": "string",
+            "description": "Our notebook version and what it changed, or the run that produced the numbers. For official rows, the Kaggle submission description, quoted verbatim."
+          },
+          {
+            "name": "official_row_id",
+            "type": "integer",
+            "description": "Kaggle submission row id. Blank when the version was never submitted."
+          },
+          {
+            "name": "submitted_utc",
+            "type": "string",
+            "description": "Submission time in ISO 8601 UTC (YYYY-MM-DDTHH:MM:SSZ), from the Kaggle submission record (submissions snapshot of 2026-10-10). Blank where the version was never submitted."
+          },
+          {
+            "name": "public_score",
+            "type": "number",
+            "description": "Public leaderboard score of the official row, from the Kaggle submission record. Unit: score points."
+          },
+          {
+            "name": "raw_status",
+            "type": "string",
+            "description": "Row or run status as recorded by us."
+          },
+          {
+            "name": "is_official_row",
+            "type": "boolean",
+            "description": "True when the row is a Kaggle submission row with a leaderboard score."
+          },
+          {
+            "name": "stack",
+            "type": "string",
+            "description": "Serving stack description."
+          },
+          {
+            "name": "speculative_steps",
+            "type": "integer",
+            "description": "SGLang speculative steps from the server arguments in the serve log. Unit: steps."
+          },
+          {
+            "name": "speculative_draft_tokens",
+            "type": "integer",
+            "description": "SGLang speculative draft tokens from the server arguments in the serve log. Unit: tokens."
+          },
+          {
+            "name": "engine_load_weight_s",
+            "type": "number",
+            "description": "Engine startup timing: load_weight from the 'Engine startup timings' line of the serve log. Recorded value; not recomputable from the shipped files. Unit: seconds."
+          },
+          {
+            "name": "boot_first_200_s",
+            "type": "number",
+            "description": "Seconds from the first serve-log line to the first HTTP 200 answer. Recorded value; not recomputable from the shipped files. Unit: seconds."
+          },
+          {
+            "name": "decode_batches",
+            "type": "integer",
+            "description": "Decode batch lines parsed from the serve log. Unit: count."
+          },
+          {
+            "name": "accept_len_mean",
+            "type": "number",
+            "description": "Mean accept length reported by SGLang across decode batches. Unit: tokens per step."
+          },
+          {
+            "name": "accept_rate_mean",
+            "type": "number",
+            "description": "Mean accept rate reported by SGLang across decode batches. Unit: fraction."
+          },
+          {
+            "name": "gen_tok_s_mean",
+            "type": "number",
+            "description": "Mean of SGLang's per-batch aggregate generation throughput. Unit: tokens/s."
+          },
+          {
+            "name": "gen_tok_s_median",
+            "type": "number",
+            "description": "Median of SGLang's per-batch aggregate generation throughput. Unit: tokens/s."
+          },
+          {
+            "name": "kv_usage_max",
+            "type": "number",
+            "description": "Maximum full-token (KV pool) usage across decode batches. Unit: fraction."
+          },
+          {
+            "name": "server_slot_idle_fraction",
+            "type": "number",
+            "description": "Server-side slot idle fraction from our serve-log occupancy analysis. Recorded value; the analysis is not published, so the value is not recomputable from the shipped files. Unit: fraction."
+          },
+          {
+            "name": "client_slot_idle_fraction",
+            "type": "number",
+            "description": "Client-side slot idle fraction, V17 only: 1 minus the sum of duration_s in client_request_timing.csv, divided by 10 times the largest value of t0_rel_s plus duration_s. Unit: fraction."
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "Context and caveats for the row."
+          }
+        ]
+      }
+    },
+    {
+      "path": "server_metrics.csv",
+      "description": "Time series parsed from the SGLang serve logs of the V15, V16 and V17 notebook runs: one row per decode or prefill batch.",
+      "schema": {
+        "fields": [
+          {
+            "name": "run_label",
+            "type": "string",
+            "description": "Run: v15, v16 or v17 (notebook runs)."
+          },
+          {
+            "name": "kind",
+            "type": "string",
+            "description": "decode (one decode batch) or prefill (one prefill batch)."
+          },
+          {
+            "name": "log_timestamp",
+            "type": "string",
+            "description": "Timestamp as printed by the server container; time zone not recorded (UTC assumed)."
+          },
+          {
+            "name": "t_s",
+            "type": "number",
+            "description": "Seconds since the first timestamped line of that run's serve log. Unit: seconds."
+          },
+          {
+            "name": "running_req",
+            "type": "integer",
+            "description": "Requests running in the batch (#running-req). Unit: requests."
+          },
+          {
+            "name": "queue_req",
+            "type": "integer",
+            "description": "Requests queued (#queue-req). Unit: requests."
+          },
+          {
+            "name": "kv_tokens",
+            "type": "integer",
+            "description": "Tokens currently held in the KV pool (#full token), decode lines only. Unit: tokens."
+          },
+          {
+            "name": "full_token_usage",
+            "type": "number",
+            "description": "Share of the full-token KV pool in use. Unit: fraction."
+          },
+          {
+            "name": "mamba_usage",
+            "type": "number",
+            "description": "Share of the mamba state pool in use. Unit: fraction."
+          },
+          {
+            "name": "accept_len",
+            "type": "number",
+            "description": "Mean accepted tokens per speculative step, decode lines only. Unit: tokens per step."
+          },
+          {
+            "name": "accept_rate",
+            "type": "number",
+            "description": "Accept rate, decode lines only. Unit: fraction."
+          },
+          {
+            "name": "gen_tok_s",
+            "type": "number",
+            "description": "Aggregate generation throughput across the batch, decode lines only. Unit: tokens/s."
+          },
+          {
+            "name": "new_tokens",
+            "type": "integer",
+            "description": "New prompt tokens in the prefill batch, prefill lines only. Unit: tokens."
+          },
+          {
+            "name": "input_tok_s",
+            "type": "number",
+            "description": "Input (prefill) throughput, prefill lines only. Unit: tokens/s."
+          },
+          {
+            "name": "cuda_graph",
+            "type": "boolean",
+            "description": "Whether the batch ran under a CUDA graph."
+          }
+        ]
+      }
+    },
+    {
+      "path": "client_request_timing.csv",
+      "description": "Client-side timing of every V17 model request: start, duration and HTTP status, across 10 game threads.",
+      "schema": {
+        "fields": [
+          {
+            "name": "seq",
+            "type": "integer",
+            "description": "Request sequence number, ordered by start time."
+          },
+          {
+            "name": "run_label",
+            "type": "string",
+            "description": "Run label. Always v17."
+          },
+          {
+            "name": "thread",
+            "type": "string",
+            "description": "Harness game thread (one thread per game stream), for example harness-game_3."
+          },
+          {
+            "name": "t0_epoch_s",
+            "type": "number",
+            "description": "Request start, epoch seconds on the notebook clock. Unit: seconds."
+          },
+          {
+            "name": "t0_rel_s",
+            "type": "number",
+            "description": "Request start relative to the first request in the file. Unit: seconds."
+          },
+          {
+            "name": "duration_s",
+            "type": "number",
+            "description": "Client-side request duration (end minus start). Unit: seconds."
+          },
+          {
+            "name": "http_status",
+            "type": "integer",
+            "description": "HTTP status returned. Blank where no HTTP status was recorded (6 requests; the cause is not shown in our logs)."
+          },
+          {
+            "name": "stream",
+            "type": "boolean",
+            "description": "Whether the request used streaming. False for every record in this run."
+          }
+        ]
+      }
+    },
+    {
+      "path": "per_stream_summary.csv",
+      "description": "One row per public demo game (demo_01 to demo_10) for V17: token, cache-hit, request-count and finish-reason totals.",
+      "schema": {
+        "fields": [
+          {
+            "name": "run_label",
+            "type": "string",
+            "description": "Notebook run that produced the row. Always v17 in this file."
+          },
+          {
+            "name": "demo_game",
+            "type": "string",
+            "description": "Demo game label (demo_01 to demo_10) assigned by us. The original public game identifier is not published here."
+          },
+          {
+            "name": "benchmark_tokens",
+            "type": "integer",
+            "description": "Generated tokens counted by the benchmark for the game. Unit: tokens."
+          },
+          {
+            "name": "request_records",
+            "type": "integer",
+            "description": "Request records in the per-stream log (event == request). Unit: count."
+          },
+          {
+            "name": "response_records",
+            "type": "integer",
+            "description": "Response records in the per-stream log (event == response). Unit: count."
+          },
+          {
+            "name": "usage_missing_responses",
+            "type": "integer",
+            "description": "Response records without a usage block. Unit: count."
+          },
+          {
+            "name": "prompt_tokens_sum",
+            "type": "integer",
+            "description": "Sum of prompt tokens over the game's responses (usage.prompt_tokens). Unit: tokens."
+          },
+          {
+            "name": "cached_prompt_tokens_sum",
+            "type": "integer",
+            "description": "Sum of prompt tokens served from the prefix cache (prompt_tokens_details.cached_tokens). Unit: tokens."
+          },
+          {
+            "name": "cache_hit_ratio",
+            "type": "number",
+            "description": "cached_prompt_tokens_sum divided by prompt_tokens_sum. Unit: fraction."
+          },
+          {
+            "name": "completion_tokens_sum",
+            "type": "integer",
+            "description": "Sum of completion tokens (usage.completion_tokens). Unit: tokens."
+          },
+          {
+            "name": "completion_tokens_mean",
+            "type": "number",
+            "description": "Mean completion tokens per response. Unit: tokens."
+          },
+          {
+            "name": "completion_tokens_median",
+            "type": "number",
+            "description": "Median completion tokens per response. Unit: tokens."
+          },
+          {
+            "name": "reasoning_tokens_sum",
+            "type": "integer",
+            "description": "Sum of reasoning tokens (usage.reasoning_tokens); part of completion tokens. Unit: tokens."
+          },
+          {
+            "name": "image_tokens_sum",
+            "type": "integer",
+            "description": "Sum of image tokens inside prompts (prompt_tokens_details.image_tokens). Unit: tokens."
+          },
+          {
+            "name": "finish_tool_calls",
+            "type": "integer",
+            "description": "Responses with finish_reason tool_calls. Unit: count."
+          },
+          {
+            "name": "finish_stop",
+            "type": "integer",
+            "description": "Responses with finish_reason stop. Unit: count."
+          },
+          {
+            "name": "finish_length",
+            "type": "integer",
+            "description": "Responses with finish_reason length (generation hit its token cap). Unit: count."
+          }
+        ]
+      }
+    },
+    {
+      "path": "requests_sample.jsonl",
+      "description": "Random 5% sample of V17 response records. Usage metadata only, with demo game labels.",
+      "schema": {
+        "fields": [
+          {
+            "name": "demo_game",
+            "type": "string",
+            "description": "Demo game label (demo_01 to demo_10) assigned by us. The original public game identifier is not published here."
+          },
+          {
+            "name": "event",
+            "type": "string",
+            "description": "Always response in this file."
+          },
+          {
+            "name": "tool_choice",
+            "type": "string",
+            "description": "Tool-choice mode sent with the request, as logged."
+          },
+          {
+            "name": "finish_reason",
+            "type": "string",
+            "description": "Finish reason reported by the server: tool_calls, stop or length."
+          },
+          {
+            "name": "prompt_tokens",
+            "type": "integer",
+            "description": "Prompt tokens, including cached tokens. Unit: tokens."
+          },
+          {
+            "name": "cached_prompt_tokens",
+            "type": "integer",
+            "description": "Prompt tokens served from the prefix cache. Unit: tokens."
+          },
+          {
+            "name": "image_tokens",
+            "type": "integer",
+            "description": "Image tokens inside the prompt. Unit: tokens."
+          },
+          {
+            "name": "reasoning_tokens",
+            "type": "integer",
+            "description": "Reasoning tokens generated (part of completion_tokens). Unit: tokens."
+          },
+          {
+            "name": "completion_tokens",
+            "type": "integer",
+            "description": "Generated tokens for the response. Unit: tokens."
+          },
+          {
+            "name": "total_tokens",
+            "type": "integer",
+            "description": "prompt_tokens plus completion_tokens, as reported by the server. Unit: tokens."
+          }
+        ]
+      }
+    }
+  ]
+}

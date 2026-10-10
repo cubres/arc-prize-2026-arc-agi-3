@@ -1,0 +1,57 @@
+{
+  "dataset": "arc-agi-3-m2-serving-measurements",
+  "generated_utc": "2026-10-10T13:35:30Z",
+  "total_bytes": 518208,
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 4325,
+      "sha256": "f30afd63bb8a87580a17d09d036bfccadc8ed2d05b61223c9c1f3421c78e5d4f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 26679,
+      "sha256": "7c07d80147e3d45384bc3081b9057179b4742d95d4e5293d624f2a8191825756"
+    },
+    {
+      "path": "client_request_timing.csv",
+      "bytes": 39866,
+      "sha256": "f26d255f06359af613a59f7085393c4db9b3d89dc38fda10da55cfec13a8e483"
+    },
+    {
+      "path": "dataset-metadata.json",
+      "bytes": 20331,
+      "sha256": "a071366316f498d299ab8e245f987af0d2f1b2b2c76c89a733038e2d31e6fb42"
+    },
+    {
+      "path": "per_stream_summary.csv",
+      "bytes": 1182,
+      "sha256": "f03ec2ace2a740a1d6762f039f02925771c806ba56083d5357bc1e13c270ecba"
+    },
+    {
+      "path": "requests_sample.jsonl",
+      "bytes": 7215,
+      "sha256": "0578002c04a4e3d195b70d2f452904582f7819ed77d7f73e024b80ac0c7bc5da"
+    },
+    {
+      "path": "rows.csv",
+      "bytes": 3365,
+      "sha256": "ffb497a73505dc80590f8b4e556714a097a7200f0a69cd537024874e985f7c9c"
+    },
+    {
+      "path": "schema.json",
+      "bytes": 16348,
+      "sha256": "c2a4f8527c4fb083f423760483e59dd8957055a42fa763d0e59eb41326fa61ef"
+    },
+    {
+      "path": "server_metrics.csv",
+      "bytes": 387540,
+      "sha256": "14c0a5e84ee098fb321daeade6d1bf066ba1335e2615065ab4085988f2d202f0"
+    }
+  ]
+}

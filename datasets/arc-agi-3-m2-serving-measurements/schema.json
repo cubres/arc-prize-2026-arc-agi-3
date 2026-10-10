@@ -1,0 +1,474 @@
+{
+  "dataset": "arc-agi-3-m2-serving-measurements",
+  "schema_version": 1,
+  "units_note": "Rates are per second unless stated. Fractions are 0 to 1. Blank CSV cells mean not measured or not applicable.",
+  "files": {
+    "requests_sample.jsonl": {
+      "format": "jsonl",
+      "rows": 31,
+      "description": "Random 5% sample of V17 per-stream response records. Usage metadata only (token counts, finish reason, tool-choice mode) with demo game labels. No message content, game frames, action identities or original game identifiers.",
+      "columns": [
+        {
+          "name": "demo_game",
+          "type": "string",
+          "unit": "",
+          "description": "Demo game label (demo_01 to demo_10) assigned by us. The original public game identifier is not published here."
+        },
+        {
+          "name": "event",
+          "type": "string",
+          "unit": "",
+          "description": "Always response in this file."
+        },
+        {
+          "name": "tool_choice",
+          "type": "string",
+          "unit": "",
+          "description": "Tool-choice mode sent with the request, as logged."
+        },
+        {
+          "name": "finish_reason",
+          "type": "string",
+          "unit": "",
+          "description": "Finish reason reported by the server: tool_calls, stop or length."
+        },
+        {
+          "name": "prompt_tokens",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Prompt tokens, including cached tokens."
+        },
+        {
+          "name": "cached_prompt_tokens",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Prompt tokens served from the prefix cache."
+        },
+        {
+          "name": "image_tokens",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Image tokens inside the prompt."
+        },
+        {
+          "name": "reasoning_tokens",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Reasoning tokens generated (part of completion_tokens)."
+        },
+        {
+          "name": "completion_tokens",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Generated tokens for the response."
+        },
+        {
+          "name": "total_tokens",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "prompt_tokens plus completion_tokens, as reported by the server."
+        }
+      ]
+    },
+    "per_stream_summary.csv": {
+      "format": "csv",
+      "rows": 10,
+      "description": "One row per public demo game (labelled demo_01 to demo_10) for the V17 notebook run: token, cache-hit, request-count and finish-reason totals. Game results and game-progress counters are not included.",
+      "columns": [
+        {
+          "name": "run_label",
+          "type": "string",
+          "unit": "",
+          "description": "Notebook run that produced the row. Always v17 in this file."
+        },
+        {
+          "name": "demo_game",
+          "type": "string",
+          "unit": "",
+          "description": "Demo game label (demo_01 to demo_10) assigned by us. The original public game identifier is not published here."
+        },
+        {
+          "name": "benchmark_tokens",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Generated tokens counted by the benchmark for the game."
+        },
+        {
+          "name": "request_records",
+          "type": "integer",
+          "unit": "count",
+          "description": "Request records in the per-stream log (event == request)."
+        },
+        {
+          "name": "response_records",
+          "type": "integer",
+          "unit": "count",
+          "description": "Response records in the per-stream log (event == response)."
+        },
+        {
+          "name": "usage_missing_responses",
+          "type": "integer",
+          "unit": "count",
+          "description": "Response records without a usage block."
+        },
+        {
+          "name": "prompt_tokens_sum",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Sum of prompt tokens over the game's responses (usage.prompt_tokens)."
+        },
+        {
+          "name": "cached_prompt_tokens_sum",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Sum of prompt tokens served from the prefix cache (prompt_tokens_details.cached_tokens)."
+        },
+        {
+          "name": "cache_hit_ratio",
+          "type": "number",
+          "unit": "fraction",
+          "description": "cached_prompt_tokens_sum divided by prompt_tokens_sum."
+        },
+        {
+          "name": "completion_tokens_sum",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Sum of completion tokens (usage.completion_tokens)."
+        },
+        {
+          "name": "completion_tokens_mean",
+          "type": "number",
+          "unit": "tokens",
+          "description": "Mean completion tokens per response."
+        },
+        {
+          "name": "completion_tokens_median",
+          "type": "number",
+          "unit": "tokens",
+          "description": "Median completion tokens per response."
+        },
+        {
+          "name": "reasoning_tokens_sum",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Sum of reasoning tokens (usage.reasoning_tokens); part of completion tokens."
+        },
+        {
+          "name": "image_tokens_sum",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Sum of image tokens inside prompts (prompt_tokens_details.image_tokens)."
+        },
+        {
+          "name": "finish_tool_calls",
+          "type": "integer",
+          "unit": "count",
+          "description": "Responses with finish_reason tool_calls."
+        },
+        {
+          "name": "finish_stop",
+          "type": "integer",
+          "unit": "count",
+          "description": "Responses with finish_reason stop."
+        },
+        {
+          "name": "finish_length",
+          "type": "integer",
+          "unit": "count",
+          "description": "Responses with finish_reason length (generation hit its token cap)."
+        }
+      ]
+    },
+    "server_metrics.csv": {
+      "format": "csv",
+      "rows": 4822,
+      "description": "Time series parsed from the SGLang serve logs of the V15, V16 and V17 notebook runs: one row per decode or prefill batch.",
+      "columns": [
+        {
+          "name": "run_label",
+          "type": "string",
+          "unit": "",
+          "description": "Run: v15, v16 or v17 (notebook runs)."
+        },
+        {
+          "name": "kind",
+          "type": "string",
+          "unit": "",
+          "description": "decode (one decode batch) or prefill (one prefill batch)."
+        },
+        {
+          "name": "log_timestamp",
+          "type": "string",
+          "unit": "",
+          "description": "Timestamp as printed by the server container; time zone not recorded (UTC assumed)."
+        },
+        {
+          "name": "t_s",
+          "type": "number",
+          "unit": "seconds",
+          "description": "Seconds since the first timestamped line of that run's serve log."
+        },
+        {
+          "name": "running_req",
+          "type": "integer",
+          "unit": "requests",
+          "description": "Requests running in the batch (#running-req)."
+        },
+        {
+          "name": "queue_req",
+          "type": "integer",
+          "unit": "requests",
+          "description": "Requests queued (#queue-req)."
+        },
+        {
+          "name": "kv_tokens",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "Tokens currently held in the KV pool (#full token), decode lines only."
+        },
+        {
+          "name": "full_token_usage",
+          "type": "number",
+          "unit": "fraction",
+          "description": "Share of the full-token KV pool in use."
+        },
+        {
+          "name": "mamba_usage",
+          "type": "number",
+          "unit": "fraction",
+          "description": "Share of the mamba state pool in use."
+        },
+        {
+          "name": "accept_len",
+          "type": "number",
+          "unit": "tokens per step",
+          "description": "Mean accepted tokens per speculative step, decode lines only."
+        },
+        {
+          "name": "accept_rate",
+          "type": "number",
+          "unit": "fraction",
+          "description": "Accept rate, decode lines only."
+        },
+        {
+          "name": "gen_tok_s",
+          "type": "number",
+          "unit": "tokens/s",
+          "description": "Aggregate generation throughput across the batch, decode lines only."
+        },
+        {
+          "name": "new_tokens",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "New prompt tokens in the prefill batch, prefill lines only."
+        },
+        {
+          "name": "input_tok_s",
+          "type": "number",
+          "unit": "tokens/s",
+          "description": "Input (prefill) throughput, prefill lines only."
+        },
+        {
+          "name": "cuda_graph",
+          "type": "boolean",
+          "unit": "",
+          "description": "Whether the batch ran under a CUDA graph."
+        }
+      ]
+    },
+    "client_request_timing.csv": {
+      "format": "csv",
+      "rows": 629,
+      "description": "Client-side timing of every V17 model request: start, duration and HTTP status, across 10 game threads.",
+      "columns": [
+        {
+          "name": "seq",
+          "type": "integer",
+          "unit": "",
+          "description": "Request sequence number, ordered by start time."
+        },
+        {
+          "name": "run_label",
+          "type": "string",
+          "unit": "",
+          "description": "Run label. Always v17."
+        },
+        {
+          "name": "thread",
+          "type": "string",
+          "unit": "",
+          "description": "Harness game thread (one thread per game stream), for example harness-game_3."
+        },
+        {
+          "name": "t0_epoch_s",
+          "type": "number",
+          "unit": "seconds",
+          "description": "Request start, epoch seconds on the notebook clock."
+        },
+        {
+          "name": "t0_rel_s",
+          "type": "number",
+          "unit": "seconds",
+          "description": "Request start relative to the first request in the file."
+        },
+        {
+          "name": "duration_s",
+          "type": "number",
+          "unit": "seconds",
+          "description": "Client-side request duration (end minus start)."
+        },
+        {
+          "name": "http_status",
+          "type": "integer",
+          "unit": "",
+          "description": "HTTP status returned. Blank where no HTTP status was recorded (6 requests; the cause is not shown in our logs)."
+        },
+        {
+          "name": "stream",
+          "type": "boolean",
+          "unit": "",
+          "description": "Whether the request used streaming. False for every record in this run."
+        }
+      ]
+    },
+    "rows.csv": {
+      "format": "csv",
+      "rows": 5,
+      "description": "Official Kaggle rows of this project and serving aggregates per version, with notes. Per-game demo scores are not included.",
+      "columns": [
+        {
+          "name": "row_label",
+          "type": "string",
+          "unit": "",
+          "description": "Label of the measured version or official row."
+        },
+        {
+          "name": "competition",
+          "type": "string",
+          "unit": "",
+          "description": "Kaggle competition slug the row belongs to."
+        },
+        {
+          "name": "notebook_version",
+          "type": "string",
+          "unit": "",
+          "description": "Our notebook version and what it changed, or the run that produced the numbers. For official rows, the Kaggle submission description, quoted verbatim."
+        },
+        {
+          "name": "official_row_id",
+          "type": "integer",
+          "unit": "",
+          "description": "Kaggle submission row id. Blank when the version was never submitted."
+        },
+        {
+          "name": "submitted_utc",
+          "type": "string",
+          "unit": "",
+          "description": "Submission time in ISO 8601 UTC (YYYY-MM-DDTHH:MM:SSZ), from the Kaggle submission record (submissions snapshot of 2026-10-10). Blank where the version was never submitted."
+        },
+        {
+          "name": "public_score",
+          "type": "number",
+          "unit": "score points",
+          "description": "Public leaderboard score of the official row, from the Kaggle submission record. Unit: score points."
+        },
+        {
+          "name": "raw_status",
+          "type": "string",
+          "unit": "",
+          "description": "Row or run status as recorded by us."
+        },
+        {
+          "name": "is_official_row",
+          "type": "boolean",
+          "unit": "",
+          "description": "True when the row is a Kaggle submission row with a leaderboard score."
+        },
+        {
+          "name": "stack",
+          "type": "string",
+          "unit": "",
+          "description": "Serving stack description."
+        },
+        {
+          "name": "speculative_steps",
+          "type": "integer",
+          "unit": "steps",
+          "description": "SGLang speculative steps from the server arguments in the serve log."
+        },
+        {
+          "name": "speculative_draft_tokens",
+          "type": "integer",
+          "unit": "tokens",
+          "description": "SGLang speculative draft tokens from the server arguments in the serve log."
+        },
+        {
+          "name": "engine_load_weight_s",
+          "type": "number",
+          "unit": "seconds",
+          "description": "Engine startup timing: load_weight from the 'Engine startup timings' line of the serve log. Recorded value; not recomputable from the shipped files. Unit: seconds."
+        },
+        {
+          "name": "boot_first_200_s",
+          "type": "number",
+          "unit": "seconds",
+          "description": "Seconds from the first serve-log line to the first HTTP 200 answer. Recorded value; not recomputable from the shipped files. Unit: seconds."
+        },
+        {
+          "name": "decode_batches",
+          "type": "integer",
+          "unit": "count",
+          "description": "Decode batch lines parsed from the serve log."
+        },
+        {
+          "name": "accept_len_mean",
+          "type": "number",
+          "unit": "tokens per step",
+          "description": "Mean accept length reported by SGLang across decode batches."
+        },
+        {
+          "name": "accept_rate_mean",
+          "type": "number",
+          "unit": "fraction",
+          "description": "Mean accept rate reported by SGLang across decode batches."
+        },
+        {
+          "name": "gen_tok_s_mean",
+          "type": "number",
+          "unit": "tokens/s",
+          "description": "Mean of SGLang's per-batch aggregate generation throughput."
+        },
+        {
+          "name": "gen_tok_s_median",
+          "type": "number",
+          "unit": "tokens/s",
+          "description": "Median of SGLang's per-batch aggregate generation throughput."
+        },
+        {
+          "name": "kv_usage_max",
+          "type": "number",
+          "unit": "fraction",
+          "description": "Maximum full-token (KV pool) usage across decode batches."
+        },
+        {
+          "name": "server_slot_idle_fraction",
+          "type": "number",
+          "unit": "fraction",
+          "description": "Server-side slot idle fraction from our serve-log occupancy analysis. Recorded value; the analysis is not published, so the value is not recomputable from the shipped files. Unit: fraction."
+        },
+        {
+          "name": "client_slot_idle_fraction",
+          "type": "number",
+          "unit": "fraction",
+          "description": "Client-side slot idle fraction, V17 only: 1 minus the sum of duration_s in client_request_timing.csv, divided by 10 times the largest value of t0_rel_s plus duration_s. Unit: fraction."
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "unit": "",
+          "description": "Context and caveats for the row."
+        }
+      ]
+    }
+  }
+}
