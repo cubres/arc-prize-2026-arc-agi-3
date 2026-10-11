@@ -1,0 +1,75 @@
+{
+  "schema": "dated-native-evidence-followup-1",
+  "account": "prvsiyan",
+  "official_snapshot_utc": "2026-10-11T16:52:19.428510+00:00",
+  "official_raw_inventory_sha256": "6831f8d5cc595669b190a40554c582bb6ba82d82e9548bac5bbae87b1a527333",
+  "official_row": {
+    "ref": 57016786,
+    "date": "2026-10-09T17:57:00.210Z",
+    "fileName": "submission.parquet",
+    "publicScore": "30.65",
+    "status": "COMPLETE",
+    "submittedByRef": "prvsiyan",
+    "url": "/code/prvsiyan/arc-agi-3-stock-taaf-action7-shadow?scriptVersionId=356491543",
+    "description": "ARC3 public V17: Franzen M2 recipe (Apache-2.0 code) + robustness pack (fail-fast input checks with fallbacks, py3.12 pin, startup/teardown reserves), MIT TAAF bundle (byte-identical), per-stream timing log in Save&Run only; second draw of the recipe for variance-aware final selection | prvsiyan/arc-agi-3-stock-taaf-action7-shadow v17 | submission.parquet sha256 71bfd543030e339d87bd9ff744d466218398a1259650b2c255626d27049c88bb"
+  },
+  "native_evidence": {
+    "accepted_normalized_cell_source_sha256": "58fe1c8966102b8e5a61211f0a878cec5339b3b04f06307c91145300896c514a",
+    "accepted_source_sha256": "c9d59e0285ed6a4921c9b2348c42c49e148c07fcaaafa80bc623f29e9122ca2b",
+    "binding_checks": {
+      "25_unique_game_receipts": true,
+      "accepted_source_sha256_equals_root_fresh_binding": true,
+      "aggregate_levels_match": true,
+      "aggregate_played_actions_match": true,
+      "aggregate_tokens_match": true,
+      "arm_binds_benchmark": true,
+      "benchmark_game_ids_match_receipt": true,
+      "candidate_all113_normalized_cell_types_sources_match": true,
+      "root_binds_arm": true,
+      "root_status_complete": true,
+      "switch_is_A": true
+    },
+    "candidate_sha256": "dfa5e0d7260febc24370c9b9f00cefe4ece229956c99e89571f2ffa237daf1ce",
+    "control_evidence": {
+      "all_action_records": 4378,
+      "games": 25,
+      "generated_tokens": 3317447,
+      "levels_completed": 105,
+      "local_mean_score": 44.23828457244125,
+      "never_admitted_games": 0,
+      "ownership_proved_teardown": true,
+      "played_nonreset_actions": 4361,
+      "reset_actions": 17,
+      "states": {
+        "gave_up": 19,
+        "won": 6
+      },
+      "timing_completed_requests": 1897,
+      "timing_error_count": 11,
+      "timing_request_records": 1897
+    },
+    "disposition": "PASS_C1_SOURCE_OUTPUT_BINDING_ONLY",
+    "download_receipt_sha256": "275e7daf2917765e8f43010587f004878d5e2f037c1a147099114a4a675bdeb6",
+    "external_mutations": 0,
+    "native_script_version_id": 357058155,
+    "observed_utc": "2026-10-11T17:09:34.596447+00:00",
+    "output_sha256": {
+      "ARM_A_receipt.json": "a028b778477f79d9a44b47dafa8730df2c73ab57ea849eface2743e2826922c2",
+      "BENCH_ROOT_A.json": "7333fdad083994393f24bdfdce6d5ef09fbb394a9b1a2878a56d061232f8daad",
+      "benchmark.json": "578ce755e4fe1472db4bdbb39f73b55d29d72d0238bf8430e424e3bf12ed8ea4",
+      "summary.txt": "69c99ee147dd2c8e77996baddc852bbb0b67b9670dd66099a427acf251d2275a",
+      "v17_report.json": "fc51ad6b6effa233099bdefbcc2bf513a021fc21db6927b18cb2ed7de7604ea8"
+    },
+    "version": 15,
+    "worker": "prvsiyan/zz-gpuchk-899422"
+  },
+  "private_review_sha256": "02eb56e3ea21aa92e24368c72c5088a91083f4355e2155974cb6701cc28c8842",
+  "fresh_native_metadata_sha256": "bc1b9e44b004cb4e791d62ddf82e2cb09609c7718c9abb1e77bf9935035702ed",
+  "fresh_worker_status_sha256": "37dd41a96d3329c8e8948c893e9bce6b88997a1eda4afd4df102df55a812727a",
+  "output_download_receipt_sha256": "275e7daf2917765e8f43010587f004878d5e2f037c1a147099114a4a675bdeb6",
+  "new_launches": 0,
+  "new_submissions": 0,
+  "notebook_changes": 0,
+  "official_score_gain_from_this_audit": false,
+  "scope": "Aggregate dated evidence, not a treatment qualification or submission permission"
+}
