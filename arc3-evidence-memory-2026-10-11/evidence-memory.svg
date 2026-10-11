@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="850" viewBox="0 0 1360 850">
+<rect width="1360" height="850" rx="28" fill="#101b30"/>
+<g font-family="Arial, sans-serif" fill="#edf4ff">
+<text x="60" y="76" font-size="34" font-weight="700">Keep the evidence when the conversation drains</text>
+<text x="60" y="112" font-size="19" fill="#adc5e6">Original ARC3 experiment · endpoint observations, not a hidden-state simulator</text>
+<rect x="60" y="160" width="380" height="200" rx="18" fill="#203554" stroke="#5b91c5"/>
+<text x="84" y="198" font-size="23" font-weight="700">1. Observe actual execution</text>
+<text x="84" y="236" font-size="18">Confirmed action + mouse coordinates</text>
+<text x="84" y="268" font-size="18">Whole-grid before / after endpoints</text>
+<text x="84" y="300" font-size="18">Changed cells + bounding box</text>
+<text x="84" y="334" font-size="16" fill="#8fd9c8">Refused or unconfirmed calls add no facts.</text>
+<rect x="490" y="160" width="380" height="200" rx="18" fill="#203554" stroke="#5b91c5"/>
+<text x="514" y="198" font-size="23" font-weight="700">2. Wait for the real drain</text>
+<text x="514" y="236" font-size="18">Bind observations to a tool result</text>
+<text x="514" y="268" font-size="18">Check the committed history</text>
+<text x="514" y="300" font-size="18">Promote only evidence that disappeared</text>
+<text x="514" y="334" font-size="16" fill="#8fd9c8">A trim preview does not activate memory.</text>
+<rect x="920" y="160" width="380" height="200" rx="18" fill="#203554" stroke="#5b91c5"/>
+<text x="944" y="198" font-size="23" font-weight="700">3. Let the model reconsider</text>
+<text x="944" y="236" font-size="18">A small sample returns in spare context</text>
+<text x="944" y="268" font-size="18">Contradictory endpoints can coexist</text>
+<text x="944" y="300" font-size="18">The model chooses its next experiment</text>
+<text x="944" y="334" font-size="16" fill="#8fd9c8">No action selection, blocking or replay.</text>
+<path d="M448 257H479m-9-8 9 8-9 8M878 257H908m-9-8 9 8-9 8" fill="none" stroke="#8fd9c8" stroke-width="3"/>
+<rect x="60" y="402" width="1240" height="110" rx="18" fill="#183d45"/>
+<text x="87" y="439" font-size="20" font-weight="700">Small, stable and optional</text>
+<text x="87" y="477" font-size="23">32 observations / agent</text>
+<text x="479" y="477" font-size="23">6 complete lines</text>
+<text x="864" y="477" font-size="23">1,200 UTF-8 bytes</text>
+<rect x="60" y="546" width="600" height="164" rx="18" fill="#272c45" stroke="#797bb0"/>
+<text x="84" y="584" font-size="22" font-weight="700">Known boundaries clear the facts</text>
+<text x="84" y="622" font-size="18">New session · level change · reset · automatic action</text>
+<text x="84" y="654" font-size="18">Terminal event · missing or malformed capture</text>
+<text x="84" y="686" font-size="16" fill="#bdc5ed">Only facts from the current observed epoch are carried.</text>
+<rect x="690" y="546" width="610" height="164" rx="18" fill="#272c45" stroke="#797bb0"/>
+<text x="714" y="584" font-size="22" font-weight="700">What the endpoints cannot tell us</text>
+<text x="714" y="622" font-size="18">Equal boards may hide an animation or internal change.</text>
+<text x="714" y="654" font-size="18">Visible-state matches do not prove identical transitions.</text>
+<text x="714" y="686" font-size="16" fill="#bdc5ed">Memory is an observed sample, not a learned game law.</text>
+<text x="60" y="760" font-size="21" fill="#ffcf87">Native plan: all 25 public games · same model and runtime · one new factor</text>
+<text x="60" y="798" font-size="18" fill="#adc5e6">Invented contract tests passed. Native integration, token cost, read overhead and score gain remain unmeasured.</text>
+</g></svg>
