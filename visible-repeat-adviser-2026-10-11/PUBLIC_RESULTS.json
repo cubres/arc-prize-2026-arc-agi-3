@@ -1,0 +1,40 @@
+{
+  "complete_animation_evidence": "UNAVAILABLE",
+  "corpus_sha256": "aa47684519d7afddde5297bfd7b6689c57df77e477c5364634f3804e218f40d6",
+  "counts": {
+    "action_records": 4940,
+    "animation_summary_present": 0,
+    "changed_after_previous_unchanged": 135,
+    "complete_animation_chains_available": 0,
+    "crop4_same_but_full_frame_changed": 1034,
+    "eligible_same_level_nonterminal_transitions": 4396,
+    "level2plus_changed_after_unchanged": 41,
+    "level2plus_revisited_after_unchanged": 66,
+    "level2plus_transitions": 1125,
+    "level2plus_unchanged_final_frame": 139,
+    "recovery_terminal_or_level_boundaries": 544,
+    "revisited_after_previous_unchanged": 254,
+    "same_visible_key_revisited": 256,
+    "unchanged_final_visible_frame": 609
+  },
+  "cpu_s": 3.982953,
+  "native_script_version_id": 338356015,
+  "native_version": 2,
+  "new_native_run": false,
+  "policy_installed": false,
+  "recorded_utc": "2026-10-11T17:02:45.211928+00:00",
+  "run_date": "2026-07-28",
+  "schema": "visible_repeat_retrospective_v1",
+  "scientific_readiness": "HOLD",
+  "scope": "descriptive post-action snapshots; no policy replay or score inference",
+  "score_gain_claimed": false,
+  "source_bytes": 125792614,
+  "source_sha256": {
+    "audit_visible_repeats.py": "a161d61b30e74029f8bae30516cfb496dfc9b2a2ff535b205dbfbce8cf32979b",
+    "repeat_adviser.py": "e884395cf85eb3d38f8e8b68855c1843266abd55a4f2868fc0a27f1b3ec780b3",
+    "test_audit_visible_repeats.py": "ed5c7cb7909a8eedc205d6310d71463ef1b7825a14f8eb0bfe44382f5a6a02b6",
+    "test_repeat_adviser.py": "b8cb0703a415ad6cbe0ded2cfffd4d0aece553d705a3b0b8449139a1a4a9cf11"
+  },
+  "streams": 25,
+  "terminal_kernel_status": "COMPLETE"
+}
