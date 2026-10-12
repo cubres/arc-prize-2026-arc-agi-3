@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680" role="img" aria-labelledby="title desc">
+<title id="title">Keep the evidence chain intact</title>
+<desc id="desc">A generic pipeline fixes a full panel before the experiment, verifies retained source and native links, rebuilds raw receipt observations and compares one treatment with two controls. Runtime and inference limitations remain explicit.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#607482"/></marker></defs>
+<rect width="1120" height="680" rx="22" fill="#f5f8f7"/>
+<rect x="0" y="0" width="1120" height="9" fill="#19796a"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="54" y="68" font-size="30" font-weight="700" fill="#183a37">Keep the evidence chain intact</text>
+<text x="54" y="103" font-size="17" fill="#526965">A complete local comparison begins before scores arrive.</text>
+<g stroke="#cad7d4" stroke-width="1.5" fill="#ffffff">
+<rect x="54" y="147" width="246" height="165" rx="16"/>
+<rect x="335" y="147" width="330" height="165" rx="16"/>
+<rect x="700" y="147" width="366" height="165" rx="16"/>
+</g>
+<g fill="#183a37" font-size="21" font-weight="700"><text x="76" y="185">Fix the panel</text><text x="358" y="185">Bind retained evidence</text><text x="723" y="185">Rebuild the observations</text></g>
+<g fill="#526965" font-size="16"><text x="76" y="218">Full ordered membership</text><text x="76" y="245">Settings and denominators</text><text x="76" y="272">Two controls + treatment</text><text x="358" y="218">Accepted source + native session</text><text x="358" y="245">Whole-file hashes + receipt links</text><text x="358" y="272">Caller authenticates authority</text><text x="723" y="218">Raw histories → matching receipts</text><text x="723" y="245">Terminal, finite, admitted games</text><text x="723" y="272">Preserve failures in the denominator</text></g>
+<g stroke="#607482" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M302 230 H331"/><path d="M667 230 H696"/><path d="M880 316 V347 H576 V371"/></g>
+<rect x="229" y="375" width="662" height="135" rx="16" fill="#e6f3ee" stroke="#a9cfc0" stroke-width="1.5"/>
+<text x="258" y="411" font-size="22" font-weight="700" fill="#183a37">Compare every paired member</text>
+<text x="258" y="445" font-size="19" fill="#19796a">Δᵢ = T1ᵢ − (C1ᵢ + C2ᵢ) / 2</text>
+<text x="258" y="478" font-size="16" fill="#526965">Mean • wins / ties / losses • sensitivity • observed control drift</text>
+<path d="M559 514 V541" stroke="#607482" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="54" y="545" width="1012" height="93" rx="16" fill="#fff4df" stroke="#e8c985" stroke-width="1.5"/>
+<text x="77" y="577" font-size="19" font-weight="700" fill="#745323">Keep the limits visible</text>
+<text x="77" y="607" font-size="16" fill="#745323">Planning MDE ≠ calibrated inference   ·   Release ≠ first answer   ·   Local result ≠ official score</text>
+</g></svg>

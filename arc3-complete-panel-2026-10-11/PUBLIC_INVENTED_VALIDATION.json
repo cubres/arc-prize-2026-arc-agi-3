@@ -1,0 +1,53 @@
+{
+  "actual_competition_data_in_public_packet": false,
+  "actual_native_results_in_public_packet": false,
+  "all_invented_fixtures_retained": true,
+  "artifact_or_notebook_deletion": false,
+  "chronology": [
+    {
+      "final_source_full_suite_claim": false,
+      "methods": 8,
+      "normal": "PASS",
+      "optimized": "PASS",
+      "reported_suite_seconds_approximately": 0.018,
+      "stage": "original_eight_methods_before_schema_hardening"
+    },
+    {
+      "methods": 1,
+      "normal": "PASS",
+      "optimized": "PASS",
+      "preceded_final_note_native_and_report_diagnostic_changes": true,
+      "reported_suite_seconds": 0.0,
+      "stage": "malformed_session_and_huge_numeric_hardening"
+    },
+    {
+      "method_names": [
+        "test_complete_invented_pipeline_and_private_opt_in",
+        "test_first_note_token_semantics_and_null_note",
+        "test_request_diagnostics_are_observations",
+        "test_exact_capture_authority_branch_and_inventory_drift"
+      ],
+      "methods": 4,
+      "normal": "PASS",
+      "normal_reported_suite_seconds": 0.009,
+      "optimized": "PASS",
+      "optimized_reported_suite_seconds": 0.01,
+      "stage": "final_independently_corrected_source_narrow_branches"
+    }
+  ],
+  "final_source_sha256": "cd20f8177993785dbcc14025b85390665f19f564d75423c2e0d8b2e1d8316df8",
+  "final_test_source_sha256": "b922448496c9a351f5ac9d540031eab9def44661f35f4ddd79c0a8a6c0de7566",
+  "independent_source_corrections": [
+    "Match emitted first note-token marker/null semantics instead of summing multiple markers.",
+    "Reject null, zero, nonnumeric and boolean native/version identifiers in both native-binding routes."
+  ],
+  "limits": [
+    "Invented controls verify declared branches, not the authenticity of external contracts.",
+    "No native runtime, hidden-game eligibility, score improvement or calibrated inference is established."
+  ],
+  "methods_present_in_final_file": 11,
+  "no_broad_final_suite_repeat_claim": true,
+  "python_observed": "3.12.14",
+  "schema": "original-invented-control-validation-v1",
+  "scope": "Stdlib CPU only; invented JSON histories, source/native declarations and locally retained fixtures. No model/environment/task/data/network/process execution."
+}

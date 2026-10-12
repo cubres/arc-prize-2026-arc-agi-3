@@ -1,0 +1,25 @@
+{
+  "authors": [
+    "cubres with Codex assistance"
+  ],
+  "external_code_included": false,
+  "license": "MIT",
+  "original_files": [
+    "analyze_panel.py",
+    "test_analyze_panel.py",
+    "README.md",
+    "evidence-path.svg",
+    "PUBLIC_INVENTED_VALIDATION.json",
+    "LICENSE"
+  ],
+  "private_native_receipts_and_admission_context": "Excluded; retained separately for review. Public tests use invented observations only.",
+  "review_boundary": "Original code/test/diagram and public claims review only. External native authority, model/dataset terms, runtime safety, submission eligibility and hidden-game claims require separate evidence.",
+  "schema": "original-local-panel-analyzer-provenance-v1",
+  "scientific_basis": "A fixed-panel paired contrast and an explicitly heuristic game-variation/run-drift planning formula used by the pre-existing campaign procedure. The formula is not claimed novel or calibrated; supplied preregistration constants remain external.",
+  "scope": "Original stdlib reconstruction and paired panel accounting; existing campaign receipt schemas are external input contracts, not bundled native implementations.",
+  "source_sha256": "cd20f8177993785dbcc14025b85390665f19f564d75423c2e0d8b2e1d8316df8",
+  "test_source_sha256": "b922448496c9a351f5ac9d540031eab9def44661f35f4ddd79c0a8a6c0de7566",
+  "third_party_license_regrant": false,
+  "validation_sha256": "277f65d892a33f4063de59b09b76945caa530a345a726b76d143e567ced41eb6",
+  "vendor_models_environments_weights_or_datasets_included": false
+}
