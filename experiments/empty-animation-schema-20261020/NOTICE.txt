@@ -1,0 +1,22 @@
+Source credits and scope
+
+The independent empty_animation_schema.py helper and portable_replay_demo.py
+are prospective project code, intended for Apache-2.0 publication subject to the
+coordinator's existing repository license/release checks. No publication is
+performed by this packet.
+
+Reference animation and lazy-proxy source: Daniel Franzen, ARC-AGI-3 Milestone2
+Solution V1/native354090904, Apache2.0, on Tufa Labs/Jeroen Cottaar's Duck harness.
+https://www.kaggle.com/code/dfranzen/arc-agi-3-milestone-2-solution?scriptVersionId=354090904
+https://github.com/Tufalabs/duck-harness
+
+Schema-completion inspiration: Heliosli V5/native359864604, Apache2.0.
+https://www.kaggle.com/code/heliosli/try-merging-it-you-might-get-lucky-and-win-gold?scriptVersionId=359864604
+
+Scored family comparison: Jingshui V1/native357384371,33.22,Apache2.0.
+https://www.kaggle.com/code/jingshuifu/arc3-m2-solution?scriptVersionId=357384371
+
+Retain the original Apache2.0 and underlying Tufa/MIT component notices when
+redistributing source excerpts. Model weights remain under their own licenses;
+no model weights, real game frames, feedback data or competition labels are
+included here. All grids/cases in the replay are synthetic.

@@ -1,0 +1,39 @@
+Tufa / Duck original source: MIT notice supplement
+
+Original source: Tufa Labs' TAAF Kaggle Source Bundle,
+https://www.kaggle.com/datasets/jeroencottaar/taaf-kaggle-source-share/versions/4
+Dataset 10710965, published by jeroencottaar with tufa-labs as a writer.
+The original dataset's native Data Card and SDK metadata explicitly declare MIT.
+The original inference pyproject identifies its authors as "ARC3 Inference authors";
+the framework README credits Tufa Labs.
+
+No standalone copyright notice or permission text was supplied among the bundle's
+LICENSE/NOTICE filenames (none), the five README/pyproject notice candidates,
+or the 58 text source files searched for copyright/license notices. No copyright
+year or holder declaration has been invented here. The standard MIT permission
+and disclaimer text follows; the linked template's unrelated author notice has
+not been imported.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to
+do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Later notebook patches/reference functions: Daniel Franzen's exact public V1
+ARC-AGI-3 Milestone 2 Solution, Apache 2.0; retain its existing credits and notices.
+https://www.kaggle.com/code/dfranzen/arc-agi-3-milestone-2-solution?scriptVersionId=354090904
+This supplement does not replace the existing frozen NOTICE or the repository's
+Apache 2.0 license. It describes the MIT-origin component separately.
